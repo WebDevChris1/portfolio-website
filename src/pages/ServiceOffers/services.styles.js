@@ -22,16 +22,28 @@ export const Content = styled.div`
 
   .page-info {
     /* border: 1px solid red; */
+    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 150px;
-    padding: 0 200px;
     text-align: center;
 
     h2 {
       font-size: 2rem;
+    }
+
+    .underline {
+      width: 80px;
+      height: 1px;
+      border: 2px solid white;
+      border-radius: 20px;
+      margin: 5px 0;
+    }
+
+    p {
+      margin-top: 10px;
     }
   }
 

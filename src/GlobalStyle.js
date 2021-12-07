@@ -24,12 +24,4 @@ body{
   font-weight: 300;
 
 }
-
-.underline{
-  width: 80px;
-  height: 1px;
-  border: 2px solid white;
-  border-radius: 20px;
-  margin: 10px 0;
-}
 `;

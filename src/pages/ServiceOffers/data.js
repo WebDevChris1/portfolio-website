@@ -13,7 +13,6 @@ const tierList = [
     revisions: "3 Revisions",
     desc: [
       "1-2 Page",
-      "Free consultation",
       "Design Customization",
       "Content Upload",
       "Include Source Code",
@@ -28,7 +27,6 @@ const tierList = [
     revisions: "3 Revisions",
     desc: [
       "3-4 Pages",
-      "Free consultation",
       "Design Customization",
       "Responsive Design",
       "Content Upload",
@@ -44,7 +42,6 @@ const tierList = [
     revisions: "3 Revisions",
     desc: [
       "Up to 5 Pages",
-      "Free consultation",
       "Design Customization",
       "Responsive Design",
       "Content Upload",
