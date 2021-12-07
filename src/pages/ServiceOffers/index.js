@@ -2,8 +2,6 @@ import React from "react";
 import { useGlobalContext } from "../../context";
 import { Wrapper, Content } from "./services.styles";
 import { Link } from "react-router-dom";
-// import { GiCycle } from "react-icons/gi";
-
 import { BiRevision } from "react-icons/bi";
 import { BiTimeFive } from "react-icons/bi";
 
@@ -16,12 +14,11 @@ const Services = () => {
           <h2>Services</h2>
           <div className="underline"></div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-            ducimus deserunt minus. Iusto, atque debitis ratione illum, a quas
-            deserunt similique rerum voluptatem natus cum! Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Placeat aut, mollitia ducimus
-            magnam quam velit dolor? Laudantium architecto error est quam
-            blanditiis aspernatur impedit deserunt?
+            All service tiers are offered with guarenteed customer support. You
+            can expect fast response times, relevant updates throughout the
+            development process and free consultations. I will work with you to
+            bring your ideas to life. Whether it is a blog or landing page I
+            will strive to always deliver quality work.
           </p>
         </div>
 
