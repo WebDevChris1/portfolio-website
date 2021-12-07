@@ -14,6 +14,12 @@ export const Content = styled.div`
   gap: 20px;
   height: 100%;
 
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
   .page-info {
     /* border: 1px solid red; */
     display: flex;
@@ -25,7 +31,6 @@ export const Content = styled.div`
     text-align: center;
 
     h2 {
-      margin: 0;
       font-size: 2rem;
     }
   }
@@ -39,13 +44,12 @@ export const Content = styled.div`
   }
 
   .tier {
-    height: 350px;
+    height: 375px;
     width: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.75);
 
@@ -53,13 +57,48 @@ export const Content = styled.div`
       font-size: 4rem;
     }
 
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    .delivery-revision {
+      display: flex;
+      width: 100%;
+      height: 50px;
+      /* border: 1px solid blue; */
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+
+      .cycle-icon {
+        font-size: 1.2rem;
+        margin-left: 25px;
+      }
+
+      .clock-icon {
+        font-size: 1.2rem;
+      }
+
+      span {
+        font-size: 1.1rem;
+        font-weight: normal;
+      }
+    }
+
     ul {
       width: 100%;
+      height: 150px;
+      padding-left: 40px;
+      /* border: 1px solid red; */
     }
-  }
+    li {
+      line-height: 20px;
+    }
 
-  div {
-    color: white;
+    .price {
+      font-weight: normal;
+      font-size: 1.5rem;
+    }
   }
 
   a {
