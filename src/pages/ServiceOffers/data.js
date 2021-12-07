@@ -12,7 +12,7 @@ const tierList = [
     delivery: "7 Day Delivery",
     revisions: "3 Revisions",
     desc: [
-      "1-2 Page",
+      "1-2 Pages",
       "Design Customization",
       "Content Upload",
       "Include Source Code",
