@@ -1,7 +1,10 @@
 import React from "react";
-import { Wrapper, Content } from "./about.styles";
-
+import { Wrapper, Content, Image } from "./about.styles";
+import { useGlobalContext } from "../../context";
+import aboutImage from "./images/about-image.jpeg";
 const About = () => {
+  const { techStack } = useGlobalContext();
+
   return (
     <Wrapper>
       <Content>
@@ -19,8 +22,12 @@ const About = () => {
           beatae modi nostrum? Provident officia et nam debitis quaerat
           laboriosam enim, qui, in, fugiat eligendi nostrum corrupti.
         </p>
-        <h3>What I Do Outside of Coding</h3>
         <h3>My Tech Stack</h3>
+        <ul>
+          {techStack.map((item) => {
+            return <li>{item}</li>;
+          })}
+        </ul>
         <h3>Goals</h3>
       </Content>
     </Wrapper>

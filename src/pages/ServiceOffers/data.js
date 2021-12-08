@@ -1,6 +1,5 @@
 import { CgWebsite } from "react-icons/cg";
 import { FaRocket } from "react-icons/fa";
-import { BiRocket } from "react-icons/bi";
 import { BsBarChartFill } from "react-icons/bs";
 import React from "react";
 const tierList = [

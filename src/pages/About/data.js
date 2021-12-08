@@ -7,3 +7,5 @@ const techStack = [
   "Mac, Windows, Linux",
   "Google Suite, Microsoft Suite",
 ];
+
+export default techStack;
