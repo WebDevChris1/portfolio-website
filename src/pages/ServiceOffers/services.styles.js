@@ -56,7 +56,7 @@ export const Content = styled.div`
   }
 
   .tier {
-    height: 375px;
+    height: 400px;
     width: 350px;
     display: flex;
     flex-direction: column;
