@@ -76,7 +76,7 @@ export const Content = styled.div`
     .delivery-revision {
       display: flex;
       width: 100%;
-      height: 50px;
+      height: 60px;
       /* border: 1px solid blue; */
       align-items: center;
       justify-content: center;
@@ -84,7 +84,7 @@ export const Content = styled.div`
 
       .cycle-icon {
         font-size: 1.2rem;
-        margin-left: 25px;
+        margin-left: 35px;
       }
 
       .clock-icon {
@@ -100,7 +100,7 @@ export const Content = styled.div`
     ul {
       width: 100%;
       height: 150px;
-      padding-left: 40px;
+      padding-left: 60px;
       /* border: 1px solid red; */
     }
     li {
