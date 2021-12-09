@@ -22,6 +22,9 @@ export const Content = styled.div`
     border: 1px solid white;
   }
 
+  .bg:hover {
+    cursor: pointer;
+  }
   .one {
     background-color: red;
   }
