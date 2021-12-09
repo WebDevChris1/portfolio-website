@@ -18,10 +18,11 @@ color: white;
 body{
   margin: 0;
   padding: 0;
-  background-color: black;
-  /* border: 1px solid red; */
-  height: 100vh;
   font-weight: 300;
 
+}
+
+.app-wrapper{
+  height: 100vh;
 }
 `;

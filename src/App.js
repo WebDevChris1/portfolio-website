@@ -13,10 +13,15 @@ import Services from "./pages/ServiceOffers/";
 // styles
 import { GlobalStyle } from "./GlobalStyle";
 
+import { useGlobalContext } from "./context";
+
 function App() {
+  const { bgColor } = useGlobalContext();
+  console.log(bgColor);
   return (
-    <>
+    <div className="app-wrapper" style={{ background: bgColor }}>
       <Router>
+        <GlobalStyle bgColor={bgColor} />
         <Navbar />
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
@@ -28,9 +33,8 @@ function App() {
           <Route path="*" element={<Error />}></Route>
         </Routes>
         <Footer />
-        <GlobalStyle />
       </Router>
-    </>
+    </div>
   );
 }
 
