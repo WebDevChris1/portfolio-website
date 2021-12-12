@@ -1,6 +1,7 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import offers from "./pages/ServiceOffers/data";
 import stack from "./pages/About/data";
+import welcomeMsg from "./pages/Home/data";
 
 const AppContext = React.createContext();
 
@@ -8,9 +9,10 @@ const AppProvider = ({ children }) => {
   const [tierList, setTierList] = useState(offers);
   const [techStack, setTechStack] = useState(stack);
   const [bgColor, setBgColor] = useState("black");
+  const [msg, setMsg] = useState(welcomeMsg);
+  const [msgIndex, setMsgIndex] = useState(0);
 
   const changeBg = (id) => {
-    console.log(id);
     if (id === "1") {
       setBgColor("black"); // black
     } else if (id === "2") {
@@ -25,7 +27,19 @@ const AppProvider = ({ children }) => {
   };
 
   return (
-    <AppContext.Provider value={{ tierList, techStack, bgColor, changeBg }}>
+    <AppContext.Provider
+      value={{
+        tierList,
+        techStack,
+        bgColor,
+        changeBg,
+        msg,
+        setTierList,
+        setTechStack,
+        setMsg,
+        setMsgIndex,
+      }}
+    >
       {children}
     </AppContext.Provider>
   );

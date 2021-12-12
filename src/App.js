@@ -1,5 +1,7 @@
+// imports
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { useGlobalContext } from "./context";
 // components
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -12,8 +14,6 @@ import Contact from "./pages/Contact/";
 import Services from "./pages/ServiceOffers/";
 // styles
 import { GlobalStyle } from "./GlobalStyle";
-
-import { useGlobalContext } from "./context";
 
 function App() {
   const { bgColor } = useGlobalContext();

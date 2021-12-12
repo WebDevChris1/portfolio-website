@@ -44,6 +44,7 @@ export const Content = styled.div`
 
     p {
       margin-top: 10px;
+      align-self: baseline;
     }
   }
 
