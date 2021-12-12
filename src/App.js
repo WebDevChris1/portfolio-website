@@ -17,11 +17,10 @@ import { useGlobalContext } from "./context";
 
 function App() {
   const { bgColor } = useGlobalContext();
-  console.log(bgColor);
   return (
     <div className="app-wrapper" style={{ background: bgColor }}>
       <Router>
-        <GlobalStyle bgColor={bgColor} />
+        <GlobalStyle />
         <Navbar />
         <Routes>
           <Route exact path="/" element={<Home />}></Route>

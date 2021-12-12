@@ -26,22 +26,22 @@ export const Content = styled.div`
     cursor: pointer;
   }
   .one {
-    background-color: red;
+    background-color: #d22b2b; // red
   }
 
   .two {
-    background-color: blue;
+    background-color: #1034a6; // blue
   }
 
   .three {
-    background-color: green;
+    background-color: #00563b; // green
   }
 
   .four {
-    background-color: yellow;
+    background-color: #ffc72c; // yellow
   }
 
   .five {
-    background-color: black;
+    background-color: black; // black
   }
 `;

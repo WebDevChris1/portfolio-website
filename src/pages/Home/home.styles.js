@@ -37,7 +37,6 @@ export const Content = styled.div`
 `;
 
 export const Image = styled.img`
-  /* border: 5px solid white; */
   width: 450px;
   height: 450px;
   border-radius: 50%;
