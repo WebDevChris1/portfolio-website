@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.nav`
   padding: 1.2rem;
   width: 100vw;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 `;
 
 export const Content = styled.div`

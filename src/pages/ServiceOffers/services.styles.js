@@ -103,6 +103,7 @@ export const Content = styled.div`
       height: 150px;
       padding-left: 60px;
       /* border: 1px solid red; */
+      list-style-type: square;
     }
     li {
       line-height: 20px;
