@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Wrapper, Content } from "./navbar.styles";
+import { useGlobalContext } from "../../context";
 import {
   AiFillTwitterCircle,
   AiFillGithub,
@@ -8,8 +9,9 @@ import {
 } from "react-icons/ai";
 
 const Navbar = () => {
+  const { bgColor } = useGlobalContext();
   return (
-    <Wrapper>
+    <Wrapper bgColor={bgColor}>
       <Content>
         <div className="nav-links">
           <Link to="/">

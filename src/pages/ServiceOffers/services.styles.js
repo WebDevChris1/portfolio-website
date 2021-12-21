@@ -2,23 +2,16 @@ import styled from "styled-components";
 
 export const Wrapper = styled.main`
   /* border: 1px solid red; */
-  height: 85vh;
+  height: 95vh;
   width: 100vw;
 `;
 export const Content = styled.div`
   /* border: 1px solid blue; */
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  gap: 20px;
   height: 100%;
-
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
 
   .page-info {
     /* border: 1px solid red; */

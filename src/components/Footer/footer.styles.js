@@ -2,12 +2,13 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   /* border: 1px solid red; */
-  height: 30px;
+  height: 40px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  justify-content: center;
+  justify-content: flex-end;
   padding-right: 1.2rem;
+  padding-bottom: 1rem;
 `;
 
 export const Content = styled.div`

@@ -9,20 +9,20 @@ export const Content = styled.div`
   /* border: 1px solid blue; */
   .hero {
     /* border: 1px solid blue; */
-    height: 90vh;
+    height: 100vh;
     display: flex;
-    padding: 10px;
+    padding-left: 30px;
+    padding-bottom: 20px;
     h2 {
       /* border: 1px solid red; */
-      font-size: 8rem;
+      font-size: 9rem;
       cursor: default;
       align-self: flex-end;
     }
   }
   .about-me {
-    margin-top: 50px;
-    padding: 0 50px;
-    height: 95vh;
+    /* border: 1px solid red; */
+    padding: 0 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

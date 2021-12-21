@@ -11,7 +11,7 @@ export const GlobalStyle = createGlobalStyle`
 *{
 box-sizing:border-box;
 font-family: 'Roboto', sans-serif;
-color: white;
+color: #ffffff;
 margin: 0;
 padding: 0;
 
@@ -19,12 +19,8 @@ padding: 0;
 
 body{
 
-  font-weight: 300;
+  font-weight: lighter;
   background-color: black;
 
-}
-
-.app-wrapper{
-  height: 100vh;
 }
 `;

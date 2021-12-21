@@ -4,6 +4,9 @@ export const Wrapper = styled.nav`
   padding: 1.2rem;
   width: 100vw;
   /* margin-bottom: 10px; */
+  position: fixed;
+  background-color: ${(props) => props.bgColor};
+  z-index: 1;
 `;
 
 export const Content = styled.div`

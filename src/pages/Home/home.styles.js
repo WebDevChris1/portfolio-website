@@ -1,26 +1,24 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  height: 85vh;
+  height: 95vh;
   /* border: 1px solid blue; */
   display: flex;
-  align-items: center;
-  justify-content: end;
-  padding-right: 50px;
-  gap: 10%;
+  align-items: flex-end;
+  position: relative;
 `;
 
 export const Content = styled.div`
   /* border: 1px solid green; */
-  width: 50%;
-  display: flex;
-  flex-direction: column;
+  width: 95%;
   font-weight: lighter;
-  margin-right: 10px;
+  /* margin-bottom: 50px; */
+  position: absolute;
+  bottom: 25px;
+  right: 20px;
 
   h2 {
-    font-size: 7rem;
-    margin: 0;
+    font-size: 8rem;
     text-align: right;
   }
 
@@ -33,11 +31,15 @@ export const Content = styled.div`
   p {
     line-height: 1.5rem;
     text-align: right;
+    margin-top: 10px;
   }
 `;
 
 export const Image = styled.img`
+  border: 5px solid white;
   width: 450px;
   height: 450px;
   border-radius: 50%;
+  margin-left: 100px;
+  margin-bottom: 130px;
 `;

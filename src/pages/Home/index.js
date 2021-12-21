@@ -7,7 +7,9 @@ const Home = () => {
     <Wrapper>
       <Image src={selfie} />
       <Content>
-        <h2>Christopher Lutchmidat</h2>
+        <h2>
+          Christopher <br /> Lutchmidat
+        </h2>
         <h3>Web Developer / Tech Enthusist</h3>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis
