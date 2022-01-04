@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.main`
-  height: 85vh;
+  height: 95vh;
   /* border: 1px solid red; */
   display: flex;
   justify-content: center;
