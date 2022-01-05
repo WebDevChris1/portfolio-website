@@ -12,6 +12,7 @@ import Projects from "./pages/Projects/";
 import Error from "./pages/Error/";
 import Contact from "./pages/Contact/";
 import Services from "./pages/ServiceOffers/";
+import Blog from "./pages/Blog/";
 // styles
 import { GlobalStyle } from "./GlobalStyle";
 
@@ -27,6 +28,7 @@ function App() {
           <Route exact path="/home" element={<Home />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/projects" element={<Projects />}></Route>
+          <Route path="/blog" element={<Blog />}></Route>
           <Route path="/services" element={<Services />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="*" element={<Error />}></Route>

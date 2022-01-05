@@ -18,9 +18,10 @@ const Navbar = () => {
             <h1>WebDevChris</h1>
           </Link>
           <Link to="/">Home</Link>
-          <Link to="/About">About</Link>
-          <Link to="/Projects">Projects</Link>
-          <Link to="/Services">Services</Link>
+          <Link to="/about">About</Link>
+          <Link to="/projects">Projects</Link>
+          <Link to="/blog">Blog</Link>
+          <Link to="/services">Services</Link>
         </div>
         <div className="nav-social">
           <a
@@ -44,7 +45,7 @@ const Navbar = () => {
           >
             <AiFillTwitterCircle />
           </a>
-          <Link className="contact" to="/Contact">
+          <Link className="contact" to="/contact">
             Contact
           </Link>
         </div>

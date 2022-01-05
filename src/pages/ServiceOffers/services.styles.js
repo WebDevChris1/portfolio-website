@@ -57,7 +57,7 @@ export const Content = styled.div`
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.75);
+    /* border: 1px solid rgba(255, 255, 255, 0.75); */
 
     .icon {
       font-size: 4rem;
