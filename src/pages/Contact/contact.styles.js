@@ -37,8 +37,14 @@ export const Form = styled.form`
   justify-content: space-around;
   align-items: center;
 
+  label {
+    margin-right: 10px;
+    font-weight: 500;
+  }
+
   select {
-    background-color: transparent;
+    width: 75px;
+    color: black;
     padding: 5px;
     outline: none;
     border: 1px solid white;
@@ -46,41 +52,47 @@ export const Form = styled.form`
     /* text-align: center; */
   }
 
-  textarea {
-    padding: 10px;
-    background-color: transparent;
-    border: 1px solid white;
-    border-radius: 5px;
-    outline: none;
-    color: white;
-    resize: none;
-  }
-
   button {
     background-color: transparent;
-    padding: 5px 20px;
-    border: 1px solid white;
+    border: none;
     border-radius: 5px;
     font-size: 1rem;
+    font-weight: 700;
+    width: 60px;
   }
 
   button:hover {
     cursor: pointer;
-    background-color: white;
-    color: black;
+  }
+
+  .input-container {
+    /* border: 1px solid red; */
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .small-input {
+    width: 120px;
   }
 `;
 
-export const Label = styled.label`
-  margin-right: 10px;
-  font-weight: 500;
-`;
-
 export const Input = styled.input`
-  padding: 5px 5px;
+  padding: 5px;
   width: 250px;
-  background-color: transparent;
+  height: 40px;
   border: 1px solid white;
   outline: none;
   border-radius: 5px;
+  color: black;
+`;
+
+export const TextArea = styled.textarea`
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 5px;
+  outline: none;
+  color: white;
+  resize: none;
+  color: black;
 `;

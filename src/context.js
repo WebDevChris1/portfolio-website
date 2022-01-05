@@ -26,6 +26,10 @@ const AppProvider = ({ children }) => {
     }
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <AppContext.Provider
       value={{
@@ -38,6 +42,7 @@ const AppProvider = ({ children }) => {
         setTechStack,
         setMsg,
         setMsgIndex,
+        handleSubmit,
       }}
     >
       {children}
