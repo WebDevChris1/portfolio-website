@@ -49,7 +49,6 @@ export const Form = styled.form`
     outline: none;
     border: 1px solid white;
     border-radius: 5px;
-    /* text-align: center; */
   }
 
   button {

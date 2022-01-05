@@ -38,7 +38,7 @@ const Contact = () => {
             />
           </div>
           <div>
-            <label for="tiers">Choose a Tier</label>
+            <label htmlFor="tiers">Choose a Tier</label>
             <select name="tiers">
               <option value="Select">Select</option>
               <option value="tier-one">Tier 1</option>
