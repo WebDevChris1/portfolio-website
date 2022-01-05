@@ -1,4 +1,5 @@
 import React, { useState, useContext, useEffect } from "react";
+import emailjs from "emailjs-com";
 import offers from "./pages/ServiceOffers/data";
 import stack from "./pages/About/data";
 import welcomeMsg from "./pages/Home/data";
@@ -11,6 +12,7 @@ const AppProvider = ({ children }) => {
   const [bgColor, setBgColor] = useState("black");
   const [msg, setMsg] = useState(welcomeMsg);
   const [msgIndex, setMsgIndex] = useState(0);
+  const [sendEmail, setSendEmail] = useState("Submit");
 
   const changeBg = (id) => {
     if (id === "1") {
@@ -28,7 +30,30 @@ const AppProvider = ({ children }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("clicked!");
+
+    emailjs
+      .sendForm(
+        "service_sut2owl",
+        "template_oh7uuel",
+        e.target,
+        "user_FLpD0WW5oi0KL9K4eHddp"
+      )
+      .then(
+        (result) => {
+          if ((result.text = "OK")) {
+            setSendEmail("Sent!");
+          } else {
+            setSendEmail("Error! Please try again");
+          }
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+    setTimeout(() => {
+      setSendEmail("Submit");
+    }, 3000);
   };
 
   return (
@@ -44,6 +69,7 @@ const AppProvider = ({ children }) => {
         setMsg,
         setMsgIndex,
         handleSubmit,
+        sendEmail,
       }}
     >
       {children}

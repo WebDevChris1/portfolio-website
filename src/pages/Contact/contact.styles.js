@@ -51,7 +51,7 @@ export const Form = styled.form`
     border-radius: 5px;
   }
 
-  button {
+  .btn {
     background-color: transparent;
     border: none;
     border-radius: 5px;
@@ -60,7 +60,7 @@ export const Form = styled.form`
     width: 60px;
   }
 
-  button:hover {
+  .btn:hover {
     cursor: pointer;
   }
 
