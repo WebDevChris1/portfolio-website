@@ -30,7 +30,7 @@ export const Content = styled.div`
 
 export const Form = styled.form`
   /* border: 1px solid green; */
-  height: 85%;
+  height: 90%;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -57,7 +57,6 @@ export const Form = styled.form`
     border-radius: 5px;
     font-size: 1rem;
     font-weight: 700;
-    width: 60px;
   }
 
   .btn:hover {

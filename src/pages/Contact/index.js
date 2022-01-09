@@ -1,9 +1,10 @@
 import React from "react";
 import { Content, Form, Wrapper, Input, TextArea } from "./contact.styles";
 import { useGlobalContext } from "../../context";
-
+import Spinner from "../../components/Spinner";
 const Contact = () => {
-  const { handleSubmit, sendEmail } = useGlobalContext();
+  const { handleSubmit, sendEmail, isLoading, setIsLoading } =
+    useGlobalContext();
   return (
     <Wrapper>
       <Content>
@@ -67,7 +68,9 @@ const Contact = () => {
             rows="4"
             placeholder="Additional Notes"
           ></TextArea>
-          <input type="submit" className="btn" value={sendEmail}></input>
+          <button type="submit" className="btn">
+            {isLoading ? <Spinner /> : sendEmail}
+          </button>
         </Form>
       </Content>
     </Wrapper>

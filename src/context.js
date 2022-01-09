@@ -3,6 +3,7 @@ import emailjs from "emailjs-com";
 import offers from "./pages/ServiceOffers/data";
 import stack from "./pages/About/data";
 import welcomeMsg from "./pages/Home/data";
+import Spinner from "./components/Spinner";
 
 const AppContext = React.createContext();
 
@@ -13,6 +14,7 @@ const AppProvider = ({ children }) => {
   const [msg, setMsg] = useState(welcomeMsg);
   const [msgIndex, setMsgIndex] = useState(0);
   const [sendEmail, setSendEmail] = useState("Submit");
+  const [isLoading, setIsLoading] = useState(false);
 
   const changeBg = (id) => {
     if (id === "1") {
@@ -30,7 +32,7 @@ const AppProvider = ({ children }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    setIsLoading(true);
     emailjs
       .sendForm(
         "service_sut2owl",
@@ -40,17 +42,19 @@ const AppProvider = ({ children }) => {
       )
       .then(
         (result) => {
-          if ((result.text = "OK")) {
+          if (result.text === "OK") {
             setSendEmail("Sent!");
-          } else {
-            setSendEmail("Error! Please try again");
+            setIsLoading(false);
+            e.target.reset();
           }
         },
         (error) => {
           console.log(error.text);
+          setSendEmail("Error! Please try again");
+          setIsLoading(false);
+          e.target.reset();
         }
       );
-    e.target.reset();
     setTimeout(() => {
       setSendEmail("Submit");
     }, 3000);
@@ -70,6 +74,8 @@ const AppProvider = ({ children }) => {
         setMsgIndex,
         handleSubmit,
         sendEmail,
+        isLoading,
+        setIsLoading,
       }}
     >
       {children}
