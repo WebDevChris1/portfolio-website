@@ -44,7 +44,7 @@ export const Form = styled.form`
 
   select {
     width: 75px;
-    color: black;
+    color: #757575;
     padding: 5px;
     outline: none;
     border: 1px solid white;
