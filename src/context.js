@@ -1,9 +1,12 @@
 import React, { useState, useContext, useEffect } from "react";
 import emailjs from "emailjs-com";
+import Spinner from "./components/Spinner";
+
+//data
 import offers from "./pages/ServiceOffers/data";
 import stack from "./pages/About/data";
 import welcomeMsg from "./pages/Home/data";
-import Spinner from "./components/Spinner";
+import projects from "./pages/Portfolio/data";
 
 const AppContext = React.createContext();
 
@@ -15,6 +18,7 @@ const AppProvider = ({ children }) => {
   const [msgIndex, setMsgIndex] = useState(0);
   const [sendEmail, setSendEmail] = useState("Submit");
   const [isLoading, setIsLoading] = useState(false);
+  const [myProjects, setMyProjects] = useState(projects);
 
   const changeBg = (id) => {
     if (id === "1") {
@@ -76,6 +80,7 @@ const AppProvider = ({ children }) => {
         sendEmail,
         isLoading,
         setIsLoading,
+        myProjects,
       }}
     >
       {children}

@@ -10,4 +10,8 @@ export const Content = styled.div`
   justify-content: center;
   align-items: center;
   height: 100%;
+
+  h2 {
+    font-size: 9rem;
+  }
 `;
