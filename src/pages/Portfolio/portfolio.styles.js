@@ -54,7 +54,7 @@ export const Content = styled.div`
   .project {
     border: 1px solid grey;
     border-radius: 10px;
-    height: 400px;
+    height: 300px;
     width: 400px;
     text-align: center;
     overflow: hidden;
@@ -63,7 +63,7 @@ export const Content = styled.div`
   .project-desc {
     /* border: 1px solid blue; */
     width: 100%;
-    height: 110px;
+    height: 80px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;

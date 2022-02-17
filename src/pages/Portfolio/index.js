@@ -9,10 +9,7 @@ const Projects = () => {
     <Wrapper>
       <Content>
         <section className="hero">
-          <h2>
-            My <br />
-            Work
-          </h2>
+          <h2>My Work</h2>
         </section>
         <section>
           <h3>API</h3>
@@ -25,9 +22,9 @@ const Projects = () => {
                   <div className="project-desc">
                     <h4>{title}</h4>
                     <p>{desc}</p>
-                    <a href={link} target="_blank">
+                    {/* <a href={link} target="_blank">
                       View
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               );
@@ -43,9 +40,9 @@ const Projects = () => {
                   <div className="project-desc">
                     <h4>{title}</h4>
                     <p>{desc}</p>
-                    <a href={link} target="_blank">
+                    {/* <a href={link} target="_blank">
                       View
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               );
@@ -61,9 +58,9 @@ const Projects = () => {
                   <div className="project-desc">
                     <h4>{title}</h4>
                     <p>{desc}</p>
-                    <a href={link} target="_blank">
+                    {/* <a href={link} target="_blank">
                       View
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               );

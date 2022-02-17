@@ -16,7 +16,7 @@ const myToolsProjects = [
   {
     id: 9,
     title: "Shopify Link Grabber",
-    desc: "An app that allows a user to enter a shopify website url which then returns information for all products listed on the site.",
+    desc: "Enter a shopify website url which then returns information for all products listed on the site.",
     link: "https://webdevchris-shopify-links.netlify.app/",
     img: "https://res.cloudinary.com/webdevchris/image/upload/v1645069661/portfolio%20site/link_rxc2j7.png",
   },

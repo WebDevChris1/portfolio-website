@@ -16,7 +16,7 @@ const myUserProjects = [
   {
     id: 5,
     title: "Slider",
-    desc: "Created an app to display information one at a time with user functionalty to change the current tab.",
+    desc: "Display information one at a time with user functionalty to change the current tab.",
     link: "https://webdevchris-slider.netlify.app/",
     img: "https://res.cloudinary.com/webdevchris/image/upload/v1645069661/portfolio%20site/slider_rfyylh.png",
   },
