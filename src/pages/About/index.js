@@ -49,8 +49,8 @@ const About = () => {
             <div className="tech-stack">
               <h3>My Tech Stack</h3>
               <ul>
-                {techStack.map((item) => {
-                  return <li>{item}</li>;
+                {techStack.map((item, index) => {
+                  return <li key={index}>{item}</li>;
                 })}
               </ul>
             </div>
