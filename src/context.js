@@ -6,7 +6,9 @@ import Spinner from "./components/Spinner";
 import offers from "./pages/ServiceOffers/data";
 import stack from "./pages/About/data";
 import welcomeMsg from "./pages/Home/data";
-import projects from "./pages/Portfolio/data";
+import apiProjects from "./pages/Portfolio/data/api-projects";
+import toolProjects from "./pages/Portfolio/data/tool-projects";
+import userProjects from "./pages/Portfolio/data/user-projects";
 
 const AppContext = React.createContext();
 
@@ -18,7 +20,9 @@ const AppProvider = ({ children }) => {
   const [msgIndex, setMsgIndex] = useState(0);
   const [sendEmail, setSendEmail] = useState("Submit");
   const [isLoading, setIsLoading] = useState(false);
-  const [myProjects, setMyProjects] = useState(projects);
+  const [myApiProjects, setMyApiProjects] = useState(apiProjects);
+  const [myToolProjects, setMyToolsProjects] = useState(toolProjects);
+  const [myUserProjects, setMyUserProjects] = useState(userProjects);
 
   const changeBg = (id) => {
     if (id === "1") {
@@ -80,7 +84,9 @@ const AppProvider = ({ children }) => {
         sendEmail,
         isLoading,
         setIsLoading,
-        myProjects,
+        myApiProjects,
+        myToolProjects,
+        myUserProjects,
       }}
     >
       {children}
