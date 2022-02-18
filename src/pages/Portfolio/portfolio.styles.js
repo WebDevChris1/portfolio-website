@@ -44,9 +44,10 @@ export const Content = styled.div`
 
       a {
         position: absolute;
-        inset: 0;
+        height: 100%;
+        width: 50%;
         text-decoration: none;
-        font-size: 3rem;
+        font-size: 2rem;
         background-color: rgba(255, 255, 255, 0.2);
         color: black;
         font-weight: 600;
@@ -61,6 +62,33 @@ export const Content = styled.div`
       width: 100%;
       object-fit: cover;
       object-position: center;
+    }
+
+    .img-wrapper > div {
+      /* border: 1px solid red;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      height: 100%; */
+    }
+
+    .view {
+      inset: 0;
+      border-right: 1px solid black;
+    }
+
+    .view:hover {
+      color: red;
+    }
+
+    .code {
+      right: 0;
+      top: 0;
+    }
+
+    .code:hover {
+      color: red;
     }
 
     .img-wrapper > img,
