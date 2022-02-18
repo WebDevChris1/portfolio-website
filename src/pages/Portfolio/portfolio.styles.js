@@ -36,18 +36,69 @@ export const Content = styled.div`
     gap: 2rem;
     margin-bottom: 1rem;
 
+    .img-wrapper {
+      height: 70%;
+      position: relative;
+      overflow: hidden;
+      /* border: 1px solid red; */
+
+      a {
+        position: absolute;
+        inset: 0;
+        text-decoration: none;
+        font-size: 3rem;
+        background-color: rgba(255, 255, 255, 0.2);
+        color: black;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .img-wrapper > img {
+      display: block;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .img-wrapper > img,
+    .img-wrapper > a {
+      transition: 200ms ease-in-out;
+    }
+
+    .img-wrapper:hover > img.blur {
+      filter: blur(5px);
+    }
+
+    /* .img-wrapper:hover > img.zoom {
+      transform: scale(1.1);
+    } */
+
+    .img-wrapper > a.fade {
+      opacity: 0;
+    }
+
+    .img-wrapper:hover > a.fade {
+      opacity: 1;
+    }
+
+    // slide up animation
+
+    .img-wrapper > a.slide-up {
+      transform: translateY(-100%);
+    }
+
+    .img-wrapper:hover > a.slide-up {
+      transform: translateY(0);
+    }
+
     p {
       width: 90%;
       /* border: 1px solid green; */
       text-align: center;
-    }
-
-    a {
-      text-decoration: none;
-      font-size: 1rem;
-      border: 1px solid white;
-      padding: 1px 15px;
-      border-radius: 10px;
+      font-size: 0.9rem;
     }
   }
 
@@ -68,13 +119,6 @@ export const Content = styled.div`
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    /* padding: 5px; */
+    padding: 5px 0;
   }
-`;
-
-export const Image = styled.img`
-  overflow: hidden;
-  height: 70%;
-  width: 100%;
-  object-fit: cover;
 `;

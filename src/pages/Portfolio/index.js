@@ -1,5 +1,5 @@
 import React from "react";
-import { Wrapper, Content, Image } from "./portfolio.styles";
+import { Wrapper, Content } from "./portfolio.styles";
 import { useGlobalContext } from "../../context";
 import { BsArrowRightShort } from "react-icons/bs";
 
@@ -18,13 +18,15 @@ const Projects = () => {
               const { id, desc, link, img, title } = project;
               return (
                 <div key={id} className="project" href={link}>
-                  <Image src={img} />
+                  <div className="img-wrapper">
+                    <img src={img} className="zoom blur" />
+                    <a href={link} target="_blank" className="fade slide-up">
+                      View
+                    </a>
+                  </div>
                   <div className="project-desc">
                     <h4>{title}</h4>
                     <p>{desc}</p>
-                    {/* <a href={link} target="_blank">
-                      View
-                    </a> */}
                   </div>
                 </div>
               );
@@ -36,13 +38,15 @@ const Projects = () => {
               const { id, desc, link, img, title } = project;
               return (
                 <div key={id} className="project" href={link}>
-                  <Image src={img} />
+                  <div className="img-wrapper">
+                    <img src={img} className="zoom blur" />
+                    <a href={link} target="_blank" className="fade slide-up">
+                      View
+                    </a>
+                  </div>
                   <div className="project-desc">
                     <h4>{title}</h4>
                     <p>{desc}</p>
-                    {/* <a href={link} target="_blank">
-                      View
-                    </a> */}
                   </div>
                 </div>
               );
@@ -54,13 +58,15 @@ const Projects = () => {
               const { id, desc, link, img, title } = project;
               return (
                 <div key={id} className="project" href={link}>
-                  <Image src={img} />
+                  <div className="img-wrapper">
+                    <img src={img} className="zoom blur" />
+                    <a href={link} target="_blank" className="fade slide-up">
+                      View
+                    </a>
+                  </div>
                   <div className="project-desc">
                     <h4>{title}</h4>
                     <p>{desc}</p>
-                    {/* <a href={link} target="_blank">
-                      View
-                    </a> */}
                   </div>
                 </div>
               );
