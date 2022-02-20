@@ -7,47 +7,38 @@ export const Wrapper = styled.main`
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  /* border: 1px solid blue; */
 
-  .hero {
-    /* border: 1px solid green; */
-    height: 100vh;
+  .page-info {
+    /* border: 1px solid yellow; */
+    margin-top: 110px;
+    margin-bottom: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
   h2 {
-    font-size: 9rem;
-    text-align: center;
-  }
-
-  h3 {
     font-size: 2rem;
-    margin-top: 1em;
-    margin-bottom: 0.5em;
+    text-align: center;
+    /* border: 1px solid blue; */
   }
 
-  .title-wrapper {
-    width: 100%;
-    /* border: 1px solid red; */
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-  }
-
-  .title-wrapper > a {
-    text-decoration: none;
-    /* border: 1px solid red; */
+  .underline {
+    width: 50%;
+    height: 1px;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin: 15px 0;
   }
 
   .projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* border: 1px solid blue; */
+    /* border: 1px solid green; */
     gap: 2rem;
-    margin-bottom: 1rem;
 
     .img-wrapper {
       height: 70%;

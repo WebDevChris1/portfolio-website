@@ -13,6 +13,10 @@ import Error from "./pages/Error/";
 import Contact from "./pages/Contact/";
 import Services from "./pages/ServiceOffers/";
 import Blog from "./pages/Blog/";
+
+//sub pages
+import AllUserProjects from "./components/sub-pages/AllUserProjects";
+
 // styles
 import { GlobalStyle } from "./GlobalStyle";
 
@@ -31,6 +35,10 @@ function App() {
           <Route path="/blog" element={<Blog />}></Route>
           <Route path="/services" element={<Services />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
+          <Route
+            path="/portfolio/all-user-experience-projects"
+            element={<AllUserProjects />}
+          ></Route>
           <Route path="*" element={<Error />}></Route>
         </Routes>
       </Router>

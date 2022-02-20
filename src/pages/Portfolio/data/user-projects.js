@@ -31,6 +31,57 @@ const myUserProjects = [
     img: "https://res.cloudinary.com/webdevchris/image/upload/v1645072103/portfolio%20site/quiz_ygkfb9.png",
     code: "https://www.google.com",
   },
+  {
+    id: 7,
+    title: "Glass Morphism Cards",
+    desc: "Display your team members information with a stylish look and hover effects.",
+    link: "https://webdevchris-glass-morphism-cards.netlify.app/",
+    img: "https://res.cloudinary.com/webdevchris/image/upload/v1645371911/portfolio%20site/Glass-Morphism-cards_vpbpuz.png",
+    code: "https://github.com/WebDevChris1/Glassmorphism-Cards",
+  },
+  {
+    id: 8,
+    title: "Sign Up Page",
+    desc: "Add a clean sign up page design to your website.",
+    link: "https://webdevchris-sign-up.netlify.app/",
+    img: "https://res.cloudinary.com/webdevchris/image/upload/v1645372576/portfolio%20site/Signup_acrbur.png",
+    code: "https://github.com/WebDevChris1/Signup-Page",
+  },
+  {
+    id: 9,
+    title: "Login Page",
+    desc: "Add a clean login page design to your website.",
+    link: "https://webdevchris-log-in.netlify.app/",
+    img: "https://res.cloudinary.com/webdevchris/image/upload/v1645372756/portfolio%20site/Login_timiuk.png",
+    code: "https://github.com/WebDevChris1/Login-Page-Auth",
+  },
+
+  {
+    id: 9,
+    title: "Tribute Page",
+    desc: "Blog site for major events that occured in World War 2.",
+    link: "https://webdevchris-ww2-events.netlify.app/",
+    img: "https://res.cloudinary.com/webdevchris/image/upload/v1645373143/portfolio%20site/WW2_ajym1k.png",
+    code: "https://github.com/WebDevChris1/Tribute-Page",
+  },
+
+  {
+    id: 10,
+    title: "Email Collector",
+    desc: "Add a clean email collector design to your website.",
+    link: "https://webdevchris-email-collector.netlify.app/",
+    img: "https://res.cloudinary.com/webdevchris/image/upload/v1645373536/portfolio%20site/email-collector_sdf7nq.png",
+    code: "https://github.com/WebDevChris1/Email-Collector",
+  },
+
+  {
+    id: 11,
+    title: "Collection Page",
+    desc: "Display all your products and/or services on one page.",
+    link: "https://webdevchris-collection-page.netlify.app/",
+    img: "https://res.cloudinary.com/webdevchris/image/upload/v1645374658/portfolio%20site/collection_page_coflxw.png",
+    code: "https://github.com/WebDevChris1/product-page",
+  },
 ];
 
 export default myUserProjects;

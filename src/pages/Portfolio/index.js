@@ -1,7 +1,7 @@
 import React from "react";
 import { Wrapper, Content } from "./portfolio.styles";
 import { useGlobalContext } from "../../context";
-import { BsArrowRightShort } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   const { myApiProjects, myUserProjects, myToolProjects } = useGlobalContext();
@@ -43,9 +43,12 @@ const Projects = () => {
               );
             })}
           </div>
-          <h3>User Experience</h3>
+          <div className="title-wrapper">
+            <h3>User Experience</h3>
+            <Link to="/portfolio/all-user-experience-projects">View All</Link>
+          </div>
           <div className="projects">
-            {myUserProjects.map((project) => {
+            {myUserProjects.slice(0, 3).map((project) => {
               const { id, desc, link, code, img, title } = project;
               return (
                 <div key={id} className="project" href={link}>
@@ -74,9 +77,12 @@ const Projects = () => {
               );
             })}
           </div>
-          <h3>Tools</h3>
+          <div className="title-wrapper">
+            <h3>Tools</h3>
+            <a href="#">View All</a>
+          </div>
           <div className="projects">
-            {myToolProjects.map((project) => {
+            {myToolProjects.slice(0, 3).map((project) => {
               const { id, desc, link, code, img, title } = project;
               return (
                 <div key={id} className="project" href={link}>
