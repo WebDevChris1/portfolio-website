@@ -30,11 +30,12 @@ export const Content = styled.div`
   }
 
   .title-wrapper {
-    width: 100%;
+    width: 90%;
     /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    margin-bottom: 5px;
   }
 
   .title-wrapper > a {
@@ -42,12 +43,26 @@ export const Content = styled.div`
     /* border: 1px solid red; */
   }
 
+  .projects-wrapper {
+    width: 100vw;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .projects {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
     /* border: 1px solid blue; */
     gap: 2rem;
     margin-bottom: 1rem;
+    width: 90%;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
 
     .img-wrapper {
       height: 70%;
