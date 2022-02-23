@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.nav`
+  /* border: 1px solid red; */
   padding: 1.2rem;
   width: 100vw;
   /* margin-bottom: 10px; */

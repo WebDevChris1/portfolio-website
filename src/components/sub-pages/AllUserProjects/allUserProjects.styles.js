@@ -7,8 +7,10 @@ export const Wrapper = styled.main`
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   /* border: 1px solid blue; */
+  width: 100%;
 
   .page-info {
     /* border: 1px solid yellow; */
@@ -27,7 +29,7 @@ export const Content = styled.div`
   }
 
   .underline {
-    width: 50%;
+    width: 100px;
     height: 1px;
     border: 2px solid white;
     border-radius: 20px;
@@ -36,9 +38,14 @@ export const Content = styled.div`
 
   .projects {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     /* border: 1px solid green; */
-    gap: 2rem;
+    row-gap: 2rem;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    width: 90%;
 
     .img-wrapper {
       height: 70%;

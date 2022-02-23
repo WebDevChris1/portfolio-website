@@ -18,7 +18,6 @@ padding: 0;
 }
 
 body{
-
   font-weight: lighter;
   background-color: black;
 
