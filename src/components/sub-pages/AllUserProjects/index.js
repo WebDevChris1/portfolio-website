@@ -1,6 +1,7 @@
 import React from "react";
 import { Wrapper, Content } from "./allUserProjects.styles";
 import { useGlobalContext } from "../../../context";
+import { Link } from "react-router-dom";
 import Projects from "../../../pages/Portfolio";
 
 const AllUserProjects = () => {
@@ -34,6 +35,7 @@ const AllUserProjects = () => {
             );
           })}
         </div>
+        <Link to="/portfolio">Return to Portfolio</Link>
       </Content>
     </Wrapper>
   );

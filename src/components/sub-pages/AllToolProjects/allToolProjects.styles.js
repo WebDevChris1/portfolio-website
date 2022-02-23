@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.main`
-  height: 95vh;
   /* border: 1px solid red; */
 `;
 
@@ -15,7 +14,7 @@ export const Content = styled.div`
 
   .page-info {
     /* border: 1px solid yellow; */
-    margin-top: 110px;
+    margin-top: 150px;
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
@@ -30,11 +29,23 @@ export const Content = styled.div`
   }
 
   .underline {
-    width: 100px;
+    width: 120px;
     height: 1px;
     border: 2px solid white;
     border-radius: 20px;
-    margin: 15px 0;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 50px;
+    margin-top: 100px;
   }
 
   .projects {
@@ -66,6 +77,8 @@ export const Content = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
+        margin: 0;
+        border-radius: 0;
       }
     }
 
@@ -79,6 +92,9 @@ export const Content = styled.div`
     .view {
       inset: 0;
       border-right: 1px solid black;
+      border-left: none;
+      border-top: none;
+      border-bottom: none;
     }
 
     .view:hover {
@@ -88,6 +104,7 @@ export const Content = styled.div`
     .code {
       right: 0;
       top: 0;
+      border: none;
     }
 
     .code:hover {

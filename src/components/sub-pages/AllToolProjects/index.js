@@ -2,6 +2,7 @@ import React from "react";
 import { Wrapper, Content } from "./allToolProjects.styles";
 import { useGlobalContext } from "../../../context";
 import Projects from "../../../pages/Portfolio";
+import { Link } from "react-router-dom";
 
 const AllToolProjects = () => {
   const { myToolProjects } = useGlobalContext();
@@ -34,6 +35,7 @@ const AllToolProjects = () => {
             );
           })}
         </div>
+        <Link to="/portfolio">Return to Portfolio</Link>
       </Content>
     </Wrapper>
   );
