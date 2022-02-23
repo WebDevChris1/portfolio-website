@@ -1,6 +1,6 @@
 const myToolsProjects = [
   {
-    id: 7,
+    id: 3,
     title: "Grocery List",
     desc: "Created an app to keep track of what is needed from the grocery store.",
     link: "https://webdevchris-grocery-list.netlify.app/",
@@ -8,7 +8,7 @@ const myToolsProjects = [
     code: "https://www.google.com",
   },
   {
-    id: 8,
+    id: 4,
     title: "Color Generator",
     desc: "Created an app to reccomend like HEX colors based on an input.",
     link: "https://webdevchris-color-gen.netlify.app/",
@@ -16,7 +16,7 @@ const myToolsProjects = [
     code: "https://www.google.com",
   },
   {
-    id: 9,
+    id: 5,
     title: "Shopify Link Grabber",
     desc: "Enter a shopify website url which then returns information for all products listed on the site.",
     link: "https://webdevchris-shopify-links.netlify.app/",

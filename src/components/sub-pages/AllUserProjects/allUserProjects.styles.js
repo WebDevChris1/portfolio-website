@@ -7,15 +7,15 @@ export const Wrapper = styled.main`
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
   width: 100%;
 
   .page-info {
     /* border: 1px solid yellow; */
     margin-top: 110px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,11 +29,12 @@ export const Content = styled.div`
   }
 
   .underline {
-    width: 100px;
+    width: 120px;
     height: 1px;
     border: 2px solid white;
     border-radius: 20px;
-    margin: 15px 0;
+    margin-top: 15px;
+    margin-bottom: 20px;
   }
 
   .projects {

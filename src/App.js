@@ -16,6 +16,7 @@ import Blog from "./pages/Blog/";
 
 //sub pages
 import AllUserProjects from "./components/sub-pages/AllUserProjects";
+import AllToolProjects from "./components/sub-pages/AllToolProjects";
 
 // styles
 import { GlobalStyle } from "./GlobalStyle";
@@ -38,6 +39,10 @@ function App() {
           <Route
             path="/portfolio/all-user-experience-projects"
             element={<AllUserProjects />}
+          ></Route>
+          <Route
+            path="/portfolio/all-tool-projects"
+            element={<AllToolProjects />}
           ></Route>
           <Route path="*" element={<Error />}></Route>
         </Routes>

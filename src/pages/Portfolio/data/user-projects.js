@@ -1,6 +1,6 @@
 const myUserProjects = [
   {
-    id: 3,
+    id: 6,
     title: "Shopping Cart",
     desc: "Example of a shopping cart page for an e-commerce website.",
     link: "https://webdevchris-shopping-cart.netlify.app/",
@@ -8,7 +8,7 @@ const myUserProjects = [
     code: "https://www.google.com",
   },
   {
-    id: 4,
+    id: 7,
     title: "Restaurant Menu",
     desc: "Example of a food menu page for a restaurant's website.",
     link: "https://webdevchris-menu.netlify.app/",
@@ -16,7 +16,7 @@ const myUserProjects = [
     code: "https://www.google.com",
   },
   {
-    id: 5,
+    id: 8,
     title: "Slider",
     desc: "Display information one at a time with user functionalty to change the current tab.",
     link: "https://webdevchris-slider.netlify.app/",
@@ -24,7 +24,7 @@ const myUserProjects = [
     code: "https://www.google.com",
   },
   {
-    id: 6,
+    id: 9,
     title: "Quiz",
     desc: "Created this app to demonstrate my ability to have a program react based on user selection.",
     link: "https://webdevchris-quiz.netlify.app/",
@@ -32,7 +32,7 @@ const myUserProjects = [
     code: "https://www.google.com",
   },
   {
-    id: 7,
+    id: 10,
     title: "Glass Morphism Cards",
     desc: "Display your team members information with a stylish look and hover effects.",
     link: "https://webdevchris-glass-morphism-cards.netlify.app/",
@@ -40,7 +40,7 @@ const myUserProjects = [
     code: "https://github.com/WebDevChris1/Glassmorphism-Cards",
   },
   {
-    id: 8,
+    id: 11,
     title: "Sign Up Page",
     desc: "Add a clean sign up page design to your website.",
     link: "https://webdevchris-sign-up.netlify.app/",
@@ -48,7 +48,7 @@ const myUserProjects = [
     code: "https://github.com/WebDevChris1/Signup-Page",
   },
   {
-    id: 9,
+    id: 12,
     title: "Login Page",
     desc: "Add a clean login page design to your website.",
     link: "https://webdevchris-log-in.netlify.app/",
@@ -57,7 +57,7 @@ const myUserProjects = [
   },
 
   {
-    id: 9,
+    id: 13,
     title: "Tribute Page",
     desc: "Blog site for major events that occured in World War 2.",
     link: "https://webdevchris-ww2-events.netlify.app/",
@@ -66,7 +66,7 @@ const myUserProjects = [
   },
 
   {
-    id: 10,
+    id: 14,
     title: "Email Collector",
     desc: "Add a clean email collector design to your website.",
     link: "https://webdevchris-email-collector.netlify.app/",
@@ -75,7 +75,7 @@ const myUserProjects = [
   },
 
   {
-    id: 11,
+    id: 15,
     title: "Collection Page",
     desc: "Display all your products and/or services on one page.",
     link: "https://webdevchris-collection-page.netlify.app/",

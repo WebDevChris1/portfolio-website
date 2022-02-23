@@ -9,7 +9,7 @@ const AllUserProjects = () => {
     <Wrapper>
       <Content>
         <div className="page-info">
-          <h2>User Experience</h2>
+          <h2>User Experience Projects</h2>
           <div className="underline"></div>
         </div>
         <div className="projects">

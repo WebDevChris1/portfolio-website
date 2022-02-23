@@ -82,7 +82,7 @@ const Projects = () => {
             </div>
             <div className="title-wrapper">
               <h3>Tools</h3>
-              <a href="#">View All</a>
+              <Link to="/portfolio/all-tool-projects">View All</Link>
             </div>
             <div className="projects">
               {myToolProjects.slice(0, 3).map((project) => {
