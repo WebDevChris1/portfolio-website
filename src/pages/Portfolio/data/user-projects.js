@@ -82,6 +82,15 @@ const myUserProjects = [
     img: "https://res.cloudinary.com/webdevchris/image/upload/v1645374658/portfolio%20site/collection_page_coflxw.png",
     code: "https://github.com/WebDevChris1/product-page",
   },
+
+  {
+    id: 16,
+    title: "Rude Bunny",
+    desc: "Hover over the bunny for a message!",
+    link: "https://webdevchris-rude-bunny.netlify.app/",
+    img: "https://res.cloudinary.com/webdevchris/image/upload/v1645675791/portfolio%20site/Screen_Shot_2022-02-23_at_23.08.00_qxhfrp.png",
+    code: "https://github.com/WebDevChris1/Rude-Bunny",
+  },
 ];
 
 export default myUserProjects;
