@@ -2,7 +2,7 @@ import React from "react";
 import { Wrapper, Content } from "./portfolio.styles";
 import { useGlobalContext } from "../../context";
 import { Link } from "react-router-dom";
-import { subPageRoutes } from "../../components/Navbar/data";
+import { subPageRoutes } from "../../data";
 
 const Projects = () => {
   const { myApiProjects, myUserProjects, myToolProjects } = useGlobalContext();

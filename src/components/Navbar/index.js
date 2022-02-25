@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Wrapper, Content } from "./navbar.styles";
 import { useGlobalContext } from "../../context";
-import { pageRoutes, social } from "./data";
+import { pageRoutes } from "../../data";
+import { social } from "./data";
 
 const Navbar = () => {
   const { bgColor } = useGlobalContext();
