@@ -21,9 +21,14 @@ export const Content = styled.div`
     margin: 0;
   }
 
+  ul {
+    display: flex;
+    align-items: baseline;
+    gap: 30px;
+  }
+
   .nav-links {
     display: flex;
-    justify-content: space-between;
     align-items: baseline;
     gap: 30px;
   }
@@ -42,7 +47,7 @@ export const Content = styled.div`
   .nav-social {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     gap: 1.1rem;
 
     .social-icon {
@@ -52,6 +57,10 @@ export const Content = styled.div`
     a {
       font-size: 0.9rem;
     }
+
+    ul {
+      gap: 1.1rem;
+    }
   }
 
   .contact {
@@ -59,5 +68,11 @@ export const Content = styled.div`
     padding: 0.5rem 1.2rem;
     border-radius: 10px;
     font-size: 1rem;
+  }
+
+  @media screen and (max-width: 850px) {
+    a {
+      color: red;
+    }
   }
 `;

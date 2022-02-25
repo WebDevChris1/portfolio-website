@@ -13,30 +13,30 @@ const Navbar = () => {
           <Link to={pageRoutes[0].path}>
             <h1>WebDevChris</h1>
           </Link>
-          {pageRoutes.slice(0, 5).map((route) => {
-            const { id, path, text } = route;
-            return (
-              <ul>
+          <ul className="links-wrapper">
+            {pageRoutes.slice(0, 5).map((route) => {
+              const { id, path, text } = route;
+              return (
                 <li key={id}>
                   <Link to={path}>{text}</Link>
                 </li>
-              </ul>
-            );
-          })}
+              );
+            })}
+          </ul>
         </div>
         <div className="nav-social">
-          {social.map((socialIcon) => {
-            const { id, url, icon } = socialIcon;
-            return (
-              <ul>
+          <ul>
+            {social.map((socialIcon) => {
+              const { id, url, icon } = socialIcon;
+              return (
                 <li key={id}>
                   <a href={url} target="_blank" className="social-icon">
                     {icon}
                   </a>
                 </li>
-              </ul>
-            );
-          })}
+              );
+            })}
+          </ul>
           <Link className="contact" to={pageRoutes[5].path}>
             {pageRoutes[5].text}
           </Link>
