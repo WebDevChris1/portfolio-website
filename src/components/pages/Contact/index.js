@@ -1,7 +1,7 @@
 import React from "react";
 import { Content, Form, Wrapper, Input, TextArea } from "./contact.styles";
-import { useGlobalContext } from "../../context";
-import Spinner from "../../components/Spinner";
+import { useGlobalContext } from "../../../context";
+import Spinner from "../../../components/Spinner";
 const Contact = () => {
   const { handleSubmit, sendEmail, isLoading, setIsLoading } =
     useGlobalContext();

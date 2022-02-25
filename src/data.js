@@ -1,13 +1,13 @@
 import React from "react";
 
 // pages
-import Home from "./pages/Home/";
-import About from "./pages/About/";
-import Portfolio from "./pages/Portfolio";
-import Error from "./pages/Error/";
-import Contact from "./pages/Contact/";
-import Services from "./pages/ServiceOffers/";
-import Blog from "./pages/Blog/";
+import Home from "./components/pages/Home/";
+import About from "./components/pages/About/";
+import Portfolio from "./components/pages/Portfolio";
+import Error from "./components/pages/Error/";
+import Contact from "./components/pages/Contact/";
+import Services from "./components/pages/ServiceOffers/";
+import Blog from "./components/pages/Blog";
 
 //sub pages
 import AllUserProjects from "./components/sub-pages/AllUserProjects";
