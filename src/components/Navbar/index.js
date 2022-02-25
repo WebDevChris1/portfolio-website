@@ -2,11 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Wrapper, Content } from "./navbar.styles";
 import { useGlobalContext } from "../../context";
-import {
-  AiFillTwitterCircle,
-  AiFillGithub,
-  AiFillCodepenCircle,
-} from "react-icons/ai";
+import { pageRoutes, social } from "./data";
 
 const Navbar = () => {
   const { bgColor } = useGlobalContext();
@@ -14,39 +10,35 @@ const Navbar = () => {
     <Wrapper bgColor={bgColor}>
       <Content>
         <div className="nav-links">
-          <Link to="/">
+          <Link to={pageRoutes[0].path}>
             <h1>WebDevChris</h1>
           </Link>
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/portfolio">Portfolio</Link>
-          <Link to="/blog">Blog</Link>
-          <Link to="/services">Services</Link>
+          {pageRoutes.slice(0, 5).map((route) => {
+            const { id, path, text } = route;
+            return (
+              <ul>
+                <li key={id}>
+                  <Link to={path}>{text}</Link>
+                </li>
+              </ul>
+            );
+          })}
         </div>
         <div className="nav-social">
-          <a
-            href="https://codepen.io/WebDevChris"
-            target="_blank"
-            className="social-icon"
-          >
-            <AiFillCodepenCircle />
-          </a>
-          <a
-            href="https://github.com/WebDevChris1"
-            target="_blank"
-            className="social-icon"
-          >
-            <AiFillGithub />
-          </a>
-          <a
-            href="https://twitter.com/webdevchris1"
-            target="_blank"
-            className="social-icon"
-          >
-            <AiFillTwitterCircle />
-          </a>
-          <Link className="contact" to="/contact">
-            Contact
+          {social.map((socialIcon) => {
+            const { id, url, icon } = socialIcon;
+            return (
+              <ul>
+                <li key={id}>
+                  <a href={url} target="_blank" className="social-icon">
+                    {icon}
+                  </a>
+                </li>
+              </ul>
+            );
+          })}
+          <Link className="contact" to={pageRoutes[5].path}>
+            {pageRoutes[5].text}
           </Link>
         </div>
       </Content>

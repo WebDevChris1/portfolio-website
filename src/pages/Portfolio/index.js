@@ -2,6 +2,7 @@ import React from "react";
 import { Wrapper, Content } from "./portfolio.styles";
 import { useGlobalContext } from "../../context";
 import { Link } from "react-router-dom";
+import { subPageRoutes } from "../../components/Navbar/data";
 
 const Projects = () => {
   const { myApiProjects, myUserProjects, myToolProjects } = useGlobalContext();
@@ -48,7 +49,7 @@ const Projects = () => {
             </div>
             <div className="title-wrapper">
               <h3>User Experience</h3>
-              <Link to="/portfolio/all-user-experience-projects">View All</Link>
+              <Link to={subPageRoutes[0].path}>View All</Link>
             </div>
             <div className="projects">
               {myUserProjects.slice(0, 3).map((project) => {
@@ -82,7 +83,7 @@ const Projects = () => {
             </div>
             <div className="title-wrapper">
               <h3>Tools</h3>
-              <Link to="/portfolio/all-tool-projects">View All</Link>
+              <Link to={subPageRoutes[1].path}>View All</Link>
             </div>
             <div className="projects">
               {myToolProjects.slice(0, 3).map((project) => {

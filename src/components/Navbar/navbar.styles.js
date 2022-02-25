@@ -28,6 +28,10 @@ export const Content = styled.div`
     gap: 30px;
   }
 
+  li {
+    list-style: none;
+  }
+
   a {
     text-decoration: none;
     color: white;

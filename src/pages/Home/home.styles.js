@@ -11,7 +11,6 @@ export const Wrapper = styled.div`
 export const Content = styled.div`
   /* border: 1px solid green; */
   width: 95%;
-  font-weight: lighter;
   /* margin-bottom: 50px; */
   position: absolute;
   bottom: 25px;
@@ -29,7 +28,6 @@ export const Content = styled.div`
   }
 
   p {
-    line-height: 1.5rem;
     text-align: right;
     margin-top: 10px;
   }

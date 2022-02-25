@@ -20,6 +20,9 @@ padding: 0;
 body{
   font-weight: lighter;
   background-color: black;
+}
 
+p{
+    line-height: 1.5rem;
 }
 `;
