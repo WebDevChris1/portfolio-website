@@ -17,6 +17,7 @@ export const Wrapper = styled.nav`
 export const Content = styled.div`
   /* display: flex; */
   /* border: 1px solid red; */
+  /* height: 100vh; */
 
   h1 {
     font-size: 2rem;
@@ -43,28 +44,56 @@ export const Content = styled.div`
     overflow: hidden;
     /* border: 1px solid red; */
     z-index: 10px;
-    height: 0;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
   }
 
   .links {
     /* border: 1px solid red; */
   }
 
-  .nav-social {
-    /* display: none; */
-    ul {
-      display: flex;
-    }
+  .links li {
+    padding: 5px 0;
   }
 
-  .nav-social > a {
-    /* display: none; */
+  .nav-social {
+    /* border: 1px solid red; */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+    /* align-items: center; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    ul {
+      display: flex;
+
+      li {
+        padding: 0 10px;
+        padding-left: 0;
+
+        a {
+          padding-top: 5px;
+        }
+      }
+    }
+
+    /* a{
+      padding: 10px 0s;
+    } */
   }
 
   .nav-toggle {
     background-color: transparent;
     border: none;
     font-size: 2rem;
+  }
+
+  .contact {
+    /* align-self: flex-start; */
+    /* border: 1px solid red; */
+    width: 55px;
+    padding: 5px 0;
   }
 
   .nav-toggle:hover {
@@ -98,7 +127,7 @@ export const Content = styled.div`
     }
 
     .links-wrapper {
-      border: 1px solid red;
+      /* border: 1px solid red; */
       height: 100%;
       overflow: visible;
       display: flex;
@@ -107,7 +136,7 @@ export const Content = styled.div`
     }
 
     .links {
-      border: 1px solid red;
+      /* border: 1px solid red; */
       display: flex;
       gap: 30;
       padding-left: 20px;
@@ -116,7 +145,9 @@ export const Content = styled.div`
 
     .nav-social {
       /* border: 1px solid red; */
+      overflow: visible;
       display: flex;
+      flex-direction: row;
       justify-content: space-between;
       align-items: flex-end;
       gap: 1.1rem;
@@ -135,11 +166,16 @@ export const Content = styled.div`
       }
     }
 
+    /* .nav-social > a {
+      display: none;
+    } */
+
     .contact {
       border: 1px solid white;
       padding: 0.5rem 1.2rem;
       border-radius: 10px;
       font-size: 1rem;
+      width: 100%;
     }
   }
 

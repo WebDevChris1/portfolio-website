@@ -10,14 +10,18 @@ import { GrMenu } from "react-icons/gr";
 const Navbar = () => {
   const { bgColor, showLinks, setShowLinks } = useGlobalContext();
   const linksWrapperRef = useRef(null);
+  const socialWrapperRef = useRef(null);
   const linksRef = useRef(null);
-
+  const socialRef = useRef(null);
   useEffect(() => {
     if (showLinks) {
       const linksHeight = linksRef.current.getBoundingClientRect().height;
-      linksWrapperRef.current.style.height = `${linksHeight}px`;
+      const socialHeight = socialRef.current.getBoundingClientRect().height;
+      linksWrapperRef.current.style.height = `150px`;
+      socialWrapperRef.current.style.height = `43px`;
     } else {
       linksWrapperRef.current.style.height = "0px";
+      socialWrapperRef.current.style.height = "0px";
     }
   }, [showLinks]);
 
@@ -47,17 +51,11 @@ const Navbar = () => {
                 </li>
               );
             })}
-            <li
-              key={pageRoutes[5].id}
-              // style={{ display: showLinks ? "visible" : "none" }}
-            >
-              {/* <Link to={pageRoutes[5].path}>{pageRoutes[5].text}</Link> */}
-            </li>
           </ul>
         </div>
 
-        <div className="nav-social">
-          <ul>
+        <div className="nav-social" ref={socialWrapperRef}>
+          <ul ref={socialRef}>
             {social.map((socialIcon) => {
               const { id, url, icon } = socialIcon;
               return (
