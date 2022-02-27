@@ -50,7 +50,6 @@ export const pageRoutes = [
     text: "Contact",
     page: <Contact />,
   },
-
   {
     id: 7,
     path: "*",
@@ -62,12 +61,12 @@ export const pageRoutes = [
 export const subPageRoutes = [
   {
     id: 1,
-    path: "/portfolio/all-user-experience-projects",
+    path: "/portfolio/user-experience-projects",
     page: <AllUserProjects />,
   },
   {
     id: 2,
-    path: "/portfolio/all-tool-projects",
+    path: "/portfolio/tool-projects",
     page: <AllToolProjects />,
   },
 ];

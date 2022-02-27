@@ -1,11 +1,11 @@
 import React from "react";
 import { Wrapper, Content } from "./allToolProjects.styles";
 import { useGlobalContext } from "../../../context";
-import Projects from "../../../pages/Portfolio";
+// import Projects from "../../../pages/Portfolio";
 import { Link } from "react-router-dom";
+import { myToolProjects } from "../../pages/Portfolio/data";
 
 const AllToolProjects = () => {
-  const { myToolProjects } = useGlobalContext();
   return (
     <Wrapper>
       <Content>

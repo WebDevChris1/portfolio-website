@@ -3,8 +3,7 @@ import { Content, Form, Wrapper, Input, TextArea } from "./contact.styles";
 import { useGlobalContext } from "../../../context";
 import Spinner from "../../../components/Spinner";
 const Contact = () => {
-  const { handleSubmit, sendEmail, isLoading, setIsLoading } =
-    useGlobalContext();
+  const { handleSubmit, sendEmail, isLoading } = useGlobalContext();
   return (
     <Wrapper>
       <Content>

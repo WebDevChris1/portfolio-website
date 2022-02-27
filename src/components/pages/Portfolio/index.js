@@ -1,11 +1,10 @@
 import React from "react";
 import { Wrapper, Content } from "./portfolio.styles";
-import { useGlobalContext } from "../../../context";
 import { Link } from "react-router-dom";
 import { subPageRoutes } from "../../../data";
+import { myApiProjects, myUserProjects, myToolProjects } from "./data";
 
 const Projects = () => {
-  const { myApiProjects, myUserProjects, myToolProjects } = useGlobalContext();
   return (
     <Wrapper>
       <Content>
@@ -14,6 +13,7 @@ const Projects = () => {
         </section>
         <section>
           <div className="projects-wrapper">
+            {/* api */}
             <div className="title-wrapper">
               <h3>API</h3>
             </div>
@@ -47,6 +47,8 @@ const Projects = () => {
                 );
               })}
             </div>
+
+            {/* user experience */}
             <div className="title-wrapper">
               <h3>User Experience</h3>
               <Link to={subPageRoutes[0].path}>View All</Link>
@@ -81,6 +83,8 @@ const Projects = () => {
                 );
               })}
             </div>
+
+            {/* tool */}
             <div className="title-wrapper">
               <h3>Tools</h3>
               <Link to={subPageRoutes[1].path}>View All</Link>

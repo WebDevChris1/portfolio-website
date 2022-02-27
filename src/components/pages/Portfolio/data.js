@@ -1,6 +1,25 @@
-const myUserProjects = [
+export const myApiProjects = [
   {
-    id: 3,
+    id: 1,
+    title: "Movie Database",
+    img: "https://res.cloudinary.com/webdevchris/image/upload/v1645069664/portfolio%20site/movie_vutbfq.png",
+    desc: "Using Movie Database API, search your favorite movies to learn more about it",
+    link: "https://webdevchris-movies.netlify.app/",
+    code: "https://www.google.com",
+  },
+  {
+    id: 2,
+    title: "Cocktail Database",
+    img: "https://res.cloudinary.com/webdevchris/image/upload/v1645069662/portfolio%20site/cocktail_y0lsiq.png",
+    desc: "Using Cocktail Database API, search your favorite drinks and learn how to make them",
+    link: "https://webdevchris-cocktail-db.netlify.app",
+    code: "https://www.google.com",
+  },
+];
+
+export const myUserProjects = [
+  {
+    id: 1,
     title: "Shopping Cart",
     img: "https://res.cloudinary.com/webdevchris/image/upload/v1645069661/portfolio%20site/cart_w94mgp.png",
     desc: "Example of a shopping cart page for an e-commerce website",
@@ -8,7 +27,7 @@ const myUserProjects = [
     code: "https://www.google.com",
   },
   {
-    id: 4,
+    id: 2,
     title: "Restaurant Menu",
     img: "https://res.cloudinary.com/webdevchris/image/upload/v1645069662/portfolio%20site/menu_xuwb8x.png",
     desc: "Example of a food menu page for a restaurant's website",
@@ -16,7 +35,7 @@ const myUserProjects = [
     code: "https://www.google.com",
   },
   {
-    id: 5,
+    id: 3,
     title: "Slider",
     img: "https://res.cloudinary.com/webdevchris/image/upload/v1645069661/portfolio%20site/slider_rfyylh.png",
     desc: "Display information one at a time with user functionalty to change the current tab",
@@ -24,7 +43,7 @@ const myUserProjects = [
     code: "https://www.google.com",
   },
   {
-    id: 6,
+    id: 4,
     title: "Navbar",
     img: "https://res.cloudinary.com/webdevchris/image/upload/v1645679799/portfolio%20site/navbar_byf6lq.png",
     desc: "See how this navbar changes based on your viewing window size",
@@ -32,7 +51,7 @@ const myUserProjects = [
     code: "https://github.com/WebDevChris1/Navbar/",
   },
   {
-    id: 7,
+    id: 5,
     title: "Collection Page",
     img: "https://res.cloudinary.com/webdevchris/image/upload/v1645374658/portfolio%20site/collection_page_coflxw.png",
     desc: "Display all your products and/or services on one page",
@@ -41,7 +60,7 @@ const myUserProjects = [
   },
 
   {
-    id: 8,
+    id: 6,
     title: "Rude Bunny",
     img: "https://res.cloudinary.com/webdevchris/image/upload/v1645678271/portfolio%20site/rude_bunny_m0mpoj.png",
     desc: "Hover over the bunny for a message",
@@ -49,7 +68,7 @@ const myUserProjects = [
     code: "https://github.com/WebDevChris1/Rude-Bunny",
   },
   {
-    id: 9,
+    id: 7,
     title: "Quiz",
     img: "https://res.cloudinary.com/webdevchris/image/upload/v1645072103/portfolio%20site/quiz_ygkfb9.png",
     desc: "Created this app to demonstrate my ability to have a program react based on user selection",
@@ -57,7 +76,7 @@ const myUserProjects = [
     code: "https://www.google.com",
   },
   {
-    id: 10,
+    id: 8,
     title: "Glass Morphism Cards",
     img: "https://res.cloudinary.com/webdevchris/image/upload/v1645371911/portfolio%20site/Glass-Morphism-cards_vpbpuz.png",
     desc: "Display your team members information with a stylish look and hover effects",
@@ -65,7 +84,7 @@ const myUserProjects = [
     code: "https://github.com/WebDevChris1/Glassmorphism-Cards",
   },
   {
-    id: 11,
+    id: 9,
     title: "Sign Up Page",
     img: "https://res.cloudinary.com/webdevchris/image/upload/v1645372576/portfolio%20site/Signup_acrbur.png",
     desc: "Add a clean sign up page design to your website",
@@ -73,7 +92,7 @@ const myUserProjects = [
     code: "https://github.com/WebDevChris1/Signup-Page",
   },
   {
-    id: 12,
+    id: 10,
     title: "Login Page",
     img: "https://res.cloudinary.com/webdevchris/image/upload/v1645372756/portfolio%20site/Login_timiuk.png",
     desc: "Add a clean login page design to your website",
@@ -82,7 +101,7 @@ const myUserProjects = [
   },
 
   {
-    id: 13,
+    id: 11,
     title: "Tribute Page",
     img: "https://res.cloudinary.com/webdevchris/image/upload/v1645373143/portfolio%20site/WW2_ajym1k.png",
     desc: "Blog site for major events that occured in World War 2",
@@ -91,7 +110,7 @@ const myUserProjects = [
   },
 
   {
-    id: 14,
+    id: 12,
     title: "Email Collector",
     img: "https://res.cloudinary.com/webdevchris/image/upload/v1645373536/portfolio%20site/email-collector_sdf7nq.png",
     desc: "Add a clean email collector design to your website",
@@ -100,4 +119,37 @@ const myUserProjects = [
   },
 ];
 
-export default myUserProjects;
+export const myToolProjects = [
+  {
+    id: 1,
+    title: "Grocery List",
+    img: "https://res.cloudinary.com/webdevchris/image/upload/v1645069660/portfolio%20site/grocery_k1ucsn.png",
+    desc: "Created an app to keep track of what is needed from the grocery store",
+    link: "https://webdevchris-grocery-list.netlify.app/",
+    code: "https://www.google.com",
+  },
+  {
+    id: 2,
+    title: "Color Generator",
+    img: "https://res.cloudinary.com/webdevchris/image/upload/v1645069661/portfolio%20site/color-gen_zifztz.png",
+    desc: "Created an app to reccomend like HEX colors based on an input",
+    link: "https://webdevchris-color-gen.netlify.app/",
+    code: "https://www.google.com",
+  },
+  {
+    id: 3,
+    title: "Shopify Link Grabber",
+    img: "https://res.cloudinary.com/webdevchris/image/upload/v1645069661/portfolio%20site/link_rxc2j7.png",
+    desc: "Enter a shopify website url which then returns information for all products listed on the site",
+    link: "https://webdevchris-shopify-links.netlify.app/",
+    code: "https://github.com/WebDevChris1/shopify-product-grabber",
+  },
+  {
+    id: 4,
+    title: "Spellcheck",
+    img: "https://res.cloudinary.com/webdevchris/image/upload/v1645677966/portfolio%20site/spellcheck_m0ea23.png",
+    desc: "Never misspell a word again",
+    link: "https://webdevchris-spell-check.netlify.app/",
+    code: "https://github.com/WebDevChris1/Spell-Check",
+  },
+];

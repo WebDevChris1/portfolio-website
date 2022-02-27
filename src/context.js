@@ -3,12 +3,9 @@ import emailjs from "emailjs-com";
 import Spinner from "./components/Spinner";
 
 //data
-import offers from "./pages/ServiceOffers/data";
-import stack from "./pages/About/data";
-import welcomeMsg from "./pages/Home/data";
-import apiProjects from "./pages/Portfolio/data/api-projects";
-import toolProjects from "./pages/Portfolio/data/tool-projects";
-import userProjects from "./pages/Portfolio/data/user-projects";
+import offers from "./components/pages/ServiceOffers/data";
+import stack from "./components/pages/About/data";
+import welcomeMsg from "./components/pages/Home/data";
 
 const AppContext = React.createContext();
 
@@ -20,9 +17,11 @@ const AppProvider = ({ children }) => {
   const [msgIndex, setMsgIndex] = useState(0);
   const [sendEmail, setSendEmail] = useState("Submit");
   const [isLoading, setIsLoading] = useState(false);
-  const [myApiProjects, setMyApiProjects] = useState(apiProjects);
-  const [myToolProjects, setMyToolsProjects] = useState(toolProjects);
-  const [myUserProjects, setMyUserProjects] = useState(userProjects);
+  const [showLinks, setShowLinks] = useState(true);
+
+  useEffect(() => {
+    setShowLinks(false);
+  }, []);
 
   const changeBg = (id) => {
     if (id === "1") {
@@ -48,21 +47,22 @@ const AppProvider = ({ children }) => {
         e.target,
         "user_FLpD0WW5oi0KL9K4eHddp"
       )
-      .then(
-        (result) => {
+      .then((result) => {
+        try {
           if (result.text === "OK") {
             setSendEmail("Sent!");
             setIsLoading(false);
             e.target.reset();
           }
-        },
-        (error) => {
-          console.log(error.text);
-          setSendEmail("Error! Please try again");
-          setIsLoading(false);
-          e.target.reset();
+        } catch (error) {
+          {
+            console.log(error.text);
+            setSendEmail("Error! Please try again");
+            setIsLoading(false);
+            e.target.reset();
+          }
         }
-      );
+      });
     setTimeout(() => {
       setSendEmail("Submit");
     }, 3000);
@@ -84,9 +84,8 @@ const AppProvider = ({ children }) => {
         sendEmail,
         isLoading,
         setIsLoading,
-        myApiProjects,
-        myToolProjects,
-        myUserProjects,
+        showLinks,
+        setShowLinks,
       }}
     >
       {children}

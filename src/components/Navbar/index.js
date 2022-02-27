@@ -1,21 +1,45 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { Wrapper, Content } from "./navbar.styles";
 import { useGlobalContext } from "../../context";
 import { pageRoutes } from "../../data";
 import { social } from "./data";
+import { FaBars } from "react-icons/fa";
+import { GrMenu } from "react-icons/gr";
 
 const Navbar = () => {
-  const { bgColor } = useGlobalContext();
+  const { bgColor, showLinks, setShowLinks } = useGlobalContext();
+  const linksWrapperRef = useRef(null);
+  const linksRef = useRef(null);
+
+  useEffect(() => {
+    if (showLinks) {
+      const linksHeight = linksRef.current.getBoundingClientRect().height;
+      linksWrapperRef.current.style.height = `${linksHeight}px`;
+    } else {
+      linksWrapperRef.current.style.height = "0px";
+    }
+  }, [showLinks]);
+
   return (
     <Wrapper bgColor={bgColor}>
       <Content>
-        <div className="nav-links">
+        <div className="nav-header">
           <Link to={pageRoutes[0].path}>
             <h1>WebDevChris</h1>
           </Link>
-          <ul className="links-wrapper">
-            {pageRoutes.slice(0, 5).map((route) => {
+
+          <button
+            className="nav-toggle"
+            onClick={() => setShowLinks(!showLinks)}
+          >
+            <FaBars />
+          </button>
+        </div>
+
+        <div className="links-wrapper" ref={linksWrapperRef}>
+          <ul className="links" ref={linksRef}>
+            {pageRoutes.slice(0, pageRoutes.length - 2).map((route) => {
               const { id, path, text } = route;
               return (
                 <li key={id}>
@@ -23,8 +47,15 @@ const Navbar = () => {
                 </li>
               );
             })}
+            <li
+              key={pageRoutes[5].id}
+              // style={{ display: showLinks ? "visible" : "none" }}
+            >
+              {/* <Link to={pageRoutes[5].path}>{pageRoutes[5].text}</Link> */}
+            </li>
           </ul>
         </div>
+
         <div className="nav-social">
           <ul>
             {social.map((socialIcon) => {
@@ -39,7 +70,7 @@ const Navbar = () => {
             })}
           </ul>
           <Link className="contact" to={pageRoutes[5].path}>
-            {pageRoutes[5].text}
+            {pageRoutes[pageRoutes.length - 2].text}
           </Link>
         </div>
       </Content>
