@@ -5,7 +5,7 @@ import { useGlobalContext } from "./context";
 // components
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import ScrollToTop from "./helpers/ScrollToTop";
+// import ScrollToTop from "./helpers/ScrollToTop";
 
 // routes
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -20,21 +20,19 @@ function App() {
   return (
     <div className="app-wrapper" style={{ background: bgColor }}>
       <Router>
-        <ScrollToTop>
-          <GlobalStyle />
-          <Navbar />
-          <Routes>
-            <Route exact path="/" element={<Home />}></Route>
-            {pageRoutes.slice(1, pageRoutes.length).map((route) => {
-              const { path, page } = route;
-              return <Route path={path} element={page}></Route>;
-            })}
-            {subPageRoutes.map((route) => {
-              const { page, path } = route;
-              return <Route path={path} element={page}></Route>;
-            })}
-          </Routes>
-        </ScrollToTop>
+        <GlobalStyle />
+        <Navbar />
+        <Routes>
+          <Route exact path="/" element={<Home />}></Route>
+          {pageRoutes.slice(1, pageRoutes.length).map((route) => {
+            const { path, page } = route;
+            return <Route path={path} element={page}></Route>;
+          })}
+          {subPageRoutes.map((route) => {
+            const { page, path } = route;
+            return <Route path={path} element={page}></Route>;
+          })}
+        </Routes>
       </Router>
       <Footer />
     </div>
