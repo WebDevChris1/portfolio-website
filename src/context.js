@@ -17,7 +17,7 @@ const AppProvider = ({ children }) => {
   const [msgIndex, setMsgIndex] = useState(0);
   const [sendEmail, setSendEmail] = useState("Submit");
   const [isLoading, setIsLoading] = useState(false);
-  const [showLinks, setShowLinks] = useState(true);
+  const [showLinks, setShowLinks] = useState(false);
 
   useEffect(() => {
     setShowLinks(false);

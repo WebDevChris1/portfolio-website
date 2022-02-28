@@ -6,6 +6,7 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: flex-end;
   position: relative;
+  transition: opacity 1s ease-in-out;
 `;
 
 export const Content = styled.div`

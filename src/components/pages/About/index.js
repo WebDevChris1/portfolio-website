@@ -3,10 +3,10 @@ import { Wrapper, Content, Image } from "./about.styles";
 import { useGlobalContext } from "../../../context";
 import aboutImage from "./images/about-me-image.jpeg";
 const About = () => {
-  const { techStack } = useGlobalContext();
+  const { techStack, showLinks } = useGlobalContext();
 
   return (
-    <Wrapper>
+    <Wrapper style={{ opacity: showLinks ? ".4" : "1" }}>
       <Content>
         <div className="hero">
           <h2>

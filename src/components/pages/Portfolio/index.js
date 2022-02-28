@@ -3,10 +3,12 @@ import { Wrapper, Content } from "./portfolio.styles";
 import { Link } from "react-router-dom";
 import { subPageRoutes } from "../../../data";
 import { myApiProjects, myUserProjects, myToolProjects } from "./data";
+import { useGlobalContext } from "../../../context";
 
 const Projects = () => {
+  const { showLinks } = useGlobalContext();
   return (
-    <Wrapper>
+    <Wrapper style={{ opacity: showLinks ? ".4" : "1" }}>
       <Content>
         <section className="hero">
           <h2>My Work</h2>

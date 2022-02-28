@@ -6,8 +6,9 @@ import { Link } from "react-router-dom";
 import { myUserProjects } from "../../pages/Portfolio/data";
 
 const AllUserProjects = () => {
+  const { showLinks } = useGlobalContext();
   return (
-    <Wrapper>
+    <Wrapper style={{ opacity: showLinks ? ".4" : "1" }}>
       <Content>
         <div className="page-info">
           <h2>User Experience Projects</h2>
