@@ -1,7 +1,6 @@
 import React from "react";
 import { Wrapper, Content } from "./allUserProjects.styles";
 import { Link } from "react-router-dom";
-// import Projects from "../../../pages/Portfolio";
 import { myUserProjects } from "../../pages/Portfolio/data";
 
 const AllUserProjects = () => {
@@ -19,10 +18,18 @@ const AllUserProjects = () => {
               <div key={id} className="project" href={link}>
                 <div className="img-wrapper">
                   <img src={img} className="zoom blur" />
-                  <a href={link} target="_blank" className="view fade slide-up">
+                  <a
+                    href={link}
+                    target="_blank"
+                    className="view fade slide-down"
+                  >
                     View
                   </a>
-                  <a href={code} target="_blank" className="code fade slide-up">
+                  <a
+                    href={code}
+                    target="_blank"
+                    className="code fade slide-down"
+                  >
                     Code
                   </a>
                 </div>

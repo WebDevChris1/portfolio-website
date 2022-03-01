@@ -1,7 +1,6 @@
 import React from "react";
 import { Wrapper, Content, Image } from "./about.styles";
 import { useGlobalContext } from "../../../context";
-import aboutImage from "./images/about-me-image.jpeg";
 const About = () => {
   const { techStack } = useGlobalContext();
 

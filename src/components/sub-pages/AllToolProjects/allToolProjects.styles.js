@@ -134,11 +134,11 @@ export const Content = styled.div`
 
     // slide up animation
 
-    .img-wrapper > a.slide-up {
+    .img-wrapper > a.slide-down {
       transform: translateY(-100%);
     }
 
-    .img-wrapper:hover > a.slide-up {
+    .img-wrapper:hover > a.slide-down {
       transform: translateY(0);
     }
 

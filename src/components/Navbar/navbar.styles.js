@@ -13,7 +13,6 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
-  /* padding: 15px; */
 
   h1 {
     font-size: 2rem;
@@ -51,7 +50,6 @@ export const Content = styled.div`
     display: flex;
     width: auto;
     justify-content: space-between;
-    /* padding: 10px; */
     background-color: black;
     z-index: 50;
     padding: 15px;
@@ -131,7 +129,6 @@ export const Content = styled.div`
       align-items: flex-end;
       padding: 0;
       padding-bottom: 7px;
-      /* height: 5vh; */
     }
 
     .links a {

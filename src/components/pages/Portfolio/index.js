@@ -27,14 +27,14 @@ const Projects = () => {
                       <a
                         href={link}
                         target="_blank"
-                        className="view fade slide-up"
+                        className="view fade slide-down"
                       >
                         View
                       </a>
                       <a
                         href={code}
                         target="_blank"
-                        className="code fade slide-up"
+                        className="code fade slide-down"
                       >
                         Code
                       </a>
@@ -63,14 +63,14 @@ const Projects = () => {
                       <a
                         href={link}
                         target="_blank"
-                        className="view fade slide-up"
+                        className="view fade slide-down"
                       >
                         View
                       </a>
                       <a
                         href={code}
                         target="_blank"
-                        className="code fade slide-up"
+                        className="code fade slide-down"
                       >
                         Code
                       </a>
