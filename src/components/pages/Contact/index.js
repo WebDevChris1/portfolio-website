@@ -3,9 +3,9 @@ import { Content, Form, Wrapper, Input, TextArea } from "./contact.styles";
 import { useGlobalContext } from "../../../context";
 import Spinner from "../../../components/Spinner";
 const Contact = () => {
-  const { handleSubmit, sendEmail, isLoading, showLinks } = useGlobalContext();
+  const { handleSubmit, sendEmail, isLoading } = useGlobalContext();
   return (
-    <Wrapper style={{ opacity: showLinks ? ".4" : "1" }}>
+    <Wrapper>
       <Content>
         <h2>How Can I Assist?</h2>
         <Form onSubmit={handleSubmit}>

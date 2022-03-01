@@ -1,14 +1,12 @@
 import React from "react";
 import { Wrapper, Content } from "./allUserProjects.styles";
-import { useGlobalContext } from "../../../context";
 import { Link } from "react-router-dom";
 // import Projects from "../../../pages/Portfolio";
 import { myUserProjects } from "../../pages/Portfolio/data";
 
 const AllUserProjects = () => {
-  const { showLinks } = useGlobalContext();
   return (
-    <Wrapper style={{ opacity: showLinks ? ".4" : "1" }}>
+    <Wrapper>
       <Content>
         <div className="page-info">
           <h2>User Experience Projects</h2>

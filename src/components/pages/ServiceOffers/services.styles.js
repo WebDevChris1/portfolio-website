@@ -4,7 +4,6 @@ export const Wrapper = styled.main`
   /* border: 1px solid red; */
   height: 95vh;
   width: 100vw;
-  transition: opacity 1s ease-in-out;
 `;
 export const Content = styled.div`
   /* border: 1px solid blue; */

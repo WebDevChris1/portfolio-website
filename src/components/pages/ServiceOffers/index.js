@@ -6,9 +6,9 @@ import { BiRevision } from "react-icons/bi";
 import { BiTimeFive } from "react-icons/bi";
 
 const Services = () => {
-  const { tierList, showLinks } = useGlobalContext();
+  const { tierList } = useGlobalContext();
   return (
-    <Wrapper style={{ opacity: showLinks ? ".4" : "1" }}>
+    <Wrapper>
       <Content>
         <div className="page-info">
           <h2>Services</h2>

@@ -3,7 +3,6 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-
 :root{
 
 }
@@ -25,4 +24,11 @@ body{
 p{
     line-height: 1.5rem;
 }
+
+.paths{
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+
+}
+
 `;

@@ -28,7 +28,7 @@ const Navbar = () => {
 
         <div
           className="links-wrapper"
-          style={{ top: showLinks ? "0" : "-250px" }}
+          style={{ top: showLinks ? "0" : "-325px" }}
         >
           <ul className="links">
             {pageRoutes.slice(0, pageRoutes.length - 2).map((route) => {

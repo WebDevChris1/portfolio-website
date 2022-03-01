@@ -1,12 +1,10 @@
 import React from "react";
 import { Wrapper, Content, Image } from "./home.styles";
 import selfie from "./images/me.jpeg";
-import { useGlobalContext } from "../../../context";
 
 const Home = () => {
-  const { showLinks } = useGlobalContext();
   return (
-    <Wrapper style={{ opacity: showLinks ? ".4" : "1" }}>
+    <Wrapper>
       <Image src={selfie} />
       <Content>
         <h2>
