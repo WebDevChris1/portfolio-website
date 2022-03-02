@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Wrapper, Content } from "./navbar.styles";
 import { useGlobalContext } from "../../context";
@@ -6,9 +6,17 @@ import { pageRoutes } from "../../data";
 import { social } from "./data";
 import { FaBars } from "react-icons/fa";
 import { GrMenu } from "react-icons/gr";
+import useWindowDimensions from "../../helpers/useWindowDimension";
 
 const Navbar = () => {
   const { bgColor, showLinks, setShowLinks } = useGlobalContext();
+  const { width } = useWindowDimensions();
+
+  useEffect(() => {
+    if (width <= 800) {
+      setShowLinks(false);
+    }
+  }, [width]);
 
   return (
     <Wrapper bgColor={bgColor}>
@@ -28,7 +36,7 @@ const Navbar = () => {
 
         <div
           className="links-wrapper"
-          style={{ top: showLinks ? "0" : "-325px" }}
+          style={{ top: showLinks ? "0" : "-350px" }}
         >
           <ul className="links">
             {pageRoutes.slice(0, pageRoutes.length - 2).map((route) => {

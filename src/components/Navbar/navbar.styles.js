@@ -5,7 +5,6 @@ export const Wrapper = styled.nav`
   position: fixed;
   z-index: 100;
   width: 100vw;
-  height: 5vh;
   background-color: black;
 `;
 export const Content = styled.div`
@@ -17,35 +16,28 @@ export const Content = styled.div`
   h1 {
     font-size: 2rem;
   }
-
   ul {
     list-style-type: none;
     width: 70px;
   }
-
   li {
     margin-bottom: 15px;
   }
-
   a {
     text-decoration: none;
   }
-
   a:hover {
     font-weight: bold;
   }
-
   button {
     height: 30px;
     font-size: 2rem;
     background-color: transparent;
     border: none;
   }
-
   button:hover {
     cursor: pointer;
   }
-
   .nav-header {
     display: flex;
     width: auto;
@@ -54,7 +46,6 @@ export const Content = styled.div`
     z-index: 50;
     padding: 15px;
   }
-
   .links-wrapper {
     position: relative;
     border-top: 1px solid white;
@@ -68,59 +59,48 @@ export const Content = styled.div`
     transition: top 1s ease-in-out;
     z-index: 10;
   }
-
   .contact-wrapper {
     /* border: 1px solid red; */
     display: flex;
     flex-direction: column-reverse;
-
     a {
       margin-bottom: 20px;
     }
   }
-
   .social-icons {
     display: flex;
     width: 80px;
     /* border: 1px solid blue; */
     justify-content: space-between;
   }
-
   @media screen and (min-width: 800px) {
     flex-direction: row;
     justify-content: center;
     align-items: center;
     /* border: 1px solid red; */
     padding: 15px;
-
     * {
       margin: 0;
       padding: 0;
     }
-
     a {
       font-size: 0.9rem;
     }
-
     a:hover {
       font-weight: lighter;
     }
-
     ul {
       display: flex;
     }
-
     li {
       margin: 0;
     }
-
     .nav-header {
       /* border: 1px solid blue; */
       align-items: flex-end;
       justify-content: center;
       padding: 0;
     }
-
     .links-wrapper {
       border: none;
       position: static;
@@ -130,40 +110,34 @@ export const Content = styled.div`
       padding: 0;
       padding-bottom: 7px;
     }
-
     .links a {
       padding-left: 25px;
     }
-
     .nav-toggle {
       display: none;
     }
-
     .contact-wrapper {
       display: flex;
       flex-direction: row;
       margin-left: auto;
       /* border: 1px solid green; */
-
       a {
         margin-bottom: 0;
       }
     }
-
     .contact {
       border: 1px solid white;
       padding: 0.5rem 1.2rem;
       border-radius: 10px;
       font-size: 1rem;
       margin-left: 10px;
+      background-color: transparent;
     }
-
     .social-icons {
       /* border: 1px solid blue; */
       width: 100px;
       justify-content: center;
       align-items: flex-end;
-
       a {
         margin: 0;
         padding: 10px;
