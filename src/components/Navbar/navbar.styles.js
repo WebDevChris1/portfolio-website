@@ -6,14 +6,13 @@ export const Wrapper = styled.nav`
   z-index: 100;
   width: 100vw;
   background-color: black;
-  height: 5vh;
 `;
 export const Content = styled.div`
   /* border: 1px solid blue; */
   display: flex;
   flex-direction: column;
   position: relative;
-  height: 5vh;
+  height: 10vh;
 
   h1 {
     font-size: 2rem;
@@ -47,7 +46,7 @@ export const Content = styled.div`
     justify-content: space-between;
     background-color: black;
     z-index: 50;
-    padding: 15px;
+    padding: 20px;
   }
 
   .links-wrapper {
@@ -82,7 +81,7 @@ export const Content = styled.div`
     justify-content: center;
     align-items: center;
     /* border: 1px solid red; */
-    padding: 15px 20px;
+    padding: 0 20px;
     * {
       margin: 0;
       padding: 0;
