@@ -1,14 +1,16 @@
 import React from "react";
 import { Wrapper, Content, Image } from "./home.styles";
 import selfie from "./images/me.jpeg";
+import useWindowDimension from "./../../../helpers/useWindowDimension";
 
 const Home = () => {
   return (
     <Wrapper>
       <Image src={selfie} />
+
       <Content>
         <h2>
-          Christopher <br /> Lutchmidat
+          Christopher <br className="line-break" /> Lutchmidat
         </h2>
         <h3>Web Developer / Tech Enthusist</h3>
         <p>

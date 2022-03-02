@@ -1,42 +1,77 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  height: 95vh;
-  /* border: 1px solid blue; */
+  /* border: 1px solid red; */
+  height: 100vh;
   display: flex;
-  align-items: flex-end;
-  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  padding: 15px;
+  position: absolute;
+
+  @media screen and (min-width: 800px) {
+    width: 100vw;
+    flex-direction: row;
+  }
 `;
 
 export const Content = styled.div`
-  /* border: 1px solid green; */
-  width: 95%;
-  position: absolute;
-  bottom: 25px;
-  right: 20px;
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: center;
 
   h2 {
-    font-size: 8rem;
-    text-align: right;
+    font-size: 2.5rem;
   }
 
-  h3 {
-    margin: 0;
-    font-size: 2rem;
-    text-align: right;
+  br {
+    display: none;
   }
 
-  p {
-    text-align: right;
-    margin-top: 10px;
+  @media screen and (min-width: 800px) {
+    /* border: 1px solid green; */
+    width: 100vw;
+    align-self: flex-end;
+    margin-bottom: 20px;
+
+    h2 {
+      font-size: 9vw;
+      text-align: right;
+    }
+
+    br {
+      display: inline;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 2rem;
+      text-align: right;
+    }
+
+    p {
+      text-align: right;
+      margin-top: 10px;
+    }
   }
 `;
 
 export const Image = styled.img`
-  border: 5px solid white;
-  width: 450px;
-  height: 450px;
+  height: 350px;
+  width: 350px;
   border-radius: 50%;
-  margin-left: 100px;
-  margin-bottom: 130px;
+
+  @media screen and (min-width: 800px) {
+    /* border: 5px solid white; */
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    position: absolute;
+    left: 5%;
+    margin: 0 50px;
+  }
 `;
