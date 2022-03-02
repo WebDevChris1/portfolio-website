@@ -5,11 +5,10 @@ import { useGlobalContext } from "../../context";
 import { pageRoutes } from "../../data";
 import { social } from "./data";
 import { FaBars } from "react-icons/fa";
-import { GrMenu } from "react-icons/gr";
 import useWindowDimensions from "../../helpers/useWindowDimension";
 
 const Navbar = () => {
-  const { bgColor, showLinks, setShowLinks } = useGlobalContext();
+  const { showLinks, setShowLinks } = useGlobalContext();
   const { width } = useWindowDimensions();
 
   useEffect(() => {
@@ -19,9 +18,9 @@ const Navbar = () => {
   }, [width]);
 
   return (
-    <Wrapper bgColor={bgColor}>
+    <Wrapper>
       <Content>
-        <div className="nav-header" bgColor={bgColor}>
+        <div className="nav-header">
           <Link to={pageRoutes[0].path}>
             <h1>WebDevChris</h1>
           </Link>
@@ -55,7 +54,7 @@ const Navbar = () => {
                 const { id, url, icon } = socialIcon;
                 return (
                   <li key={id}>
-                    <a href={url} target="_blank">
+                    <a href={url} target="_blank" rel="noopener noreferrer">
                       {icon}
                     </a>
                   </li>

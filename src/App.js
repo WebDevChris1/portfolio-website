@@ -4,7 +4,6 @@ import { useGlobalContext } from "./context";
 
 // components
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import ScrollToTop from "./helpers/ScrollToTop";
 
 // routes
@@ -16,35 +15,32 @@ import Home from "./components/pages/Home/";
 import { GlobalStyle } from "./GlobalStyle";
 
 function App() {
-  const { bgColor, showLinks } = useGlobalContext();
+  const { showLinks } = useGlobalContext();
   return (
-    <div className="app-wrapper" style={{ background: bgColor }}>
-      <Router>
-        <ScrollToTop>
-          <GlobalStyle />
-          <Navbar />
-          <div
-            className="paths"
-            style={{
-              opacity: showLinks ? ".4" : "1",
-            }}
-          >
-            <Routes>
-              <Route exact path="/" element={<Home />} st></Route>
-              {pageRoutes.slice(1, pageRoutes.length).map((route) => {
-                const { path, page } = route;
-                return <Route path={path} element={page}></Route>;
-              })}
-              {subPageRoutes.map((route) => {
-                const { page, path } = route;
-                return <Route path={path} element={page}></Route>;
-              })}
-            </Routes>
-          </div>
-        </ScrollToTop>
-      </Router>
-      <Footer />
-    </div>
+    <Router>
+      <ScrollToTop>
+        <GlobalStyle />
+        <Navbar />
+        <div
+          className="paths"
+          style={{
+            opacity: showLinks ? ".4" : "1",
+          }}
+        >
+          <Routes>
+            <Route exact path="/" element={<Home />} st></Route>
+            {pageRoutes.slice(1, pageRoutes.length).map((route) => {
+              const { path, page, id } = route;
+              return <Route key={id} path={path} element={page}></Route>;
+            })}
+            {subPageRoutes.map((route) => {
+              const { page, path, id } = route;
+              return <Route key={id} path={path} element={page}></Route>;
+            })}
+          </Routes>
+        </div>
+      </ScrollToTop>
+    </Router>
   );
 }
 

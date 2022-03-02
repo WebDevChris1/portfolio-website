@@ -6,15 +6,18 @@ export const Wrapper = styled.nav`
   z-index: 100;
   width: 100vw;
   background-color: black;
+  height: 5vh;
 `;
 export const Content = styled.div`
   /* border: 1px solid blue; */
   display: flex;
   flex-direction: column;
   position: relative;
+  height: 5vh;
 
   h1 {
     font-size: 2rem;
+    font-weight: 1000;
   }
   ul {
     list-style-type: none;
@@ -46,6 +49,7 @@ export const Content = styled.div`
     z-index: 50;
     padding: 15px;
   }
+
   .links-wrapper {
     position: relative;
     border-top: 1px solid white;
@@ -78,7 +82,7 @@ export const Content = styled.div`
     justify-content: center;
     align-items: center;
     /* border: 1px solid red; */
-    padding: 15px;
+    padding: 15px 20px;
     * {
       margin: 0;
       padding: 0;

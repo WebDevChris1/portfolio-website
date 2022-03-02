@@ -23,11 +23,12 @@ const Projects = () => {
                 return (
                   <div key={id} className="project" href={link}>
                     <div className="img-wrapper">
-                      <img src={img} className="zoom blur" />
+                      <img src={img} alt="preview" className="zoom blur" />
                       <a
                         href={link}
                         target="_blank"
                         className="view fade slide-down"
+                        rel="noopener noreferrer"
                       >
                         View
                       </a>
@@ -35,6 +36,7 @@ const Projects = () => {
                         href={code}
                         target="_blank"
                         className="code fade slide-down"
+                        rel="noopener noreferrer"
                       >
                         Code
                       </a>
@@ -59,11 +61,12 @@ const Projects = () => {
                 return (
                   <div key={id} className="project" href={link}>
                     <div className="img-wrapper">
-                      <img src={img} className="zoom blur" />
+                      <img src={img} alt="preview" className="zoom blur" />
                       <a
                         href={link}
                         target="_blank"
                         className="view fade slide-down"
+                        rel="noopener noreferrer"
                       >
                         View
                       </a>
@@ -71,6 +74,7 @@ const Projects = () => {
                         href={code}
                         target="_blank"
                         className="code fade slide-down"
+                        rel="noopener noreferrer"
                       >
                         Code
                       </a>
@@ -95,11 +99,12 @@ const Projects = () => {
                 return (
                   <div key={id} className="project" href={link}>
                     <div className="img-wrapper">
-                      <img src={img} className="zoom blur" />
+                      <img src={img} alt="preview" className="zoom blur" />
                       <a
                         href={link}
                         target="_blank"
                         className="view fade slide-up"
+                        rel="noopener noreferrer"
                       >
                         View
                       </a>
@@ -107,6 +112,7 @@ const Projects = () => {
                         href={code}
                         target="_blank"
                         className="code fade slide-up"
+                        rel="noopener noreferrer"
                       >
                         Code
                       </a>

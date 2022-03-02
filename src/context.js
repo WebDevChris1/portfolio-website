@@ -1,6 +1,5 @@
 import React, { useState, useContext, useEffect } from "react";
 import emailjs from "emailjs-com";
-import Spinner from "./components/Spinner";
 
 //data
 import offers from "./components/pages/ServiceOffers/data";
@@ -12,9 +11,7 @@ const AppContext = React.createContext();
 const AppProvider = ({ children }) => {
   const [tierList, setTierList] = useState(offers);
   const [techStack, setTechStack] = useState(stack);
-  const [bgColor, setBgColor] = useState("black");
   const [msg, setMsg] = useState(welcomeMsg);
-  const [msgIndex, setMsgIndex] = useState(0);
   const [sendEmail, setSendEmail] = useState("Submit");
   const [isLoading, setIsLoading] = useState(false);
   const [showLinks, setShowLinks] = useState(false);
@@ -23,23 +20,10 @@ const AppProvider = ({ children }) => {
     setShowLinks(false);
   }, []);
 
-  const changeBg = (id) => {
-    if (id === "1") {
-      setBgColor("black"); // black
-    } else if (id === "2") {
-      setBgColor("#FFC72C"); // yellow
-    } else if (id === "3") {
-      setBgColor("#00563B"); // green
-    } else if (id === "4") {
-      setBgColor("#1034A6"); // blue
-    } else if (id === "5") {
-      setBgColor("#D22B2B"); // red
-    }
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsLoading(true);
+
     emailjs
       .sendForm(
         "service_sut2owl",
@@ -48,21 +32,19 @@ const AppProvider = ({ children }) => {
         "user_FLpD0WW5oi0KL9K4eHddp"
       )
       .then((result) => {
-        try {
-          if (result.text === "OK") {
-            setSendEmail("Sent!");
-            setIsLoading(false);
-            e.target.reset();
-          }
-        } catch (error) {
-          {
-            console.log(error.text);
-            setSendEmail("Error! Please try again");
-            setIsLoading(false);
-            e.target.reset();
-          }
+        if (result.text === "OK") {
+          setSendEmail("Sent!");
+          setIsLoading(false);
+          e.target.reset();
         }
+      })
+      .catch((err) => {
+        setIsLoading(false);
+        setSendEmail("Error! Please try again");
+        console.log(err.text);
+        e.target.reset();
       });
+
     setTimeout(() => {
       setSendEmail("Submit");
     }, 3000);
@@ -73,13 +55,11 @@ const AppProvider = ({ children }) => {
       value={{
         tierList,
         techStack,
-        bgColor,
-        changeBg,
         msg,
         setTierList,
         setTechStack,
         setMsg,
-        setMsgIndex,
+
         handleSubmit,
         sendEmail,
         isLoading,
