@@ -25,7 +25,11 @@ export const Content = styled.div`
   text-align: center;
 
   h2 {
-    font-size: 5vh;
+    font-size: 4vh;
+  }
+
+  h3 {
+    font-weight: 600;
   }
 
   br {
@@ -89,17 +93,7 @@ export const Image = styled.img`
   border-radius: 50%;
   margin: 0 auto;
 
-  /* @media screen and (min-width: 800px) {
-    height: 375px;
-    width: 375px;
-  } */
-
   @media screen and (min-width: 800px) {
-    /* border: 5px solid white; */
-    /* width: 450px;
-    height: 450px; */
-    /* border-radius: 50%; */
-
     width: 100%;
     height: 100%;
     object-fit: cover;
