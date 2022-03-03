@@ -25,7 +25,7 @@ export const Content = styled.div`
   text-align: center;
 
   h2 {
-    font-size: 2.5rem;
+    font-size: 5vh;
   }
 
   br {
@@ -36,11 +36,14 @@ export const Content = styled.div`
     /* border: 1px solid green; */
     width: 100vw;
     align-self: flex-end;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 
     h2 {
       font-size: 9vw;
       text-align: right;
+      /* border: 1px solid yellow; */
+      align-self: flex-end;
+      width: 50%;
     }
 
     br {
@@ -51,11 +54,31 @@ export const Content = styled.div`
       margin: 0;
       font-size: 2rem;
       text-align: right;
+      /* border: 1px solid yellow; */
     }
 
     p {
       text-align: right;
       margin-top: 10px;
+      /* border: 1px solid yellow; */
+    }
+
+    .header-wrapper {
+      height: 100%;
+      width: 100%;
+      /* border: 1px solid blue; */
+      display: flex;
+      justify-content: space-between;
+    }
+    .img-wrapper {
+      position: relative;
+      width: 35vw;
+      height: 35vw;
+      overflow: hidden;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 `;
@@ -64,14 +87,21 @@ export const Image = styled.img`
   height: 350px;
   width: 350px;
   border-radius: 50%;
+  margin: 0 auto;
+
+  /* @media screen and (min-width: 800px) {
+    height: 375px;
+    width: 375px;
+  } */
 
   @media screen and (min-width: 800px) {
     /* border: 5px solid white; */
-    width: 450px;
-    height: 450px;
-    border-radius: 50%;
-    position: absolute;
-    left: 5%;
-    margin: 0 50px;
+    /* width: 450px;
+    height: 450px; */
+    /* border-radius: 50%; */
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 `;
