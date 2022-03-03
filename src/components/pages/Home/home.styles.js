@@ -36,6 +36,12 @@ export const Content = styled.div`
     display: none;
   }
 
+  p {
+    border-top: 1px solid white;
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+
   @media screen and (min-width: 800px) {
     /* border: 1px solid green; */
     width: 100vw;
