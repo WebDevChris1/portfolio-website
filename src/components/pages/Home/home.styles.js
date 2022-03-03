@@ -24,11 +24,12 @@ export const Content = styled.div`
   text-align: center;
 
   h2 {
-    font-size: 4vh;
+    font-size: 4.5vh;
   }
 
   h3 {
     font-weight: 600;
+    font-size: 2.5vh;
   }
 
   br {
