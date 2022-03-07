@@ -15,33 +15,30 @@ const About = () => {
         <div className="about-me">
           <section>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ad
-              ea maiores inventore beatae necessitatibus excepturi molestiae
-              modi, neque omnis rem libero delectus cumque totam et, id placeat
-              hic veniam sit cum harum. Molestiae ad nulla laudantium, minima
-              praesentium veritatis beatae magnam provident ipsam possimus
-              reprehenderit mollitia distinctio numquam enim! Lorem, ipsum dolor
-              sit amet consectetur adipisicing elit. Officiis mollitia ab iusto
-              similique fugit nostrum unde voluptates, nemo aliquam! Eveniet
-              quo, aut, dolore, provident nisi eius commodi quasi eaque delectus
-              minima possimus omnis beatae modi nostrum? Provident officia et
-              nam debitis quaerat laboriosam enim, qui, in, fugiat eligendi
-              nostrum corrupti.
+              my journey in tech began in middle school. I was fortunate enough
+              to have classes that taught me computer basics and a variety of
+              applications like Microsoft’s Suite, Garageband, Dreamweaver and
+              Adobe Flash Player. Without me knowing during that time my
+              obsession with making stick figure animation and games would be
+              laying down the foundation for my natural curiosity in the way
+              things work. Quickly after my introduction to these concepts and
+              terminology my first website was born. My class was tasked with
+              building a website and the best website will go on to represent
+              the school in a ThinkQuest competition. I wasn’t selected but my
+              basic car themed website was an experience I would never forget.
             </p>
+            <br />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-              iusto necessitatibus tenetur labore? Recusandae sapiente
-              voluptatibus vitae vel molestias! Provident labore sequi
-              voluptatibus fugiat necessitatibus, obcaecati molestias autem
-              quibusdam unde earum laborum odit, voluptas ea, accusamus sint
-              ipsum nostrum consectetur recusandae reprehenderit rem animi
-              commodi harum tempora? Incidunt, eius impedit! Lorem ipsum, dolor
-              sit amet consectetur adipisicing elit. Explicabo vitae sapiente
-              impedit cupiditate vero unde possimus, exercitationem laborum
-              eveniet magnam incidunt voluptatem. Aut enim possimus magnam
-              maxime, distinctio dolorem illo. Necessitatibus ducimus blanditiis
-              aperiam sit autem incidunt recusandae qui minus quidem excepturi
-              animi assumenda, itaque optio quod cumque nobis laboriosam.
+              I took my new acquaintance and attended a vocational school which
+              had a variety of shop classes. During my first year the students
+              were shuffled between each shop class to help us decide a path we
+              can eventually graduate certified in the trade. Although the other
+              shop classes had a lasting impression, I stuck to my premature
+              understanding of tech and chose to pursue the certification in
+              Graphic Design. During the next 3 years I was thought a variety of
+              adobe software like Photoshop, InDesign, and Illustrator. In
+              retrospect I owe these years of my life for the development of my
+              creativity and deeper understanding
             </p>
           </section>
           <section className="second-section">

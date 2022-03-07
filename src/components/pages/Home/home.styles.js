@@ -29,7 +29,7 @@ export const Content = styled.div`
 
   h3 {
     font-weight: 600;
-    font-size: 2.3vh;
+    font-size: 2vh;
   }
 
   br {
@@ -70,7 +70,7 @@ export const Content = styled.div`
     p {
       text-align: right;
       margin-top: 10px;
-      /* border: 1px solid yellow; */
+      border: none;
     }
 
     .header-wrapper {

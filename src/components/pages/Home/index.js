@@ -11,7 +11,7 @@ const Home = () => {
             <Image src={selfie} />
           </div>
           <h2>
-            Christopher <br className="line-break" /> Lutchmidat
+            Christopher <br /> Lutchmidat
           </h2>
         </div>
         <h3>Web Developer / Tech Enthusist</h3>
