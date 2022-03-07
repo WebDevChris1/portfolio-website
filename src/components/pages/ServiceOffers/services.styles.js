@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.main`
-  border: 1px solid red;
+  /* border: 1px solid red; */
 `;
 
 export const Content = styled.div`
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   margin-top: 100px;
   display: flex;
   flex-direction: column;
