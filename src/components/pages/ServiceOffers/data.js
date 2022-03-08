@@ -2,16 +2,18 @@ import { CgWebsite } from "react-icons/cg";
 import { FaRocket } from "react-icons/fa";
 import { BsBarChartFill } from "react-icons/bs";
 import React from "react";
+
 const tierList = [
   {
     id: 1,
+    available: true,
     icon: <CgWebsite />,
     title: "Tier 1",
     price: "Free",
-    delivery: "7 Day Delivery",
-    revisions: "3 Revisions",
+    delivery: 7,
+    revisions: 3,
     desc: [
-      "1-2 Pages",
+      "Up to 2 Pages",
       "Design Customization",
       "Content Upload",
       "Include Source Code",
@@ -19,34 +21,23 @@ const tierList = [
   },
   {
     id: 2,
+    available: true,
     icon: <BsBarChartFill />,
     title: "Tier 2",
     price: "Free",
-    delivery: "14 Day Delivery",
-    revisions: "3 Revisions",
-    desc: [
-      "3-4 Pages",
-      "Design Customization",
-      "Responsive Design",
-      "Content Upload",
-      "Include Source Code",
-    ],
+    delivery: 14,
+    revisions: 3,
+    desc: ["Tier 1 Perks", "Up to 4 Pages", "Responsive Design"],
   },
   {
     id: 3,
+    available: false,
     icon: <FaRocket />,
     title: "Tier 3",
-    price: "Coming Soon",
-    delivery: "21 Day Delivery",
-    revisions: "3 Revisions",
-    desc: [
-      "Up to 5 Pages",
-      "Design Customization",
-      "Responsive Design",
-      "Content Upload",
-      "Include Source Code",
-      "E-Commerce",
-    ],
+    price: null,
+    delivery: 21,
+    revisions: 3,
+    desc: ["Tier 2 Perks", "Up to 5 Pages", "E-Commerce", "Admin Dashboard"],
   },
 ];
 

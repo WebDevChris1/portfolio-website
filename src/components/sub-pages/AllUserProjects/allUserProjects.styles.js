@@ -41,7 +41,7 @@ export const Content = styled.div`
     text-decoration: none;
     border: 1px solid white;
     border-radius: 10px;
-    padding: 0.5rem 1.2rem;
+    padding: 0.5rem 1.5rem;
     font-size: 1rem;
     font-weight: 500;
     margin-bottom: 50px;

@@ -24,30 +24,40 @@ const Services = () => {
 
         <div className="tier-options">
           {tierList.map((tier) => {
-            const { id, icon, title, price, desc, delivery, revisions } = tier;
+            const {
+              id,
+              icon,
+              title,
+              price,
+              desc,
+              delivery,
+              revisions,
+              available,
+            } = tier;
             return (
-              <article key={id} className="tier">
+              <article
+                key={id}
+                className={`${available ? "tier" : "tier unavailable"}`}
+              >
                 <div className="icon">{icon}</div>
                 <h3>{title}</h3>
                 <div className="delivery-revision">
                   <BiTimeFive className="clock-icon" />
-                  <span>{delivery}</span>
+                  <span>{`${delivery} Day Delivery`}</span>
                   <BiRevision className="cycle-icon" />
-                  <span>{revisions}</span>
+                  <span>{`${revisions} Revisions`}</span>
                 </div>
                 <ul>
                   {desc.map((item, index) => {
                     return <li key={index}>{item}</li>;
                   })}
                 </ul>
-                <div className="price">{price}</div>
+                <h4 className="price">{available ? price : "Coming Soon"}</h4>
+                <Link to="/contact">Book Now</Link>
               </article>
             );
           })}
         </div>
-        <Link to="/contact" className="btn">
-          Book Now
-        </Link>
       </Content>
     </Wrapper>
   );
