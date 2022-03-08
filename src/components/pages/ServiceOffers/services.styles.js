@@ -5,7 +5,7 @@ export const Wrapper = styled.main`
 `;
 
 export const Content = styled.div`
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   margin-top: 90px;
   display: flex;
   flex-direction: column;
