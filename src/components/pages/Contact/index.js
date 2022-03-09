@@ -49,7 +49,7 @@ const Contact = () => {
           <div>
             <label htmlFor="tiers">Choose a Tier</label>
             <select name="tier" required>
-              <option value="inquiry-only">Inquiry Only</option>
+              <option value="inquiry-only">Inquiry</option>
               <option value="one">Tier 1</option>
               <option value="two">Tier 2</option>
               <option value="three">Tier 3</option>

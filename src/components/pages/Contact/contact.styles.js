@@ -1,30 +1,53 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.main`
-  /* border: 1px solid red; */
-  height: 95vh;
+  /* border: 1px solid blue; */
+  height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
+
+  @media screen and (min-width: 800px) {
+    /* border: 1px solid red; */
+    height: 95vh;
+    justify-content: center;
+    align-items: flex-end;
+  }
 `;
 
 export const Content = styled.div`
-  /* border: 1px solid blue; */
+  /* border: 1px solid red; */
   height: 600px;
-  width: 1100px;
+  width: 800px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  gap: 20px;
+  margin-top: 80px;
 
   h2 {
-    height: 100%;
-    width: 50%;
-    /* border: 1px solid yellow; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 6rem;
+    font-size: 3rem;
     text-align: center;
+  }
+
+  @media screen and (min-width: 800px) {
+    /* border: 1px solid blue; */
+    height: 600px;
+    width: 1100px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+      height: 100%;
+      width: 50%;
+      /* border: 1px solid yellow; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 6rem;
+      text-align: center;
+    }
   }
 `;
 

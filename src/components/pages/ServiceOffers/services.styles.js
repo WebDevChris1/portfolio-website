@@ -141,4 +141,12 @@ export const Content = styled.div`
     font-size: 1rem;
     font-weight: 500;
   }
+
+  @media screen and (min-width: 800px) {
+    gap: 50px;
+
+    .page-info {
+      width: 80%;
+    }
+  }
 `;
