@@ -23,7 +23,7 @@ export const Content = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  margin-top: 80px;
+  margin-top: 60px;
 
   h2 {
     font-size: 3rem;
