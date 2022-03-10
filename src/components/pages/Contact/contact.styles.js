@@ -9,9 +9,7 @@ export const Wrapper = styled.main`
 
   @media screen and (min-width: 800px) {
     /* border: 1px solid red; */
-    height: 95vh;
     justify-content: center;
-    align-items: flex-end;
   }
 `;
 
@@ -24,10 +22,13 @@ export const Content = styled.div`
   align-items: center;
   gap: 20px;
   margin-top: 60px;
+  /* align-self: flex-end; */
 
   h2 {
     font-size: 3rem;
     text-align: center;
+    border-bottom: 2px solid white;
+    width: 85%;
   }
 
   @media screen and (min-width: 800px) {
@@ -41,7 +42,7 @@ export const Content = styled.div`
     h2 {
       height: 100%;
       width: 50%;
-      /* border: 1px solid yellow; */
+      border: none;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -52,13 +53,13 @@ export const Content = styled.div`
 `;
 
 export const Form = styled.form`
-  /* border: 1px solid green; */
-  height: 90%;
-  width: 50%;
+  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  height: 90%;
+  width: 60%;
 
   label {
     margin-right: 10px;
@@ -74,7 +75,7 @@ export const Form = styled.form`
     border-radius: 5px;
   }
 
-  .btn {
+  button {
     background-color: transparent;
     border: none;
     border-radius: 5px;
@@ -82,19 +83,27 @@ export const Form = styled.form`
     font-weight: 700;
   }
 
-  .btn:hover {
+  button:hover {
     cursor: pointer;
   }
 
   .input-container {
-    /* border: 1px solid red; */
-    gap: 10px;
     display: flex;
-    justify-content: space-between;
+    gap: 10px;
   }
 
   .small-input {
     width: 120px;
+  }
+
+  @media screen and (min-width: 800px) {
+    /* border: 1px solid green; */
+    width: 50%;
+
+    .input-container {
+      /* border: 1px solid green; */
+      flex-direction: row;
+    }
   }
 `;
 

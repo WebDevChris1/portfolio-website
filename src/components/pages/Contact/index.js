@@ -67,9 +67,7 @@ const Contact = () => {
             rows="4"
             placeholder="Additional Notes"
           ></TextArea>
-          <button type="submit" className="btn">
-            {isLoading ? <Spinner /> : sendEmail}
-          </button>
+          <button type="submit">{isLoading ? <Spinner /> : sendEmail}</button>
         </Form>
       </Content>
     </Wrapper>
