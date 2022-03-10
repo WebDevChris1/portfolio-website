@@ -21,14 +21,14 @@ export const Content = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  margin-top: 40px;
   /* align-self: flex-end; */
 
   h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
     border-bottom: 2px solid white;
-    width: 85%;
+    width: 70%;
+    padding-bottom: 5px;
   }
 
   @media screen and (min-width: 800px) {
