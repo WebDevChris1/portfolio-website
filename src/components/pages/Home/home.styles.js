@@ -2,17 +2,16 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   border: 1px solid red;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 40px;
   padding: 15px;
 
   @media screen and (min-width: 800px) {
     width: 100vw;
     flex-direction: row;
+    gap: 40px;
   }
 `;
 

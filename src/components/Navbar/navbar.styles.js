@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const Wrapper = styled.nav`
   /* border: 1px solid red; */
-  position: fixed;
+  position: sticky;
+  top: 0;
   z-index: 100;
   width: 100vw;
   background-color: black;
