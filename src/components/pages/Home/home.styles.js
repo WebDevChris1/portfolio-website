@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
+  border: 1px solid red;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -8,7 +9,6 @@ export const Wrapper = styled.div`
   flex-direction: column;
   gap: 40px;
   padding: 15px;
-  position: absolute;
 
   @media screen and (min-width: 800px) {
     width: 100vw;

@@ -14,13 +14,13 @@ export const Wrapper = styled.main`
 `;
 
 export const Content = styled.div`
-  height: 80%;
-  width: 100%;
+  height: 600px;
+  width: 1100px;
   border: 1px solid green;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  /* gap: 20px; */
   /* align-self: flex-end; */
 
   h2 {
@@ -73,6 +73,7 @@ export const Form = styled.form`
     padding: 5px;
     outline: none;
     border: 1px solid white;
+    background-color: white;
     border-radius: 5px;
   }
 
