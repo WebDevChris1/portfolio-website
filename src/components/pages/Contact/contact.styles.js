@@ -14,9 +14,9 @@ export const Wrapper = styled.main`
 `;
 
 export const Content = styled.div`
-  /* border: 1px solid red; */
-  height: 600px;
-  width: 800px;
+  height: 80%;
+  width: 100%;
+  border: 1px solid green;
   display: flex;
   flex-direction: column;
   align-items: center;
