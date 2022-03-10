@@ -21,7 +21,7 @@ export const Content = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  margin-top: 60px;
+  margin-top: 40px;
   /* align-self: flex-end; */
 
   h2 {
