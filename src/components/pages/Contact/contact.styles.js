@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.main`
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -27,7 +27,7 @@ export const Content = styled.div`
     font-size: 2rem;
     text-align: center;
     border-bottom: 2px solid white;
-    width: 70%;
+    padding: 0 60px;
     padding-bottom: 5px;
   }
 
@@ -40,8 +40,9 @@ export const Content = styled.div`
     align-items: center;
 
     h2 {
+      border: 1px solid red;
       height: 100%;
-      width: 50%;
+      width: 60%;
       border: none;
       display: flex;
       justify-content: center;
@@ -53,13 +54,13 @@ export const Content = styled.div`
 `;
 
 export const Form = styled.form`
-  /* border: 1px solid red; */
+  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 90%;
-  width: 60%;
+  height: 100%;
+  width: 80%;
 
   label {
     margin-right: 10px;
