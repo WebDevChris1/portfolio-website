@@ -1,38 +1,38 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.main`
-  border: 1px solid blue;
-  height: 100vh;
+  /* border: 1px solid blue; */
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
 
   @media screen and (min-width: 800px) {
-    /* border: 1px solid red; */
+    border: 1px solid red;
     justify-content: center;
   }
 `;
 
 export const Content = styled.div`
-  height: 600px;
-  width: 1100px;
-  border: 1px solid green;
+  height: 650px;
+  width: 480px;
+  border: 1px solid white;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* gap: 20px; */
-  /* align-self: flex-end; */
+  margin: 0 35px;
 
   h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
     border-bottom: 2px solid white;
-    padding: 0 60px;
-    padding-bottom: 5px;
+    padding: 5px 35px;
+    margin: 10px 0;
   }
 
   @media screen and (min-width: 800px) {
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     height: 600px;
     width: 1100px;
     flex-direction: row;
@@ -40,7 +40,7 @@ export const Content = styled.div`
     align-items: center;
 
     h2 {
-      border: 1px solid red;
+      /* border: 1px solid red; */
       height: 100%;
       width: 60%;
       border: none;
@@ -54,7 +54,7 @@ export const Content = styled.div`
 `;
 
 export const Form = styled.form`
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -101,6 +101,8 @@ export const Form = styled.form`
   @media screen and (min-width: 800px) {
     /* border: 1px solid green; */
     width: 50%;
+    height: 90%;
+    border: none;
 
     .input-container {
       /* border: 1px solid green; */
