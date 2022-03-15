@@ -2,8 +2,9 @@ import styled from "styled-components";
 import aboutImage from "./images/about-me-image.jpeg";
 
 export const Wrapper = styled.main`
-  /* border: 1px solid red; */
+  border: 1px solid red;
   padding: 0 10px 10px 10px;
+  height: 100%;
 `;
 
 export const Content = styled.div`
@@ -29,7 +30,7 @@ export const Content = styled.div`
   }
 
   .hero {
-    /* height: 90vh; */
+    height: 90vh;
     /* border: 1px solid blue; */
     display: flex;
     align-items: flex-end;
