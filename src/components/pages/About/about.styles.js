@@ -27,7 +27,7 @@ export const Content = styled.div`
 
   li {
     text-align: center;
-    margin: 0 20px;
+    /* margin: 0 20px;s */
   }
 
   h2 {
@@ -43,7 +43,7 @@ export const Content = styled.div`
   }
 
   .tech-stack-wrapper {
-    height: 200px;
+    height: 175px;
     /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
@@ -59,10 +59,15 @@ export const Content = styled.div`
 
   .tech-stack {
     /* border: 1px solid blue; */
-    overflow-x: scroll;
+    overflow-y: scroll;
     white-space: nowrap;
-    height: 100px;
+
     align-items: center;
+    text-align: center;
+    height: 75px;
+    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   }
 
   .icon {
