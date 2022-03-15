@@ -3,7 +3,6 @@ import aboutImage from "./images/about-me-image.jpeg";
 
 export const Wrapper = styled.main`
   border: 1px solid red;
-  padding: 0 10px 10px 10px;
   height: 100%;
   width: 100vw;
 `;
@@ -12,12 +11,15 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
-  /* border: 1px solid green; */
+  border: 1px solid green;
   height: 100%;
+  width: 100%;
+  padding: 0 5px 5px 5px;
 
   p {
     text-align: left;
     text-indent: 50px;
+    border: 1px solid yellow;
   }
 
   ul {
@@ -33,7 +35,7 @@ export const Content = styled.div`
 
   .hero {
     height: 90vh;
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     display: flex;
     align-items: flex-end;
     font-size: 11vh;
@@ -41,7 +43,7 @@ export const Content = styled.div`
 
   .tech-stack-wrapper {
     height: 200px;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -54,7 +56,7 @@ export const Content = styled.div`
   }
 
   .tech-stack {
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     overflow-x: scroll;
     white-space: nowrap;
     height: 100px;
@@ -74,6 +76,7 @@ export const Content = styled.div`
 `;
 
 export const Image = styled.img`
+  border: 1px solid yellow;
   height: 500px;
   width: 100%;
   background-image: url("${aboutImage}");
