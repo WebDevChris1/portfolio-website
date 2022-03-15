@@ -12,7 +12,7 @@ export const Content = styled.div`
   align-items: center;
 
   .hero {
-    /* border: 1px solid green; */
+    border: 1px solid green;
     height: 100vh;
     display: flex;
     justify-content: center;

@@ -26,15 +26,19 @@ export const Content = styled.div`
 
   li {
     text-align: center;
-    padding: 0 20px;
+    margin: 0 20px;
+  }
+
+  h2 {
+    font-size: 9vh;
   }
 
   .hero {
-    height: 100%;
+    height: 100vh;
     border: 1px solid blue;
     display: flex;
-    align-items: flex-end;
-    font-size: 11vh;
+    align-items: center;
+    justify-content: center;
   }
 
   .tech-stack-wrapper {
