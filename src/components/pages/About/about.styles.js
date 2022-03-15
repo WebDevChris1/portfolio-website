@@ -34,7 +34,7 @@ export const Content = styled.div`
   }
 
   .hero {
-    height: 100vh;
+    height: 90vh;
     border: 1px solid blue;
     display: flex;
     align-items: center;
