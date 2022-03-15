@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 15px;
+  height: 90vh;
 
   @media screen and (min-width: 800px) {
     width: 100vw;
@@ -24,6 +25,7 @@ export const Content = styled.div`
 
   h2 {
     font-size: 4vh;
+    margin-top: 10px;
   }
 
   h3 {

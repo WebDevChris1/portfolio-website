@@ -1,18 +1,20 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.nav`
-  /* border: 1px solid red; */
+  /* border: 1px solid red;s */
   position: sticky;
   top: 0;
   z-index: 100;
   width: 100vw;
   background-color: black;
+  height: 10vh;
 `;
 export const Content = styled.div`
   /* border: 1px solid blue; */
   display: flex;
   flex-direction: column;
   position: relative;
+  width: 100%;
   height: 10vh;
 
   h1 {

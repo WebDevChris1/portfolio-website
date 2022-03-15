@@ -8,15 +8,15 @@ export const Wrapper = styled.main`
   align-items: center;
 
   @media screen and (min-width: 800px) {
-    border: 1px solid red;
+    /* border: 1px solid red;s */
     justify-content: center;
   }
 `;
 
 export const Content = styled.div`
-  height: 650px;
+  height: 600px;
   width: 480px;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -26,13 +26,13 @@ export const Content = styled.div`
   h2 {
     font-size: 2.5rem;
     text-align: center;
-    border-bottom: 2px solid white;
-    padding: 5px 35px;
-    margin: 10px 0;
+    /* border-bottom: 2px solid white; */
+    padding: 5px 0;
+    /* margin: 10px 0; */
   }
 
   @media screen and (min-width: 800px) {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     height: 600px;
     width: 1100px;
     flex-direction: row;
