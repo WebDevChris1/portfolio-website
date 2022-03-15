@@ -12,6 +12,7 @@ export const Content = styled.div`
   flex-direction: column;
   gap: 20px;
   /* border: 1px solid green; */
+  height: 100%;
 
   p {
     text-align: left;
