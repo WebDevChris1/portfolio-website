@@ -29,7 +29,7 @@ export const Content = styled.div`
   }
 
   .hero {
-    height: 90vh;
+    /* height: 90vh; */
     /* border: 1px solid blue; */
     display: flex;
     align-items: flex-end;
@@ -37,12 +37,12 @@ export const Content = styled.div`
   }
 
   .tech-stack-wrapper {
-    height: 175px;
+    height: 200px;
     /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 5px;
+    padding: 5px 0;
 
     h3 {
       text-align: center;
@@ -54,6 +54,8 @@ export const Content = styled.div`
     /* border: 1px solid blue; */
     overflow-x: scroll;
     white-space: nowrap;
+    height: 100px;
+    align-items: center;
   }
 
   .icon {
