@@ -2,9 +2,8 @@ import styled from "styled-components";
 import aboutImage from "./images/about-me-image.jpeg";
 
 export const Wrapper = styled.main`
-  border: 1px solid red;
-  height: 100%;
-  width: 100vw;
+  /* border: 1px solid red; */
+  padding: 0 15px 15px 15px;
 `;
 
 export const Content = styled.div`
@@ -14,7 +13,6 @@ export const Content = styled.div`
   border: 1px solid green;
   height: 100%;
   width: 100%;
-  padding: 0 5px 5px 5px;
 
   p {
     text-align: left;
