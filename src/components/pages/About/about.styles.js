@@ -25,7 +25,7 @@ export const Content = styled.div`
 
   li {
     text-align: center;
-    padding: 0 30px;
+    padding: 0 20px;
   }
 
   .hero {
