@@ -1,7 +1,7 @@
 import React from "react";
 import { Wrapper, Content, Image } from "./about.styles";
 import { useGlobalContext } from "../../../context";
-import { IconContext } from "react-icons";
+
 const About = () => {
   const { techStack } = useGlobalContext();
 

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import aboutImage from "./images/about-me-image.jpeg";
 
 export const Wrapper = styled.main`
-  /* border: 1px solid red; */
+  border: 1px solid red;
   padding: 0 15px 15px 15px;
 `;
 
@@ -11,8 +11,6 @@ export const Content = styled.div`
   flex-direction: column;
   gap: 20px;
   border: 1px solid green;
-  height: 100%;
-  width: 100%;
 
   p {
     text-align: left;
@@ -32,7 +30,7 @@ export const Content = styled.div`
   }
 
   .hero {
-    height: 90vh;
+    height: 100%;
     border: 1px solid blue;
     display: flex;
     align-items: flex-end;
@@ -50,6 +48,7 @@ export const Content = styled.div`
     h3 {
       text-align: center;
       font-size: 2rem;
+      border: 1px solid orange;
     }
   }
 
@@ -64,6 +63,7 @@ export const Content = styled.div`
   .icon {
     text-align: center;
     font-size: 3rem;
+    border: 1px solid orange;
   }
 
   @media screen and (min-width: 800px) {
