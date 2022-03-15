@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.nav`
-  /* border: 1px solid red;s */
+  /* border: 1px solid red; */
   position: sticky;
   top: 0;
   z-index: 100;
   width: 100vw;
   background-color: black;
-  height: 10vh;
+  height: 8vh;
 `;
 export const Content = styled.div`
   /* border: 1px solid blue; */
@@ -15,7 +15,7 @@ export const Content = styled.div`
   flex-direction: column;
   position: relative;
   width: 100%;
-  height: 10vh;
+  height: 8vh;
 
   h1 {
     font-size: 2rem;
@@ -49,7 +49,7 @@ export const Content = styled.div`
     justify-content: space-between;
     background-color: black;
     z-index: 50;
-    padding: 20px;
+    padding: 10px;
   }
 
   .links-wrapper {
@@ -64,6 +64,10 @@ export const Content = styled.div`
     width: 100%;
     transition: top 1s ease-in-out;
     z-index: 10;
+  }
+
+  .nav-toggle {
+    margin-top: 3px;
   }
   .contact-wrapper {
     /* border: 1px solid red; */

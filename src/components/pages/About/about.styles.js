@@ -10,20 +10,22 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
+  /* border: 1px solid green; */
 
   p {
-    text-align: center;
+    text-align: left;
+    text-indent: 50px;
   }
 
   ul {
     list-style-type: none;
     line-height: 2rem;
     display: flex;
-    justify-content: space-around;
   }
 
   li {
     text-align: center;
+    padding: 0 30px;
   }
 
   .hero {
@@ -32,7 +34,6 @@ export const Content = styled.div`
     display: flex;
     align-items: flex-end;
     font-size: 11vh;
-    padding-bottom: 10px;
   }
 
   .tech-stack-wrapper {
@@ -51,6 +52,8 @@ export const Content = styled.div`
 
   .tech-stack {
     /* border: 1px solid blue; */
+    overflow-x: scroll;
+    white-space: nowrap;
   }
 
   .icon {

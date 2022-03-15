@@ -48,11 +48,11 @@ const About = () => {
           <h3>My Tech Stack</h3>
           <ul className="tech-stack">
             {techStack.map((item, index) => {
-              const { language, icon, id } = item;
+              const { text, icon, id } = item;
               return (
                 <div className="tech" key={id}>
                   <div className="icon">{icon}</div>
-                  <li>{language}</li>
+                  <li>{text}</li>
                 </div>
               );
             })}
