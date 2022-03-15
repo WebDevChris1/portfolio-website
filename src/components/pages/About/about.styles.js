@@ -5,6 +5,7 @@ export const Wrapper = styled.main`
   border: 1px solid red;
   padding: 0 10px 10px 10px;
   height: 100%;
+  width: 100vw;
 `;
 
 export const Content = styled.div`
