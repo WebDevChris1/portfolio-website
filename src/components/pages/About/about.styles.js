@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import aboutImage from "./images/about-me-image.jpeg";
+import mobileImage from "./images/mobile-image.jpeg";
+import desktopImage from "./images/desktop-image.jpeg";
 
 export const Wrapper = styled.main`
   /* border: 1px solid red; */
@@ -60,9 +61,8 @@ export const Content = styled.div`
 
   .tech-stack::-webkit-scrollbar {
     -webkit-appearance: none;
-    -webkit-overflow-scrolling: auto;
     width: 7px;
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.1);
   }
 
   .tech-stack::-webkit-scrollbar-thumb {
@@ -90,12 +90,15 @@ export const Content = styled.div`
 `;
 
 export const Image = styled.img`
-  /* border: 1px solid yellow; */
   height: 500px;
   width: 100%;
-  background-image: url("${aboutImage}");
+  background-image: url("${mobileImage}");
   background-position: center;
   background-size: cover;
+
+  @media screen and (min-width: 800px) {
+    background-image: url("${desktopImage}");
+  }
 `;
 
 export const Button = styled.button`
