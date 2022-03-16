@@ -32,7 +32,6 @@ export const Content = styled.div`
   }
 
   .tech-stack-wrapper {
-    /* position: relative; */
     height: 180px;
     /* border: 1px solid red; */
     display: flex;
@@ -49,7 +48,6 @@ export const Content = styled.div`
 
   .tech-stack {
     /* border: 1px solid blue; */
-    position: absolute;
     overflow-y: scroll;
     white-space: nowrap;
     align-items: center;
@@ -62,6 +60,7 @@ export const Content = styled.div`
 
   .tech-stack::-webkit-scrollbar {
     -webkit-appearance: none;
+    -webkit-overflow-scrolling: auto;
     width: 7px;
     background-color: rgba(255, 255, 255, 0.15);
   }
