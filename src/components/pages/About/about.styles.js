@@ -19,17 +19,6 @@ export const Content = styled.div`
     /* border: 1px solid yellow; */
   }
 
-  ul {
-    list-style-type: none;
-    line-height: 2rem;
-    display: flex;
-  }
-
-  li {
-    text-align: center;
-    /* margin: 0 20px;s */
-  }
-
   h2 {
     font-size: 7rem;
   }
@@ -43,7 +32,7 @@ export const Content = styled.div`
   }
 
   .tech-stack-wrapper {
-    height: 175px;
+    height: 180px;
     /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
@@ -61,13 +50,29 @@ export const Content = styled.div`
     /* border: 1px solid blue; */
     overflow-y: scroll;
     white-space: nowrap;
-
     align-items: center;
     text-align: center;
-    height: 75px;
+    height: 95px;
     gap: 15px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .tech-stack::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+
+  .tech-stack::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+  }
+
+  .tech > p {
+    text-indent: 0;
+    text-align: center;
   }
 
   .icon {
@@ -90,4 +95,13 @@ export const Image = styled.img`
   background-image: url("${aboutImage}");
   background-position: center;
   background-size: cover;
+`;
+
+export const Button = styled.button`
+  /* border: 1px solid red; */
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  margin: 5px;
+  cursor: pointer;
 `;

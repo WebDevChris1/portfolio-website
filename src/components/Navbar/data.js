@@ -10,16 +10,16 @@ export const social = [
   {
     id: 1,
     url: "https://codepen.io/WebDevChris",
-    icon: <AiFillCodepenCircle />,
+    icon: <AiFillCodepenCircle title="Codepen" />,
   },
   {
     id: 2,
     url: "https://github.com/WebDevChris1",
-    icon: <AiFillGithub />,
+    icon: <AiFillGithub title="Github" />,
   },
   {
     id: 3,
     url: "https://twitter.com/webdevchris1",
-    icon: <AiFillTwitterCircle />,
+    icon: <AiFillTwitterCircle title="Twitter" />,
   },
 ];

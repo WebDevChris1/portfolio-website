@@ -19,7 +19,7 @@ import { FcLinux, FcGoogle } from "react-icons/fc";
 const techStack = [
   {
     id: 1,
-    text: "ReactJS",
+    text: "React",
     icon: <SiReact style={{ fill: "#00D9FF" }} />,
   },
   {
@@ -62,7 +62,7 @@ const techStack = [
 
   {
     id: 10,
-    text: "Pycharm",
+    text: "PyCharm",
     icon: <SiPycharm style={{ fill: "#A5EC5C" }} />,
   },
   {

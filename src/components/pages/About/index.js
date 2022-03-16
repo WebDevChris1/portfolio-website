@@ -46,17 +46,17 @@ const About = () => {
         </section>
         <section className="tech-stack-wrapper">
           <h3>My Tech Stack</h3>
-          <ul className="tech-stack">
+          <div className="tech-stack">
             {techStack.map((item, index) => {
               const { text, icon, id } = item;
               return (
                 <div className="tech" key={id}>
                   <div className="icon">{icon}</div>
-                  <li>{text}</li>
+                  <p>{text}</p>
                 </div>
               );
             })}
-          </ul>
+          </div>
         </section>
 
         <section className="goals">
