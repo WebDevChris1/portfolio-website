@@ -16,7 +16,7 @@ import {
 } from "react-icons/si";
 import { FcLinux, FcGoogle } from "react-icons/fc";
 
-const techStack = [
+export const techStack = [
   {
     id: 1,
     text: "React",
@@ -44,7 +44,7 @@ const techStack = [
   },
   {
     id: 7,
-    text: "Router",
+    text: "React Router",
     icon: <SiReactrouter style={{ fill: "#CA031B" }} />,
   },
 
@@ -87,12 +87,12 @@ const techStack = [
   },
   {
     id: 15,
-    text: "Abobe",
+    text: "Abobe Suite",
     icon: <SiAdobe style={{ fill: "#F31001" }} />,
   },
   {
     id: 16,
-    text: "Google",
+    text: "Google Suite",
     icon: <FcGoogle />,
   },
   {
@@ -100,14 +100,25 @@ const techStack = [
     text: "Microsoft",
     icon: <SiMicrosoft style={{ fill: "#EA4E20" }} />,
   },
-
-  // "ReactJS, JavaScript ES5/ES6, Python",
-  // "HTML5, CSS3, Markdown, PhotoShop",
-  // "React Router, Styled Components",
-  // "Git, Github",
-  // "Visual Studio Code, PyCharm, Atom",
-  // "Mac, Windows, Linux",
-  // "Google Suite, Microsoft Suite",
 ];
 
-export default techStack;
+// export const goals = [
+//   {
+//     shortTerm: "Short Term",
+//     longTerm: "Long Term",
+//     shortTermGoals: [
+//       "short goal",
+//       "short goal",
+//       "short goal",
+//       "short goal",
+//       "short goal",
+//     ],
+//     longTermGoals: [
+//       "long goal",
+//       "long goal",
+//       "long goal",
+//       "long goal",
+//       "long goal",
+//     ],
+//   },
+// ];

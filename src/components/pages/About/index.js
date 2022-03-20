@@ -1,9 +1,10 @@
 import React from "react";
 import { Wrapper, Content, Image } from "./about.styles";
 import { useGlobalContext } from "../../../context";
+import { GiStairsGoal } from "react-icons/gi";
 
 const About = () => {
-  const { techStack } = useGlobalContext();
+  const { myTechStack } = useGlobalContext();
 
   return (
     <Wrapper>
@@ -43,11 +44,49 @@ const About = () => {
             retrospect I owe these years of my life for the development of my
             creativity and deeper understanding
           </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi modi
+            adipisci doloribus nisi officia maxime iste dolore, consectetur
+            totam fugit provident cumque laboriosam eaque mollitia quidem
+            officiis ut corporis quo fugiat odio sed culpa nemo. Ipsa veritatis
+            ducimus qui libero nulla, rem temporibus voluptate alias rerum
+            voluptas quas ad. Doloremque repellendus iste quia perferendis. Iste
+            officia, in temporibus necessitatibus dolorem illo quasi, inventore
+            sed doloribus autem rem iure? Cupiditate eos rerum ex magni hic
+            laborum, doloribus eveniet numquam fugit, quas delectus praesentium
+            repellendus distinctio, iste illo quaerat aut. Sint quas ad ex
+            dolore iure velit accusamus at veniam, voluptatibus ipsa esse
+            similique temporibus tenetur reiciendis veritatis adipisci alias
+            molestiae. Perspiciatis fugit, magni tenetur tempore cupiditate
+            impedit. Necessitatibus ipsum voluptatum aliquid quod sequi possimus
+            iusto voluptatibus, esse, impedit culpa aspernatur, minima ducimus
+            quaerat quisquam vitae nemo? Tempora corporis alias maxime eos
+            voluptates odit facere optio voluptatem consectetur ea laudantium,
+            eaque eius impedit atque reprehenderit! Sapiente aspernatur nulla,
+            labore error dicta laboriosam nostrum sunt accusamus ratione
+            officiis sint reprehenderit eligendi recusandae, esse voluptatum
+            quae iusto quibusdam aliquam, laborum tenetur soluta consectetur
+            veniam quidem? Consectetur magnam ipsam nobis, omnis culpa modi
+            perferendis nostrum ut, tempore nesciunt debitis, ex enim aliquam.
+            Ab libero molestiae alias recusandae. Quasi nostrum magni illum
+            fugit? Dolor similique iure nemo, praesentium fuga pariatur tenetur
+            provident adipisci illum, cumque accusantium magnam blanditiis
+            repellendus esse ipsa exercitationem velit sed nisi optio cupiditate
+            repellat cum? Quas beatae aperiam dolorem earum rerum vitae ad ullam
+            iste incidunt accusamus! Veniam mollitia tenetur officiis provident
+            quod vitae tempore vel, voluptatem illum necessitatibus voluptates
+            repellat saepe ex quos. Minima, quas quidem. Quam saepe, eaque ex
+            sit hic debitis fugit inventore commodi maxime, sequi, natus dolore
+            deleniti! Exercitationem sit amet velit, voluptatem dolor corporis
+            saepe in eaque eveniet ab temporibus, laborum et eius molestiae
+            veritatis beatae deleniti.
+          </p>
         </section>
         <section className="tech-stack-wrapper">
           <h3>My Tech Stack</h3>
           <div className="tech-stack">
-            {techStack.map((item, index) => {
+            {myTechStack.map((item) => {
               const { text, icon, id } = item;
               return (
                 <div className="tech" key={id}>
@@ -59,9 +98,34 @@ const About = () => {
           </div>
         </section>
 
-        <section className="goals">
-          <h3>Goals</h3>
-        </section>
+        {/* <section className="goals-wrapper">
+          <GiStairsGoal className="goal-icon" />
+          <div className="goals">
+            <div>
+              <h3>Goals</h3>
+              {myGoals.map((goal, index) => {
+                const { shortTerm, longTerm, shortTermGoals, longTermGoals } =
+                  goal;
+                return (
+                  <div key={index}>
+                    <h4>{shortTerm}</h4>
+                    <ul>
+                      {shortTermGoals.map((shortGoal, index) => {
+                        return <li key={index}>{shortGoal}</li>;
+                      })}
+                    </ul>
+                    <h4>{longTerm}</h4>
+                    <ul>
+                      {longTermGoals.map((longGoal, index) => {
+                        return <li key={index}>{longGoal}</li>;
+                      })}
+                    </ul>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </section> */}
       </Content>
     </Wrapper>
   );

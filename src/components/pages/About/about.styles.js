@@ -10,7 +10,7 @@ export const Wrapper = styled.main`
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 60px;
   /* border: 1px solid green; */
   text-align: center;
 
@@ -22,6 +22,15 @@ export const Content = styled.div`
 
   h2 {
     font-size: 7rem;
+  }
+
+  ul {
+    list-style-type: decimal;
+    height: 200px;
+    padding-left: 20px;
+  }
+  li {
+    margin-top: 10px;
   }
 
   .hero {
@@ -82,9 +91,80 @@ export const Content = styled.div`
     /* border: 1px solid orange; */
   }
 
+  .goals-wrapper {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* height: 500px; */
+    height: 600px;
+  }
+
+  .goal-icon {
+    /* border: 1px solid blue; */
+    height: 60%;
+    width: 500px;
+  }
+
+  .goals {
+    height: 100%;
+    width: 600px;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: left;
+    padding: 10px 50px;
+
+    h3 {
+      text-align: center;
+      font-size: 3rem;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid white;
+      align-self: center;
+    }
+
+    h4 {
+      font-size: 1.5rem;
+    }
+  }
+
   @media screen and (min-width: 800px) {
     .hero {
       font-size: 16vh;
+    }
+
+    .about-me {
+      width: 80%;
+      align-self: center;
+    }
+
+    .tech-stack-wrapper {
+      justify-content: space-between;
+      align-items: center;
+      /* border: 1px solid red; */
+      height: 370px;
+
+      h3 {
+        font-size: 3rem;
+      }
+    }
+
+    .tech-stack {
+      /* border: 1px solid blue; */
+      width: 100%;
+      align-self: center;
+      height: 250px;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    }
+
+    .tech-stack::-webkit-scrollbar {
+      background-color: transparent;
+    }
+
+    .tech-stack::-webkit-scrollbar-thumb {
+      background-color: rgba(255, 255, 255, 0.5);
+      box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
     }
   }
 `;
@@ -99,13 +179,4 @@ export const Image = styled.img`
   @media screen and (min-width: 800px) {
     background-image: url("${desktopImage}");
   }
-`;
-
-export const Button = styled.button`
-  /* border: 1px solid red; */
-  background-color: transparent;
-  border: none;
-  font-size: 1.5rem;
-  margin: 5px;
-  cursor: pointer;
 `;

@@ -3,18 +3,22 @@ import emailjs from "emailjs-com";
 
 //data
 import offers from "./components/pages/ServiceOffers/data";
-import stack from "./components/pages/About/data";
+import { techStack } from "./components/pages/About/data";
 import welcomeMsg from "./components/pages/Home/data";
+import { featured, favorites, myBlogs } from "./components/pages/Blog/data";
 
 const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
   const [tierList, setTierList] = useState(offers);
-  const [techStack, setTechStack] = useState(stack);
+  const [myTechStack, setTechStack] = useState(techStack);
   const [msg, setMsg] = useState(welcomeMsg);
   const [sendEmail, setSendEmail] = useState("Submit");
   const [isLoading, setIsLoading] = useState(false);
   const [showLinks, setShowLinks] = useState(false);
+  const [featuredBlog, setFeaturedBlog] = useState(featured);
+  const [favoriteBlogs, setFavoriteBlogs] = useState(favorites);
+  const [allBlogs, setAllBlogs] = useState(myBlogs);
 
   useEffect(() => {
     setShowLinks(false);
@@ -54,18 +58,20 @@ const AppProvider = ({ children }) => {
     <AppContext.Provider
       value={{
         tierList,
-        techStack,
+        myTechStack,
         msg,
         setTierList,
         setTechStack,
         setMsg,
-
         handleSubmit,
         sendEmail,
         isLoading,
         setIsLoading,
         showLinks,
         setShowLinks,
+        featuredBlog,
+        favoriteBlogs,
+        allBlogs,
       }}
     >
       {children}
