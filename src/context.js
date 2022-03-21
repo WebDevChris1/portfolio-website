@@ -5,7 +5,9 @@ import emailjs from "emailjs-com";
 import offers from "./components/pages/ServiceOffers/data";
 import { techStack } from "./components/pages/About/data";
 import welcomeMsg from "./components/pages/Home/data";
-import { featured, favorites, myBlogs } from "./components/pages/Blog/data";
+import { myBlogs } from "./components/pages/Blog/data";
+
+import useReverseArray from "./helpers/useReverseArray";
 
 const AppContext = React.createContext();
 
@@ -16,9 +18,8 @@ const AppProvider = ({ children }) => {
   const [sendEmail, setSendEmail] = useState("Submit");
   const [isLoading, setIsLoading] = useState(false);
   const [showLinks, setShowLinks] = useState(false);
-  const [featuredBlog, setFeaturedBlog] = useState(featured);
-  const [favoriteBlogs, setFavoriteBlogs] = useState(favorites);
-  const [allBlogs, setAllBlogs] = useState(myBlogs);
+  const [featuredBlog, setFeaturedBlog] = useState(myBlogs.featured);
+  const [allBlogs, setAllBlogs] = useState(useReverseArray(myBlogs.blogs));
 
   useEffect(() => {
     setShowLinks(false);
@@ -70,8 +71,8 @@ const AppProvider = ({ children }) => {
         showLinks,
         setShowLinks,
         featuredBlog,
-        favoriteBlogs,
         allBlogs,
+        setAllBlogs,
       }}
     >
       {children}
