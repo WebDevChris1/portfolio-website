@@ -54,7 +54,7 @@ export const Content = styled.div`
     grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
     justify-items: center;
     width: 100%;
-    gap: 2rem;
+    gap: 3rem;
   }
 
   .tier {
@@ -147,6 +147,11 @@ export const Content = styled.div`
 
     .page-info {
       width: 80%;
+    }
+
+    .tier-options {
+      grid-template-columns: repeat(auto-fill, minmax(475px, 1fr));
+      border: 1px solid red;
     }
   }
 `;
