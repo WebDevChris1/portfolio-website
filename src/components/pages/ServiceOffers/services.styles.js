@@ -150,8 +150,8 @@ export const Content = styled.div`
     }
 
     .tier-options {
-      grid-template-columns: repeat(auto-fill, minmax(475px, 1fr));
-      border: 1px solid red;
+      grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+      /* border: 1px solid red; */
     }
   }
 `;
