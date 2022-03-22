@@ -1,23 +1,22 @@
+//imports
 import styled from "styled-components";
-import mobileImage from "./images/mobile-image.jpeg";
-import desktopImage from "./images/desktop-image.jpeg";
 
 export const Wrapper = styled.main`
-  /* border: 1px solid red; */
+  // component wrapper global styles
   padding: 0 15px 15px 15px;
 `;
 
 export const Content = styled.div`
+  // component content global styles
   display: flex;
   flex-direction: column;
   gap: 60px;
-  /* border: 1px solid green; */
   text-align: center;
 
+  /* general styles */
   p {
     text-align: left;
     text-indent: 50px;
-    /* border: 1px solid yellow; */
   }
 
   h2 {
@@ -29,35 +28,33 @@ export const Content = styled.div`
     height: 200px;
     padding-left: 20px;
   }
+
   li {
     margin-top: 10px;
   }
 
+  /* hero */
   .hero {
     height: 90vh;
-    /* border: 1px solid blue; */
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
+  /* tech stack */
   .tech-stack-wrapper {
     height: 180px;
-    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 5px 0;
-
     h3 {
       text-align: center;
       font-size: 2rem;
-      /* border: 1px solid orange; */
     }
   }
 
   .tech-stack {
-    /* border: 1px solid blue; */
     overflow-y: scroll;
     white-space: nowrap;
     align-items: center;
@@ -68,6 +65,7 @@ export const Content = styled.div`
     grid-template-columns: repeat(4, 1fr);
   }
 
+  /* show scrollbar tech stack */
   .tech-stack::-webkit-scrollbar {
     -webkit-appearance: none;
     width: 7px;
@@ -85,79 +83,45 @@ export const Content = styled.div`
     text-align: center;
   }
 
+  /* tech stack icon */
   .icon {
     text-align: center;
     font-size: 3rem;
-    /* border: 1px solid orange; */
   }
 
-  .goals-wrapper {
-    /* border: 1px solid red; */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    /* height: 500px; */
-    height: 600px;
-  }
+  /* goals */
 
-  .goal-icon {
-    /* border: 1px solid blue; */
-    height: 60%;
-    width: 500px;
-  }
-
-  .goals {
-    height: 100%;
-    width: 600px;
-    border: 1px solid white;
-    border-radius: 10px;
-    text-align: left;
-    padding: 10px 50px;
-
-    h3 {
-      text-align: center;
-      font-size: 3rem;
-      padding-bottom: 10px;
-      margin-bottom: 20px;
-      border-bottom: 1px solid white;
-      align-self: center;
-    }
-
-    h4 {
-      font-size: 1.5rem;
-    }
-  }
-
+  /* desktop */
   @media screen and (min-width: 800px) {
+    /* hero */
     .hero {
       font-size: 16vh;
     }
 
+    /* about me */
     .about-me {
       width: 80%;
       align-self: center;
     }
 
+    /* tech stack */
     .tech-stack-wrapper {
       justify-content: space-between;
       align-items: center;
-      /* border: 1px solid red; */
       height: 370px;
-
       h3 {
         font-size: 3rem;
       }
     }
 
     .tech-stack {
-      /* border: 1px solid blue; */
       width: 100%;
       align-self: center;
       height: 250px;
       grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     }
 
+    /* hide scroll bar */
     .tech-stack::-webkit-scrollbar {
       background-color: transparent;
     }
@@ -170,13 +134,15 @@ export const Content = styled.div`
 `;
 
 export const Image = styled.img`
+  /* component image global styles */
   height: 500px;
   width: 100%;
-  background-image: url("${mobileImage}");
+  background-image: url("https://res.cloudinary.com/webdevchris/image/upload/v1647919180/portfolio%20site/mobile-image_qh3qsl.jpg");
   background-position: center;
   background-size: cover;
 
+  /* desktop */
   @media screen and (min-width: 800px) {
-    background-image: url("${desktopImage}");
+    background-image: url("https://res.cloudinary.com/webdevchris/image/upload/v1647919180/portfolio%20site/desktop-image_yrplea.jpg");
   }
 `;

@@ -1,3 +1,4 @@
+// react icon
 import {
   SiJavascript,
   SiCss3,
@@ -16,6 +17,7 @@ import {
 } from "react-icons/si";
 import { FcLinux, FcGoogle } from "react-icons/fc";
 
+// tech stack data
 export const techStack = [
   {
     id: 1,
@@ -101,24 +103,3 @@ export const techStack = [
     icon: <SiMicrosoft style={{ fill: "#EA4E20" }} />,
   },
 ];
-
-// export const goals = [
-//   {
-//     shortTerm: "Short Term",
-//     longTerm: "Long Term",
-//     shortTermGoals: [
-//       "short goal",
-//       "short goal",
-//       "short goal",
-//       "short goal",
-//       "short goal",
-//     ],
-//     longTermGoals: [
-//       "long goal",
-//       "long goal",
-//       "long goal",
-//       "long goal",
-//       "long goal",
-//     ],
-//   },
-// ];

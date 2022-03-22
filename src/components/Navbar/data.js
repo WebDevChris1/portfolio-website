@@ -1,11 +1,14 @@
+// imports
 import React from "react";
 
+// react icon
 import {
   AiFillTwitterCircle,
   AiFillGithub,
   AiFillCodepenCircle,
 } from "react-icons/ai";
 
+// social media data
 export const social = [
   {
     id: 1,

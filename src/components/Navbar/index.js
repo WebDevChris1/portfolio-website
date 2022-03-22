@@ -1,16 +1,22 @@
+// imports
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
-import { Wrapper, Content } from "./navbar.styles";
 import { useGlobalContext } from "../../context";
-import { pageRoutes } from "../../data";
-import { social } from "./data";
-import { FaBars } from "react-icons/fa";
 import useWindowDimensions from "../../helpers/useWindowDimension";
+import { Link } from "react-router-dom";
+// data
+import { social } from "./data";
+import { pageRoutes } from "../../data";
+// react icon
+import { FaBars } from "react-icons/fa";
+// styled components
+import { Wrapper, Content } from "./navbar.styles";
 
+// navbar component
 const Navbar = () => {
   const { showLinks, setShowLinks } = useGlobalContext();
   const { width } = useWindowDimensions();
 
+  // toggle showLinks
   useEffect(() => {
     if (width <= 800) {
       setShowLinks(false);
@@ -18,13 +24,18 @@ const Navbar = () => {
   }, [width]);
 
   return (
+    // component wrapper
     <Wrapper>
+      {/* all content */}
       <Content>
+        {/* header */}
         <div className="nav-header">
+          {/* logo */}
           <Link to={pageRoutes[0].path}>
             <h1>WebDevChris</h1>
           </Link>
 
+          {/* nav toggle button */}
           <button
             className="nav-toggle"
             onClick={() => setShowLinks(!showLinks)}
@@ -33,11 +44,13 @@ const Navbar = () => {
           </button>
         </div>
 
+        {/* links */}
         <div
           className="links-wrapper"
-          style={{ top: showLinks ? "0" : "-350px" }}
+          style={{ top: showLinks ? "0" : "-450px" }}
         >
           <ul className="links">
+            {/* map page routes */}
             {pageRoutes.slice(0, pageRoutes.length - 2).map((route) => {
               const { id, path, text } = route;
               return (
@@ -48,8 +61,10 @@ const Navbar = () => {
             })}
           </ul>
 
+          {/* contact wrapper */}
           <div className="contact-wrapper">
             <ul className="social-icons">
+              {/* map social media data */}
               {social.map((socialIcon) => {
                 const { id, url, icon } = socialIcon;
                 return (
@@ -61,6 +76,7 @@ const Navbar = () => {
                 );
               })}
             </ul>
+            {/* contact button */}
             <Link className="contact" to={pageRoutes[5].path}>
               {pageRoutes[pageRoutes.length - 2].text}
             </Link>

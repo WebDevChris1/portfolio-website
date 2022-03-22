@@ -1,23 +1,30 @@
+// imports
 import React from "react";
-import { Wrapper, Content, Image } from "./about.styles";
 import { useGlobalContext } from "../../../context";
-import { GiStairsGoal } from "react-icons/gi";
+// styled components
+import { Wrapper, Content, Image } from "./about.styles";
 
 const About = () => {
   const { myTechStack } = useGlobalContext();
 
   return (
+    // component wrapper
     <Wrapper>
+      {/* all content */}
       <Content>
+        {/* hero */}
         <section className="hero">
           <h2>
             Here's <br /> My Story
           </h2>
         </section>
+        {/* image */}
         <section className="image-wrapper">
           <Image />
         </section>
+        {/* about me */}
         <section className="about-me">
+          {/* tech history */}
           <p>
             My journey in tech began in middle school. I was fortunate enough to
             have classes that taught me computer basics and a variety of
@@ -45,6 +52,7 @@ const About = () => {
             creativity and deeper understanding
           </p>
           <br />
+          {/* goals */}
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi modi
             adipisci doloribus nisi officia maxime iste dolore, consectetur
@@ -83,9 +91,11 @@ const About = () => {
             veritatis beatae deleniti.
           </p>
         </section>
+        {/* tech stack */}
         <section className="tech-stack-wrapper">
           <h3>My Tech Stack</h3>
           <div className="tech-stack">
+            {/* map tech stack data */}
             {myTechStack.map((item) => {
               const { text, icon, id } = item;
               return (
@@ -97,35 +107,6 @@ const About = () => {
             })}
           </div>
         </section>
-
-        {/* <section className="goals-wrapper">
-          <GiStairsGoal className="goal-icon" />
-          <div className="goals">
-            <div>
-              <h3>Goals</h3>
-              {myGoals.map((goal, index) => {
-                const { shortTerm, longTerm, shortTermGoals, longTermGoals } =
-                  goal;
-                return (
-                  <div key={index}>
-                    <h4>{shortTerm}</h4>
-                    <ul>
-                      {shortTermGoals.map((shortGoal, index) => {
-                        return <li key={index}>{shortGoal}</li>;
-                      })}
-                    </ul>
-                    <h4>{longTerm}</h4>
-                    <ul>
-                      {longTermGoals.map((longGoal, index) => {
-                        return <li key={index}>{longGoal}</li>;
-                      })}
-                    </ul>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </section> */}
       </Content>
     </Wrapper>
   );
