@@ -1,49 +1,22 @@
 import React from "react";
-import { Wrapper, Content } from "./allToolProjects.styles";
+import { Wrapper, Content } from "../../Projects/projects.styles";
 import { Link } from "react-router-dom";
-import { myToolProjects } from "../../pages/Portfolio/data";
+import { useGlobalContext } from "../../../context";
+import Projects from "../../Projects";
 
 const AllToolProjects = () => {
+  const { myProjects } = useGlobalContext();
   return (
     <Wrapper>
       <Content>
         <div className="page-info">
-          <h2>Tool Projects</h2>
+          <h2>Tools</h2>
           <div className="underline"></div>
         </div>
-        <div className="projects">
-          {myToolProjects.map((project) => {
-            const { id, title, link, code, desc, img } = project;
-            return (
-              <div key={id} className="project" href={link}>
-                <div className="img-wrapper">
-                  <img src={img} alt="preview" className="zoom blur" />
-                  <a
-                    href={link}
-                    target="_blank"
-                    className="view fade slide-down"
-                    rel="noopener noreferrer"
-                  >
-                    View
-                  </a>
-                  <a
-                    href={code}
-                    target="_blank"
-                    className="code fade slide-dowm"
-                    rel="noopener noreferrer"
-                  >
-                    Code
-                  </a>
-                </div>
-                <div className="project-desc">
-                  <h4>{title}</h4>
-                  <p>{desc}</p>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-        <Link to="/portfolio">Return to Portfolio</Link>
+        <Projects data={myProjects.toolProjects} />
+        <Link to="/portfolio" className="go-back">
+          Return to Portfolio
+        </Link>
       </Content>
     </Wrapper>
   );

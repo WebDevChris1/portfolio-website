@@ -4,16 +4,16 @@ import { Link } from "react-router-dom";
 import { useGlobalContext } from "../../../context";
 import Projects from "../../Projects";
 
-const AllUserProjects = () => {
+const AllApiProjects = () => {
   const { myProjects } = useGlobalContext();
   return (
     <Wrapper>
       <Content>
         <div className="page-info">
-          <h2>User Experience</h2>
+          <h2>API</h2>
           <div className="underline"></div>
         </div>
-        <Projects data={myProjects.userProjects} />
+        <Projects data={myProjects.apiProjects} />
         <Link to="/portfolio" className="go-back">
           Return to Portfolio
         </Link>
@@ -22,4 +22,4 @@ const AllUserProjects = () => {
   );
 };
 
-export default AllUserProjects;
+export default AllApiProjects;

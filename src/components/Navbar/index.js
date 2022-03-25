@@ -31,7 +31,7 @@ const Navbar = () => {
         {/* header */}
         <div className="nav-header">
           {/* logo */}
-          <Link to={pageRoutes[0].path}>
+          <Link to={pageRoutes.routes[0].path}>
             <h1>WebDevChris</h1>
           </Link>
 
@@ -51,14 +51,16 @@ const Navbar = () => {
         >
           <ul className="links">
             {/* map page routes */}
-            {pageRoutes.slice(0, pageRoutes.length - 2).map((route) => {
-              const { id, path, text } = route;
-              return (
-                <li key={id}>
-                  <Link to={path}>{text}</Link>
-                </li>
-              );
-            })}
+            {pageRoutes.routes
+              .slice(0, pageRoutes.routes.length - 2)
+              .map((route) => {
+                const { id, path, text } = route;
+                return (
+                  <li key={id}>
+                    <Link to={path}>{text}</Link>
+                  </li>
+                );
+              })}
           </ul>
 
           {/* contact wrapper */}
@@ -77,8 +79,8 @@ const Navbar = () => {
               })}
             </ul>
             {/* contact button */}
-            <Link className="contact" to={pageRoutes[5].path}>
-              {pageRoutes[pageRoutes.length - 2].text}
+            <Link className="contact" to={pageRoutes.routes[5].path}>
+              {pageRoutes.routes[pageRoutes.routes.length - 2].text}
             </Link>
           </div>
         </div>

@@ -11,7 +11,7 @@ export const Wrapper = styled.nav`
   height: 8vh;
   padding: 0 5px;
   @media screen and (min-width: 800px) {
-    height: 10vh;
+    height: 9vh;
   }
 `;
 export const Content = styled.div`
@@ -69,11 +69,11 @@ export const Content = styled.div`
   /* links */
   .links-wrapper {
     position: relative;
-    border-top: 1px solid white;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
     display: flex;
     flex-direction: column;
     background-color: black;
-    padding: 15px 10px;
+    padding: 15px 10px 0 10px;
     height: auto;
     width: 100%;
     transition: top 500ms ease-in-out;
@@ -98,6 +98,9 @@ export const Content = styled.div`
     display: flex;
     width: 80px;
     justify-content: space-between;
+    a {
+      font-size: 1rem;
+    }
   }
 
   /* desktop */
@@ -178,6 +181,7 @@ export const Content = styled.div`
       width: 100px;
       justify-content: center;
       align-items: flex-end;
+      border: none;
       a {
         margin: 0;
         padding: 10px;

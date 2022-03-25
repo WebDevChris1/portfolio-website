@@ -8,7 +8,7 @@ import ScrollToTop from "./helpers/ScrollToTop";
 
 // routes
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { pageRoutes, subPageRoutes } from "./data";
+import { pageRoutes } from "./data";
 import Home from "./components/pages/Home/";
 
 // styles
@@ -28,12 +28,14 @@ function App() {
           }}
         >
           <Routes>
-            <Route exact path="/" element={<Home />} st></Route>
-            {pageRoutes.slice(1, pageRoutes.length).map((route) => {
-              const { path, page, id } = route;
-              return <Route key={id} path={path} element={page}></Route>;
-            })}
-            {subPageRoutes.map((route) => {
+            <Route exact path="/" element={<Home />}></Route>
+            {pageRoutes.routes
+              .slice(1, pageRoutes.routes.length)
+              .map((route) => {
+                const { path, page, id } = route;
+                return <Route key={id} path={path} element={page}></Route>;
+              })}
+            {pageRoutes.subRoutes.map((route) => {
               const { page, path, id } = route;
               return <Route key={id} path={path} element={page}></Route>;
             })}
