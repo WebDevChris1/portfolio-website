@@ -56,7 +56,7 @@ export const Content = styled.div`
   .projects {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    border: 1px solid green;
+    /* border: 1px solid green; */
     row-gap: 2rem;
     justify-content: space-evenly;
     justify-items: center;

@@ -35,7 +35,7 @@ const Navbar = () => {
             <h1>WebDevChris</h1>
           </Link>
 
-          {/* nav toggle button */}
+          {/* nav toggle */}
           <button
             className="nav-toggle"
             onClick={() => setShowLinks(!showLinks)}
