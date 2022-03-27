@@ -13,14 +13,14 @@ export const Content = styled.div`
 
   .hero {
     /* border: 1px solid green;  */
-    height: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   h2 {
-    font-size: 9rem;
+    font-size: 7rem;
     text-align: center;
   }
 
@@ -149,6 +149,9 @@ export const Content = styled.div`
   }
 
   @media screen and (min-width: 800px) {
+    br {
+      display: none;
+    }
     .title-wrapper {
       padding-left: 75px;
     }

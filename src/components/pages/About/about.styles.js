@@ -13,6 +13,9 @@ export const Content = styled.div`
   gap: 60px;
   text-align: center;
 
+  br {
+  }
+
   /* general styles */
   p {
     text-align: left;
@@ -21,6 +24,7 @@ export const Content = styled.div`
 
   h2 {
     font-size: 7rem;
+    text-align: center;
   }
 
   ul {
@@ -93,6 +97,9 @@ export const Content = styled.div`
 
   /* desktop */
   @media screen and (min-width: 800px) {
+    br {
+      display: block;
+    }
     /* hero */
     .hero {
       font-size: 16vh;
