@@ -17,7 +17,7 @@ export const Content = styled.div`
     height: 90vh;
     display: flex;
     align-items: end;
-    align-self: start;
+    align-self: flex-start;
   }
 
   h2 {
