@@ -17,12 +17,13 @@ export const Content = styled.div`
     height: 90vh;
     width: 100%;
     display: flex;
-    align-items: end;
-    align-self: flex-start;
+    justify-content: center;
+    align-items: center;
   }
 
   h2 {
     font-size: 9rem;
+    text-align: center;
   }
   h3 {
     font-size: 2rem;
