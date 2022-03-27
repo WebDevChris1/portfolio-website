@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Wrapper = styled.main`
   /* border: 1px solid red; */
   height: 100%;
-  padding: 15px;
 `;
 
 export const Content = styled.div`
@@ -35,7 +34,7 @@ export const Content = styled.div`
     width: 100%;
     /* border: 1px solid red; */
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     align-self: flex-start;
     align-items: baseline;
     margin-bottom: 5px;
