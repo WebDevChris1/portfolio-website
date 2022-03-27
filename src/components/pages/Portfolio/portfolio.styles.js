@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.main`
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 100%;
   padding: 0 15px;
 `;
@@ -13,7 +13,7 @@ export const Content = styled.div`
   align-items: center;
 
   .hero {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     height: 90vh;
     width: 100%;
     display: flex;

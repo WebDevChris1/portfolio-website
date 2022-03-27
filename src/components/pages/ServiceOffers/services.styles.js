@@ -6,7 +6,7 @@ export const Wrapper = styled.main`
 
 export const Content = styled.div`
   /* border: 1px solid blue; */
-  /* margin-top: 90px; */
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,10 +30,10 @@ export const Content = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
 
     h2 {
-      font-size: 2rem;
+      font-size: 2.2rem;
     }
 
     .underline {

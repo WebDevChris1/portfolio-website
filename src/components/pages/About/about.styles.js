@@ -13,9 +13,6 @@ export const Content = styled.div`
   gap: 60px;
   text-align: center;
 
-  br {
-  }
-
   /* general styles */
   p {
     text-align: left;
@@ -23,7 +20,7 @@ export const Content = styled.div`
   }
 
   h2 {
-    font-size: 7rem;
+    font-size: 9rem;
     text-align: center;
   }
 
