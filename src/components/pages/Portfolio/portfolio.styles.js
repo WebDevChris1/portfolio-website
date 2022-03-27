@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.main`
   /* border: 1px solid red; */
   height: 100%;
+  padding: 15px;
 `;
 
 export const Content = styled.div`
@@ -13,17 +14,15 @@ export const Content = styled.div`
 
   .hero {
     /* border: 1px solid green;  */
-    height: 85vh;
+    height: 90vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: end;
+    align-self: start;
   }
 
   h2 {
-    font-size: 7rem;
-    text-align: center;
+    font-size: 9rem;
   }
-
   h3 {
     font-size: 2rem;
     margin: 1em 5px 0.5em;
