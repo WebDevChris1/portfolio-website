@@ -25,7 +25,7 @@ export const Content = styled.div`
   }
 
   h3 {
-    font-size: 2.3rem;
+    font-size: 2rem;
     margin: 1em 5px 0.5em;
     color: white;
   }
@@ -34,10 +34,11 @@ export const Content = styled.div`
     width: 100%;
     /* border: 1px solid red; */
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-self: flex-start;
     align-items: baseline;
     margin-bottom: 5px;
+    padding-left: 50px;
   }
 
   .title-wrapper > a {
@@ -148,6 +149,9 @@ export const Content = styled.div`
   }
 
   @media screen and (min-width: 800px) {
+    .title-wrapper {
+      padding-left: 75px;
+    }
     .project {
       height: 300px;
       width: 400px;
