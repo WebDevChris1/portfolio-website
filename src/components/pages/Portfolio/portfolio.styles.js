@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.main`
   /* border: 1px solid red; */
   height: 100%;
+  padding: 15px;
 `;
 
 export const Content = styled.div`
@@ -13,7 +14,7 @@ export const Content = styled.div`
 
   .hero {
     /* border: 1px solid green;  */
-    height: 90vh;
+    height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,7 +39,6 @@ export const Content = styled.div`
     align-self: flex-start;
     align-items: baseline;
     margin-bottom: 5px;
-    padding-left: 50px;
   }
 
   .title-wrapper > a {
