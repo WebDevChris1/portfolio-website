@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.main`
+export const Wrapper = styled.div`
   /* border: 1px solid red; */
   height: 100%;
 `;
@@ -16,7 +16,7 @@ export const Content = styled.div`
   .page-info {
     /* border: 1px solid yellow; */
     margin-top: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,10 +35,9 @@ export const Content = styled.div`
 
   .underline {
     width: 120px;
-    height: 1px;
-    border: 2px solid white;
+    border: 1px solid white;
     border-radius: 20px;
-    margin-top: 15px;
+    margin-top: 10px;
     margin-bottom: 20px;
   }
 
@@ -111,7 +110,6 @@ export const Content = styled.div`
   }
 
   .project-desc {
-    /* border: 1px solid blue; */
     width: 100%;
     height: 35%;
     display: flex;
@@ -119,6 +117,7 @@ export const Content = styled.div`
     justify-content: space-between;
     align-items: center;
     padding-top: 10px;
+    overflow: hidden;
 
     a {
       font-size: 1rem;

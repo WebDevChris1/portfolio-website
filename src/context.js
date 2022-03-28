@@ -6,7 +6,7 @@ import offers from "./components/pages/ServiceOffers/data";
 import { techStack } from "./components/pages/About/data";
 import welcomeMsg from "./components/pages/Home/data";
 import { myBlogs } from "./components/pages/Blog/data";
-import projects from "./components/pages/Portfolio/data";
+import projects from "./components/Projects/data";
 
 import useReverseArray from "./helpers/useReverseArray";
 

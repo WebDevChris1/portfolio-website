@@ -30,7 +30,7 @@ export const Content = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
 
     h2 {
       font-size: 2.2rem;
@@ -38,9 +38,8 @@ export const Content = styled.div`
 
     .underline {
       width: 80px;
-      height: 1px;
-      border: 2px solid white;
-      border-radius: 20px;
+      border: 1px solid white;
+      /* border-radius: 20px; */
       margin-bottom: 10px;
     }
 

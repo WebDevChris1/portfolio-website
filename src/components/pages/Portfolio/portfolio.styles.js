@@ -25,10 +25,20 @@ export const Content = styled.div`
     font-size: 9rem;
     text-align: center;
   }
+
   h3 {
     font-size: 2rem;
     margin: 1em 5px 0.5em;
     color: white;
+  }
+
+  .projects-wrapper {
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
   }
 
   .title-wrapper {
@@ -44,15 +54,6 @@ export const Content = styled.div`
   .title-wrapper > a {
     text-decoration: none;
     /* border: 1px solid red; */
-  }
-
-  .projects-wrapper {
-    width: 100%;
-    /* border: 1px solid red; */
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
   }
 
   .projects {
@@ -114,7 +115,6 @@ export const Content = styled.div`
   }
 
   .project-desc {
-    /* border: 1px solid blue; */
     width: 100%;
     height: 35%;
     display: flex;
@@ -176,10 +176,6 @@ export const Content = styled.div`
       object-fit: cover;
       object-position: center;
     }
-
-    /* .img-wrapper > a:hover {
-      color: red;
-    } */
 
     .view {
       inset: 0;
