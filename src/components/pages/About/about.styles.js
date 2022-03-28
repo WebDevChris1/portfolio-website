@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.main`
   // component wrapper global styles
-  padding: 0 15px 15px 15px;
+  padding: 0 10px 10px 10px;
 `;
 
 export const Content = styled.div`
@@ -37,7 +37,7 @@ export const Content = styled.div`
   /* hero */
   .hero {
     /* border: 1px solid red; */
-    height: 100vh;
+    height: 85vh;
     display: flex;
     align-items: center;
     justify-content: center;
