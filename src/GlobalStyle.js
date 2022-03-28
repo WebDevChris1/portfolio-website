@@ -19,7 +19,7 @@ p{
 }
 
 .paths{
-  transition: opacity 500ms ease-in-out;
+  transition: opacity 700ms ease-in-out;
 }
 
 `;

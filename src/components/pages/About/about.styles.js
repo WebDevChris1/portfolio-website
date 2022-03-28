@@ -20,7 +20,7 @@ export const Content = styled.div`
   }
 
   h2 {
-    font-size: 3.8rem;
+    font-size: 3.5rem;
     /* text-align: left; */
     margin: 10px 0;
   }
@@ -106,9 +106,6 @@ export const Content = styled.div`
 
     h2 {
       font-size: 4.1rem;
-    }
-
-    p {
     }
 
     /* about me */
