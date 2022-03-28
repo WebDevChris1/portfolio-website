@@ -20,7 +20,7 @@ export const Content = styled.div`
   }
 
   h2 {
-    font-size: 3.5rem;
+    font-size: 3.3rem;
     /* text-align: left; */
     margin: 10px 0;
   }
@@ -145,18 +145,16 @@ export const Content = styled.div`
 
 export const Image = styled.img`
   /* component image global styles */
-  height: 450px;
+  height: 500px;
   width: 100%;
   background-image: url("https://res.cloudinary.com/webdevchris/image/upload/v1647919180/portfolio%20site/mobile-image_qh3qsl.jpg");
   background-position: center;
   background-size: cover;
-  border-radius: 5px;
+  /* border-radius: 5px; */
 
   /* desktop */
   @media screen and (min-width: 800px) {
     margin-top: 50px;
-    height: 500px;
-    width: 100%;
     border-radius: 0;
     background-image: url("https://res.cloudinary.com/webdevchris/image/upload/v1647919180/portfolio%20site/desktop-image_yrplea.jpg");
   }
