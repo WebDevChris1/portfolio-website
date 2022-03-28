@@ -76,7 +76,7 @@ export const Content = styled.div`
     padding: 15px 10px 0 10px;
     height: auto;
     width: 100%;
-    transition: top 700ms ease-in-out;
+    transition: top var(--nav-delay) ease-in-out;
     z-index: 10;
   }
 

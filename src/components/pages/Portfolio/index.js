@@ -24,7 +24,7 @@ const Portfolio = () => {
           <Projects data={myProjects.apiProjects} />
           {/* user experience */}
           <div className="title-wrapper">
-            <h3>User Experience /</h3>
+            <h3>User Interface /</h3>
             <Link to={pageRoutes.subRoutes[1].path}>View All</Link>
           </div>
           <Projects data={myProjects.userProjects.slice(0, 3)} />

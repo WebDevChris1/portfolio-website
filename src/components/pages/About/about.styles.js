@@ -38,10 +38,7 @@ export const Content = styled.div`
   /* hero */
   .hero {
     /* border: 1px solid red; */
-    height: 85vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: none;
   }
 
   /* tech stack */
@@ -99,19 +96,25 @@ export const Content = styled.div`
     br {
       display: block;
     }
+
     /* hero */
     .hero {
-      font-size: 16vh;
-    }
-
-    h2 {
-      font-size: 4.1rem;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      h2 {
+        font-size: 9rem;
+      }
     }
 
     /* about me */
     .about-me {
       width: 80%;
       align-self: center;
+      h2 {
+        display: none;
+      }
     }
 
     /* tech stack */
@@ -145,7 +148,7 @@ export const Content = styled.div`
 
 export const Image = styled.img`
   /* component image global styles */
-  height: 500px;
+  height: 450px;
   width: 100%;
   background-image: url("https://res.cloudinary.com/webdevchris/image/upload/v1647919180/portfolio%20site/mobile-image_qh3qsl.jpg");
   background-position: center;
@@ -154,7 +157,7 @@ export const Image = styled.img`
 
   /* desktop */
   @media screen and (min-width: 800px) {
-    margin-top: 50px;
+    margin: 50px 0;
     border-radius: 0;
     background-image: url("https://res.cloudinary.com/webdevchris/image/upload/v1647919180/portfolio%20site/desktop-image_yrplea.jpg");
   }

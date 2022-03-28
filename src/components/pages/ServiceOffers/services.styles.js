@@ -57,7 +57,7 @@ export const Content = styled.div`
   }
 
   .tier {
-    border: 1px solid white;
+    border: 1px solid var(--border-color);
     border-radius: 10px;
     height: 450px;
     width: 375px;
@@ -134,7 +134,7 @@ export const Content = styled.div`
 
   a {
     text-decoration: none;
-    border: 1px solid white;
+    border: 1px solid var(--border-color);
     border-radius: 10px;
     padding: 0.7rem 1.5rem;
     font-size: 1rem;

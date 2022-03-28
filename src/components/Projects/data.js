@@ -30,7 +30,7 @@ const myProjects = {
       id: 2,
       title: "Restaurant Menu",
       img: "https://res.cloudinary.com/webdevchris/image/upload/v1645069662/portfolio%20site/menu_xuwb8x.png",
-      desc: "Example of a food menu page for a restaurant's website",
+      desc: "Example of a food menu page for a restaurant's website. Including filtering",
       link: "https://webdevchris-menu.netlify.app/",
       code: "https://www.google.com",
     },

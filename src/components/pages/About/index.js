@@ -13,9 +13,12 @@ const About = () => {
       {/* all content */}
       <Content>
         {/* hero */}
-        {/* <section className="hero">
-          <h2>My Story</h2>
-        </section> */}
+        <section className="hero">
+          <h2>
+            Here's <br />
+            My Story
+          </h2>
+        </section>
         {/* image */}
         {/* about me */}
         <section className="about-me">

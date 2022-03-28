@@ -32,10 +32,20 @@ const Projects = ({ data }) => {
               <h4>{title}</h4>
               <p>{desc}</p>
               <div className="link-wrapper">
-                <a href={link} className="view">
+                <a
+                  href={link}
+                  className="view"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaEye />
                 </a>
-                <a href={link} className="code">
+                <a
+                  href={link}
+                  className="code"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <MdSource />
                 </a>
               </div>

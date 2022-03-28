@@ -37,16 +37,16 @@ export const Content = styled.div`
     /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
+
+    a {
+    }
   }
 
   .title-wrapper {
-    width: 100%;
-    /* border: 1px solid red; */
+    width: 85%;
     display: flex;
-    justify-content: center;
-    align-self: flex-start;
     align-items: baseline;
     margin-bottom: 5px;
   }
@@ -153,7 +153,7 @@ export const Content = styled.div`
       display: none;
     }
     .title-wrapper {
-      padding-left: 75px;
+      width: 90%;
     }
     .project {
       height: 300px;

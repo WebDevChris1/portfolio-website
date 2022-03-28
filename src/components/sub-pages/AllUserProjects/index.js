@@ -10,7 +10,7 @@ const AllUserProjects = () => {
     <Wrapper>
       <Content>
         <div className="page-info">
-          <h2>User Experience</h2>
+          <h2>User Interface</h2>
           <div className="underline"></div>
         </div>
         <Projects data={myProjects.userProjects} />
