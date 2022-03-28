@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.main`
   // component wrapper global styles
-  padding: 0 10px 10px 10px;
+  padding: 0 15px 15px 15px;
 `;
 
 export const Content = styled.div`
@@ -20,8 +20,9 @@ export const Content = styled.div`
   }
 
   h2 {
-    font-size: 9rem;
-    text-align: center;
+    font-size: 3.8rem;
+    /* text-align: left; */
+    margin: 10px 0;
   }
 
   ul {
@@ -103,6 +104,13 @@ export const Content = styled.div`
       font-size: 16vh;
     }
 
+    h2 {
+      font-size: 4.1rem;
+    }
+
+    p {
+    }
+
     /* about me */
     .about-me {
       width: 80%;
@@ -140,14 +148,19 @@ export const Content = styled.div`
 
 export const Image = styled.img`
   /* component image global styles */
-  height: 500px;
+  height: 450px;
   width: 100%;
   background-image: url("https://res.cloudinary.com/webdevchris/image/upload/v1647919180/portfolio%20site/mobile-image_qh3qsl.jpg");
   background-position: center;
   background-size: cover;
+  border-radius: 5px;
 
   /* desktop */
   @media screen and (min-width: 800px) {
+    margin-top: 50px;
+    height: 500px;
+    width: 100%;
+    border-radius: 0;
     background-image: url("https://res.cloudinary.com/webdevchris/image/upload/v1647919180/portfolio%20site/desktop-image_yrplea.jpg");
   }
 `;

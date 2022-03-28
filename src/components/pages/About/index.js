@@ -13,16 +13,15 @@ const About = () => {
       {/* all content */}
       <Content>
         {/* hero */}
-        <section className="hero">
+        {/* <section className="hero">
           <h2>My Story</h2>
-        </section>
+        </section> */}
         {/* image */}
-        <section className="image-wrapper">
-          <Image />
-        </section>
         {/* about me */}
         <section className="about-me">
           {/* tech history */}
+          <Image />
+          <h2>Here's My Story</h2>
           <p>
             My journey in tech began in middle school. I was fortunate enough to
             have classes that taught me computer basics and a variety of
