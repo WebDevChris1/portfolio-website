@@ -48,7 +48,7 @@ export const Content = styled.div`
   // desktop
   @media screen and (min-width: 800px) {
     // content component global styles
-    height: 80vh;
+    height: 85vh;
     width: 100vw;
     align-self: flex-end;
     gap: 0;
