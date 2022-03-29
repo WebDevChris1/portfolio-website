@@ -1,7 +1,9 @@
-const welcomeMsg = [
-  "1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim facilisis gravida neque convallis a cras. In fermentum et sollicitudin ac orci. Fames ac turpis egestas sed tempus urna. A iaculis at erat pellentesque adipiscing commodo elit at imperdiet. Fermentum iaculis eu non diam. Sed sed risus pretium quam vulputate. Elementum",
-  "2. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim facilisis gravida neque convallis a cras. In fermentum et sollicitudin ac orci. Fames ac turpis egestas sed tempus urna. A iaculis at erat pellentesque adipiscing commodo elit at imperdiet. Fermentum iaculis eu non diam. Sed sed risus pretium quam vulputate. Elementum",
-  "3. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim facilisis gravida neque convallis a cras. In fermentum et sollicitudin ac orci. Fames ac turpis egestas sed tempus urna. A iaculis at erat pellentesque adipiscing commodo elit at imperdiet. Fermentum iaculis eu non diam. Sed sed risus pretium quam vulputate. Elementum",
-];
+const homePageInfo = {
+  mainTitle: ["Christopher", <br />, "Lutchmidat"],
+  subTitle: "Web Developer / Tech Enthusist",
+  img: "https://res.cloudinary.com/webdevchris/image/upload/v1648524708/portfolio%20site/home-page-selfie.jpg",
+  welcomeMsg:
+    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis tenetur suscipit esse. Corporis, repellendus? Quo nostrum corrupti iure odit id aperiam. Ab est molestias expedita eaque alias facere rerum aut quibusdam vel rem? Accusantium sequi iure molestiae necessitatibus, veritatis alias possimus excepturi debitis sint nobis explicabo, ex, nemo dignissimos dolore.",
+};
 
-export default welcomeMsg;
+export default homePageInfo;

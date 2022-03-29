@@ -1,28 +1,27 @@
+// importss
 import React from "react";
+// styled components
 import { Wrapper, Content, Image } from "./home.styles";
-import selfie from "./images/me.jpeg";
+// data
+import homePageInfo from "./data";
 
+//component
 const Home = () => {
   return (
     <Wrapper>
       <Content>
-        <div className="header-wrapper">
-          <div className="img-wrapper">
-            <Image src={selfie} />
-          </div>
-          <h2>
-            Christopher <br /> Lutchmidat
-          </h2>
-        </div>
-        <h3>Web Developer / Tech Enthusist</h3>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis
-          tenetur suscipit esse. Corporis, repellendus? Quo nostrum corrupti
-          iure odit id aperiam. Ab est molestias expedita eaque alias facere
-          rerum aut quibusdam vel rem? Accusantium sequi iure molestiae
-          necessitatibus, veritatis alias possimus excepturi debitis sint nobis
-          explicabo, ex, nemo dignissimos dolore.
-        </p>
+        {/* header */}
+        <main className="header-wrapper">
+          <section className="img-wrapper">
+            <Image src={homePageInfo.img} />
+          </section>
+          <section className="header">
+            <h2>{homePageInfo.mainTitle}</h2>
+            <h3>{homePageInfo.subTitle}</h3>
+          </section>
+        </main>
+        {/* welcome message */}
+        <p>{homePageInfo.welcomeMsg}</p>
       </Content>
     </Wrapper>
   );
