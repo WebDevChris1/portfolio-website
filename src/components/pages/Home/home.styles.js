@@ -7,7 +7,6 @@ export const Wrapper = styled.div`
   align-items: center;
   flex-direction: column;
   padding: 15px;
-  height: 90vh;
 
   @media screen and (min-width: 800px) {
     width: 100vw;
