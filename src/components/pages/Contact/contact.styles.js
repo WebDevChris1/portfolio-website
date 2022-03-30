@@ -98,16 +98,24 @@ export const Form = styled.form`
     width: 120px;
   }
 
+  .med-input {
+    /* width: 55%; */
+  }
+
   @media screen and (min-width: 800px) {
-    /* border: 1px solid green; */
+    /* border: 1px solid white; */
     width: 50%;
-    height: 90%;
-    border: none;
+    height: 100%;
+    /* padding: 20px; */
+    /* border: none; */
 
     .input-container {
-      /* border: 1px solid green; */
       flex-direction: row;
     }
+  }
+
+  .recaptcha {
+    /* border: 1px solid red; */
   }
 `;
 

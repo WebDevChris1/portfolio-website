@@ -2,6 +2,10 @@ import React from "react";
 import { Content, Form, Wrapper, Input, TextArea } from "./contact.styles";
 import { useGlobalContext } from "../../../context";
 import Spinner from "../../../components/Spinner";
+import ReCAPTCHA from "react-google-recaptcha";
+
+const onChange = () => {};
+
 const Contact = () => {
   const { handleSubmit, sendEmail, isLoading } = useGlobalContext();
   return (
@@ -26,6 +30,7 @@ const Contact = () => {
             />
           </div>
           <Input
+            className="med-input"
             type="email"
             name="email"
             placeholder="Email address"
@@ -57,16 +62,21 @@ const Contact = () => {
           </div>
           <TextArea
             name="about-business"
-            cols="40"
+            cols="43"
             rows="4"
             placeholder="Describe Your Business"
           ></TextArea>
           <TextArea
             name="additional-notes"
-            cols="40"
+            cols="43"
             rows="4"
             placeholder="Additional Notes"
           ></TextArea>
+          <ReCAPTCHA
+            className="recaptcha"
+            sitekey="6Lc5vSkfAAAAAE8XC8q_r56cCXGTUw9z5ndjivhQ"
+            onChange={onChange}
+          />
           <button type="submit">{isLoading ? <Spinner /> : sendEmail}</button>
         </Form>
       </Content>
