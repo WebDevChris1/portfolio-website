@@ -57,10 +57,11 @@ export const Form = styled.form`
   /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   align-items: center;
   height: 100%;
   width: 80%;
+  gap: 25px;
 
   label {
     margin-right: 10px;
@@ -77,7 +78,7 @@ export const Form = styled.form`
     border-radius: 5px;
   }
 
-  button {
+  .btn {
     background-color: transparent;
     border: none;
     border-radius: 5px;
@@ -85,7 +86,7 @@ export const Form = styled.form`
     font-weight: 700;
   }
 
-  button:hover {
+  .btn:hover {
     cursor: pointer;
   }
 
@@ -98,14 +99,10 @@ export const Form = styled.form`
     width: 120px;
   }
 
-  .med-input {
-    /* width: 55%; */
-  }
-
   @media screen and (min-width: 800px) {
     /* border: 1px solid white; */
     width: 50%;
-    height: 100%;
+    height: 90%;
     /* padding: 20px; */
     /* border: none; */
 

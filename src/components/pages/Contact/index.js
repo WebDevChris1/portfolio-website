@@ -1,18 +1,105 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
+import emailjs from "emailjs-com";
 import { Content, Form, Wrapper, Input, TextArea } from "./contact.styles";
-import { useGlobalContext } from "../../../context";
 import Spinner from "../../../components/Spinner";
 import ReCAPTCHA from "react-google-recaptcha";
-
-const onChange = () => {};
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
-  const { handleSubmit, sendEmail, isLoading } = useGlobalContext();
+  const [captchaToken, setCaptchaToken] = useState(null);
+
+  const recaptchaRef = useRef();
+  const formRef = useRef();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    recaptchaRef.current.execute();
+  };
+
+  const onChange = (value) => {
+    setCaptchaToken(value);
+  };
+
+  const sendEmail = () => {
+    if (captchaToken) {
+      formRef.current.reset();
+
+      const notify = toast.loading("Sending Email...", {
+        position: "bottom-center",
+      });
+
+      emailjs
+        .sendForm(
+          "service_sut2owl",
+          "template_oh7uuel",
+          formRef.current,
+          "user_FLpD0WW5oi0KL9K4eHddp"
+        )
+        .then(
+          (result) => {
+            if (result.text === "OK") {
+              console.log(result);
+              recaptchaRef.current.reset();
+              setCaptchaToken(null);
+              toast.update(notify, {
+                render: "Email Sent",
+                type: "success",
+                isLoading: false,
+                position: "bottom-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+              });
+            }
+          },
+          (error) => {
+            if (error !== "OK") {
+              console.log(error.text);
+              recaptchaRef.current.reset();
+              setCaptchaToken(null);
+              toast.update(notify, {
+                render: "Something Went Wrong",
+                type: "error",
+                isLoading: false,
+                position: "bottom-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+              });
+            }
+          }
+        );
+    }
+  };
+
+  useEffect(() => {
+    sendEmail();
+  }, [captchaToken]);
+
   return (
     <Wrapper>
       <Content>
+        <ToastContainer
+          position="bottom-center"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="dark"
+        />
         <h2>How Can I Assist?</h2>
-        <Form onSubmit={handleSubmit}>
+        <Form onSubmit={handleSubmit} ref={formRef}>
           <div className="input-container">
             <Input
               type="text"
@@ -62,22 +149,27 @@ const Contact = () => {
           </div>
           <TextArea
             name="about-business"
-            cols="43"
-            rows="4"
+            cols="40"
+            rows="5"
             placeholder="Describe Your Business"
           ></TextArea>
           <TextArea
             name="additional-notes"
-            cols="43"
-            rows="4"
+            cols="40"
+            rows="5"
             placeholder="Additional Notes"
           ></TextArea>
+
+          <input className="btn" type="submit" value="Submit" />
+
           <ReCAPTCHA
-            className="recaptcha"
+            ref={recaptchaRef}
+            theme="dark"
+            size="invisible"
             sitekey="6Lc5vSkfAAAAAE8XC8q_r56cCXGTUw9z5ndjivhQ"
             onChange={onChange}
+            // badge="bottomleft"
           />
-          <button type="submit">{isLoading ? <Spinner /> : sendEmail}</button>
         </Form>
       </Content>
     </Wrapper>
