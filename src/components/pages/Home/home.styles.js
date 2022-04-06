@@ -98,17 +98,14 @@ export const Content = styled.div`
       height: 35vw;
       overflow: hidden;
       border-radius: 50%;
-      margin-bottom: 10px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: auto;
+      margin: auto auto 30px auto;
     }
   }
 `;
 
 export const Image = styled.img`
   // image component global styles
-  height: 350px;
+  height: 370px;
   width: 350px;
   border-radius: 50%;
   margin: 0 auto;

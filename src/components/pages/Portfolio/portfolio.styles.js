@@ -12,19 +12,28 @@ export const Content = styled.div`
   justify-content: center;
   align-items: center;
 
+  /* hero */
   .hero {
-    /* border: 1px solid green; */
-    height: 90vh;
-    width: 100%;
+    height: 25vh;
+    /* border: 1px solid red; */
+    /* display: none; */
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    h2 {
+      font-size: 3rem;
+      margin-top: 50px;
+    }
   }
 
-  h2 {
+  br {
+    display: none;
+  }
+
+  /* h2 {
     font-size: 9rem;
     text-align: center;
-  }
+  } */
 
   h3 {
     font-size: 2rem;
@@ -149,6 +158,15 @@ export const Content = styled.div`
   }
 
   @media screen and (min-width: 800px) {
+    .hero {
+      height: 50vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      h2 {
+        font-size: 9rem;
+      }
+    }
     br {
       display: none;
     }

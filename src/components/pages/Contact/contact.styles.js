@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Wrapper = styled.main`
   /* border: 1px solid blue; */
-  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,6 +9,7 @@ export const Wrapper = styled.main`
   @media screen and (min-width: 800px) {
     /* border: 1px solid red;s */
     justify-content: center;
+    height: 90vh;
   }
 `;
 
@@ -24,11 +24,12 @@ export const Content = styled.div`
   /* margin: 0 35px; */
 
   h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-align: center;
     /* border-bottom: 2px solid white; */
     padding: 5px 0;
-    /* margin: 10px 0; */
+    /* margin-bottom: 20px; */
+    margin: 40px 0;
   }
 
   @media screen and (min-width: 800px) {

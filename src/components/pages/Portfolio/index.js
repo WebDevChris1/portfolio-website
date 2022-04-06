@@ -11,9 +11,7 @@ const Portfolio = () => {
     <Wrapper>
       <Content>
         <section className="hero">
-          <h2>
-            My <br /> Work
-          </h2>
+          <h2>My Work</h2>
         </section>
         <section className="projects-wrapper">
           {/* api */}

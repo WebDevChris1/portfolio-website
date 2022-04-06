@@ -37,6 +37,7 @@ const Navbar = () => {
 
           {/* nav toggle */}
           <button
+            style={{ transform: showLinks ? "rotate(-90deg)" : "rotate(0)" }}
             className="nav-toggle"
             onClick={() => setShowLinks(!showLinks)}
           >

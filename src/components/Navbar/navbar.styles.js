@@ -82,6 +82,7 @@ export const Content = styled.div`
 
   .nav-toggle {
     margin-top: 3px;
+    transition: transform var(--nav-delay) ease-in-out;
   }
 
   /* contact button */

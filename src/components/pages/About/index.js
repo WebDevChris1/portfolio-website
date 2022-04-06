@@ -24,7 +24,6 @@ const About = () => {
         <section className="about-me">
           {/* tech history */}
           <Image />
-          <h2>Here's My Story</h2>
           <p>
             My journey in tech began in middle school. I was fortunate enough to
             have classes that taught me computer basics and a variety of

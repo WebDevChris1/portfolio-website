@@ -10,7 +10,7 @@ export const Content = styled.div`
   // component content global styles
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 50px;
   text-align: center;
 
   /* general styles */
@@ -19,10 +19,8 @@ export const Content = styled.div`
     text-indent: 50px;
   }
 
-  h2 {
-    font-size: 3.3rem;
-    /* text-align: left; */
-    margin: 10px 0;
+  br {
+    display: none;
   }
 
   ul {
@@ -37,8 +35,22 @@ export const Content = styled.div`
 
   /* hero */
   .hero {
+    height: 25vh;
     /* border: 1px solid red; */
-    display: none;
+    /* display: none; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2 {
+      font-size: 3rem;
+      margin-top: 50px;
+    }
+  }
+
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
 
   /* tech stack */
@@ -99,7 +111,7 @@ export const Content = styled.div`
 
     /* hero */
     .hero {
-      height: 90vh;
+      height: 50vh;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -112,9 +124,7 @@ export const Content = styled.div`
     .about-me {
       width: 80%;
       align-self: center;
-      h2 {
-        display: none;
-      }
+      gap: 10px;
     }
 
     /* tech stack */

@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import emailjs from "emailjs-com";
 import { Content, Form, Wrapper, Input, TextArea } from "./contact.styles";
-import Spinner from "../../../components/Spinner";
 import ReCAPTCHA from "react-google-recaptcha";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -25,9 +24,7 @@ const Contact = () => {
     if (captchaToken) {
       formRef.current.reset();
 
-      const notify = toast.loading("Sending Email...", {
-        position: "bottom-center",
-      });
+      const notify = toast.loading("Sending Email...");
 
       emailjs
         .sendForm(
@@ -46,7 +43,6 @@ const Contact = () => {
                 render: "Email Sent",
                 type: "success",
                 isLoading: false,
-                position: "bottom-center",
                 autoClose: 5000,
                 hideProgressBar: false,
                 closeOnClick: true,
@@ -65,7 +61,6 @@ const Contact = () => {
                 render: "Something Went Wrong",
                 type: "error",
                 isLoading: false,
-                position: "bottom-center",
                 autoClose: 5000,
                 hideProgressBar: false,
                 closeOnClick: true,
@@ -87,7 +82,8 @@ const Contact = () => {
     <Wrapper>
       <Content>
         <ToastContainer
-          position="bottom-center"
+          style={{ margin: "45px 0 0 0" }}
+          position="top-center"
           autoClose={5000}
           hideProgressBar={false}
           newestOnTop={false}

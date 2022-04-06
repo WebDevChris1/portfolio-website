@@ -2,8 +2,7 @@ import React from "react";
 import { useGlobalContext } from "../../../context";
 import { Wrapper, Content } from "./services.styles";
 import { Link } from "react-router-dom";
-import { BiRevision } from "react-icons/bi";
-import { BiTimeFive } from "react-icons/bi";
+import { BiRevision, BiTimeFive } from "react-icons/bi";
 
 const Services = () => {
   const { tierList } = useGlobalContext();
