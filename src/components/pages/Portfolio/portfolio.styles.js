@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.main`
-  /* border: 1px solid red; */
   height: 100%;
-  padding: 0 15px;
+  /* padding: 0 10px; */
+  /* border: 1px solid red; */
 `;
 
 export const Content = styled.div`
@@ -15,8 +15,6 @@ export const Content = styled.div`
   /* hero */
   .hero {
     height: 25vh;
-    /* border: 1px solid red; */
-    /* display: none; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,59 +28,40 @@ export const Content = styled.div`
     display: none;
   }
 
-  /* h2 {
-    font-size: 9rem;
-    text-align: center;
-  } */
-
   h3 {
     font-size: 2rem;
-    /* margin-left: 35px; */
     color: white;
   }
 
   .projects-wrapper {
-    width: 85%;
-    /* border: 1px solid red; */
+    width: 82%;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
-
-    a {
-    }
   }
 
   .title-wrapper {
-    /* border: 1px solid red; */
     display: flex;
     align-items: baseline;
     margin-bottom: 15px;
     gap: 5px;
-    /* padding-left: 40px; */
-    /* align-self: flex-start; */
   }
 
   .title-wrapper > a {
     text-decoration: none;
-    /* border: 1px solid red; */
   }
 
   .projects {
+    /* border: 1px solid red; */
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
-    /* border: 1px solid blue; */
     gap: 1.5rem;
     margin-bottom: 3rem;
     width: 100%;
     justify-items: center;
-
     .img-wrapper {
       height: 65%;
       position: relative;
       overflow: hidden;
-      /* border: 1px solid red; */
-
       a {
         position: absolute;
         height: 100%;
@@ -108,7 +87,6 @@ export const Content = styled.div`
 
     p {
       width: 90%;
-      /* border: 1px solid green; */
       text-align: center;
       font-size: 0.9rem;
     }
