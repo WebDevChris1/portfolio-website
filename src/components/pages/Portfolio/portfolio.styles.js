@@ -37,8 +37,7 @@ export const Content = styled.div`
 
   h3 {
     font-size: 2rem;
-    margin-bottom: 10px;
-    margin-left: 40px;
+    /* margin-left: 35px; */
     color: white;
   }
 
@@ -59,7 +58,9 @@ export const Content = styled.div`
     width: 100%;
     display: flex;
     align-items: baseline;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
+    gap: 5px;
+    padding-left: 40px;
   }
 
   .title-wrapper > a {
@@ -72,7 +73,7 @@ export const Content = styled.div`
     grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
     /* border: 1px solid blue; */
     gap: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     width: 90%;
     justify-content: space-evenly;
     justify-items: center;
@@ -160,9 +161,6 @@ export const Content = styled.div`
   }
 
   @media screen and (min-width: 800px) {
-    h3 {
-      margin-left: 0;
-    }
     .hero {
       height: 50vh;
       display: flex;
@@ -176,7 +174,8 @@ export const Content = styled.div`
       display: none;
     }
     .title-wrapper {
-      width: 90%;
+      width: 100%;
+      padding-left: 75px;
     }
     .project {
       height: 300px;
