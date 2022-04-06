@@ -42,12 +42,12 @@ export const Content = styled.div`
   }
 
   .projects-wrapper {
-    width: 100%;
+    width: 85%;
     /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
 
     a {
     }
@@ -60,7 +60,7 @@ export const Content = styled.div`
     margin-bottom: 15px;
     gap: 5px;
     /* padding-left: 40px; */
-    align-self: flex-start;
+    /* align-self: flex-start; */
   }
 
   .title-wrapper > a {
@@ -72,13 +72,10 @@ export const Content = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
     /* border: 1px solid blue; */
-    gap: 2rem;
+    gap: 1.5rem;
     margin-bottom: 3rem;
-    width: 90%;
-    justify-content: space-evenly;
+    width: 100%;
     justify-items: center;
-    align-content: space-evenly;
-    align-items: center;
 
     .img-wrapper {
       height: 65%;
@@ -173,9 +170,15 @@ export const Content = styled.div`
     br {
       display: none;
     }
-    .title-wrapper {
-      padding-left: 75px;
+
+    .projects-wrapper {
+      width: 100%;
     }
+
+    .projects {
+      justify-items: flex-start;
+    }
+
     .project {
       height: 300px;
       width: 400px;
