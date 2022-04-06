@@ -37,7 +37,8 @@ export const Content = styled.div`
 
   h3 {
     font-size: 2rem;
-    margin: 1em 5px 0.5em;
+    margin-bottom: 10px;
+    margin-left: 40px;
     color: white;
   }
 
@@ -54,7 +55,8 @@ export const Content = styled.div`
   }
 
   .title-wrapper {
-    width: 85%;
+    /* border: 1px solid red; */
+    width: 100%;
     display: flex;
     align-items: baseline;
     margin-bottom: 5px;
@@ -158,6 +160,9 @@ export const Content = styled.div`
   }
 
   @media screen and (min-width: 800px) {
+    h3 {
+      margin-left: 0;
+    }
     .hero {
       height: 50vh;
       display: flex;
