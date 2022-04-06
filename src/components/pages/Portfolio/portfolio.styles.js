@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.main`
   /* height: 100%; */
+  width: 100%;
   padding: 0 15px;
   border: 1px solid red;
 `;
@@ -95,8 +96,8 @@ export const Content = styled.div`
   .project {
     border: 1px solid grey;
     border-radius: 10px;
-    height: 370px;
-    width: 400px;
+    height: 340px;
+    width: 390px;
     text-align: center;
     overflow: hidden;
   }
