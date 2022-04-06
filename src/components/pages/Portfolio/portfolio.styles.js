@@ -55,12 +55,12 @@ export const Content = styled.div`
 
   .title-wrapper {
     /* border: 1px solid red; */
-    width: 100%;
     display: flex;
     align-items: baseline;
     margin-bottom: 15px;
     gap: 5px;
-    padding-left: 40px;
+    /* padding-left: 40px; */
+    align-self: flex-start;
   }
 
   .title-wrapper > a {
@@ -174,7 +174,6 @@ export const Content = styled.div`
       display: none;
     }
     .title-wrapper {
-      width: 100%;
       padding-left: 75px;
     }
     .project {
