@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.main`
-  height: 100%;
-  /* padding: 0 10px; */
-  /* border: 1px solid red; */
+  /* height: 100%; */
+  padding: 0 15px;
+  border: 1px solid red;
 `;
 
 export const Content = styled.div`
@@ -20,7 +20,7 @@ export const Content = styled.div`
     justify-content: center;
     h2 {
       font-size: 3rem;
-      margin-top: 50px;
+      /* margin-top: 50px; */
     }
   }
 
@@ -34,9 +34,10 @@ export const Content = styled.div`
   }
 
   .projects-wrapper {
-    width: 82%;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    border: 1px solid red;
   }
 
   .title-wrapper {
@@ -51,7 +52,6 @@ export const Content = styled.div`
   }
 
   .projects {
-    /* border: 1px solid red; */
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
     gap: 1.5rem;
