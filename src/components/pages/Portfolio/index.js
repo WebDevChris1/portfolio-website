@@ -15,23 +15,30 @@ const Portfolio = () => {
         </section>
         <section className="projects-wrapper">
           {/* api */}
-          <div className="title-wrapper">
-            <h3>API /</h3>
-            <Link to={pageRoutes.subRoutes[0].path}>View All</Link>
+          <div className="api-projects-wrapper">
+            <div className="title-wrapper">
+              <h3>API /</h3>
+              <Link to={pageRoutes.subRoutes[0].path}>View All</Link>
+            </div>
+
+            <Projects data={myProjects.apiProjects} />
           </div>
-          <Projects data={myProjects.apiProjects} />
           {/* user experience */}
-          <div className="title-wrapper">
-            <h3>User Interface /</h3>
-            <Link to={pageRoutes.subRoutes[1].path}>View All</Link>
+          <div className="user-interface-projects-wrapper">
+            <div className="title-wrapper">
+              <h3>User Interface /</h3>
+              <Link to={pageRoutes.subRoutes[1].path}>View All</Link>
+            </div>
+            <Projects data={myProjects.userProjects.slice(0, 3)} />
           </div>
-          <Projects data={myProjects.userProjects.slice(0, 3)} />
           {/* tool */}
-          <div className="title-wrapper">
-            <h3>Tools /</h3>
-            <Link to={pageRoutes.subRoutes[2].path}>View All</Link>
+          <div className="tools-projects-wrapper">
+            <div className="title-wrapper">
+              <h3>Tools /</h3>
+              <Link to={pageRoutes.subRoutes[2].path}>View All</Link>
+            </div>
+            <Projects data={myProjects.toolProjects.slice(0, 3)} />
           </div>
-          <Projects data={myProjects.toolProjects.slice(0, 3)} />
         </section>
       </Content>
     </Wrapper>

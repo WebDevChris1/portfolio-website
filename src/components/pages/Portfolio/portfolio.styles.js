@@ -1,10 +1,8 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.main`
-  /* height: 100%; */
   width: 100%;
   padding: 0 15px;
-  border: 1px solid red;
 `;
 
 export const Content = styled.div`
@@ -21,7 +19,6 @@ export const Content = styled.div`
     justify-content: center;
     h2 {
       font-size: 3rem;
-      /* margin-top: 50px; */
     }
   }
 
@@ -30,15 +27,13 @@ export const Content = styled.div`
   }
 
   h3 {
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: white;
   }
 
   .projects-wrapper {
-    width: 100%;
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
   }
 
   .title-wrapper {
@@ -58,7 +53,6 @@ export const Content = styled.div`
     gap: 1.5rem;
     margin-bottom: 3rem;
     width: 100%;
-    justify-items: center;
     .img-wrapper {
       height: 65%;
       position: relative;
@@ -136,7 +130,10 @@ export const Content = styled.div`
     border-right: 1px solid rgba(255, 255, 255, 0.4);
   }
 
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 850px) {
+    h3 {
+      font-size: 2rem;
+    }
     .hero {
       height: 50vh;
       display: flex;
@@ -152,10 +149,6 @@ export const Content = styled.div`
 
     .projects-wrapper {
       width: 100%;
-    }
-
-    .projects {
-      justify-items: flex-start;
     }
 
     .project {
