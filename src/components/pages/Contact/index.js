@@ -82,8 +82,7 @@ const Contact = () => {
     <Wrapper>
       <Content>
         <ToastContainer
-          style={{ margin: "45px 0 0 0" }}
-          position="top-center"
+          position="bottom-center"
           autoClose={5000}
           hideProgressBar={false}
           newestOnTop={false}
