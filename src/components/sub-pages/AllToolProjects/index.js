@@ -1,19 +1,19 @@
 import React from "react";
-import { Wrapper, Content } from "../../Projects/projects.styles";
+import { Wrapper, Content } from "./allToolProjects.styles";
 import { Link } from "react-router-dom";
 import { useGlobalContext } from "../../../context";
 import Projects from "../../Projects";
+import Hero from "../../Hero/Hero";
 
 const AllToolProjects = () => {
   const { myProjects } = useGlobalContext();
   return (
     <Wrapper>
       <Content>
-        <div className="page-info">
-          <h2>Tools</h2>
-          <div className="underline"></div>
-        </div>
-        <Projects data={myProjects.toolProjects} />
+        <Hero text="Tools" />
+        <section className="projects-wrapper">
+          <Projects data={myProjects.toolProjects} />
+        </section>
         <Link to="/portfolio" className="go-back">
           Return to Portfolio
         </Link>

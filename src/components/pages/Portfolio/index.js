@@ -4,18 +4,18 @@ import { Link } from "react-router-dom";
 import { pageRoutes } from "../../../data";
 import { useGlobalContext } from "../../../context";
 import Projects from "../../Projects";
+import Hero from "../../Hero/Hero";
 
 const Portfolio = () => {
   const { myProjects } = useGlobalContext();
   return (
     <Wrapper>
       <Content>
-        <section className="hero">
-          <h2>My Work</h2>
-        </section>
+        <Hero text="My Work" />
+
         <section className="projects-wrapper">
           {/* api */}
-          <div className="api-projects-wrapper">
+          <div>
             <div className="title-wrapper">
               <h3>API /</h3>
               <Link to={pageRoutes.subRoutes[0].path}>View All</Link>
@@ -24,7 +24,7 @@ const Portfolio = () => {
             <Projects data={myProjects.apiProjects} />
           </div>
           {/* user experience */}
-          <div className="user-interface-projects-wrapper">
+          <div>
             <div className="title-wrapper">
               <h3>User Interface /</h3>
               <Link to={pageRoutes.subRoutes[1].path}>View All</Link>
@@ -32,7 +32,7 @@ const Portfolio = () => {
             <Projects data={myProjects.userProjects.slice(0, 3)} />
           </div>
           {/* tool */}
-          <div className="tools-projects-wrapper">
+          <div>
             <div className="title-wrapper">
               <h3>Tools /</h3>
               <Link to={pageRoutes.subRoutes[2].path}>View All</Link>

@@ -1,6 +1,7 @@
 // imports
 import React from "react";
 import { useGlobalContext } from "../../../context";
+import Hero from "../../Hero/Hero";
 // styled components
 import { Wrapper, Content, Image } from "./about.styles";
 
@@ -13,12 +14,7 @@ const About = () => {
       {/* all content */}
       <Content>
         {/* hero */}
-        <section className="hero">
-          <h2>
-            Here's <br />
-            My Story
-          </h2>
-        </section>
+        <Hero text="My Story" />
         {/* image */}
         {/* about me */}
         <section className="about-me">

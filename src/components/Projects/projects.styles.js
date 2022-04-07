@@ -1,74 +1,16 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
-  /* border: 1px solid red; */
-  height: 100%;
-`;
-
-export const Content = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  /* border: 1px solid blue; */
-  width: 100%;
-
-  .page-info {
-    /* border: 1px solid yellow; */
-    margin-top: 50px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  h2 {
-    font-size: 2rem;
-    text-align: center;
-    /* border: 1px solid blue; */
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  .underline {
-    width: 120px;
-    border: 1px solid white;
-    border-radius: 20px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-
-  .go-back {
-    text-decoration: none;
-    border: 1px solid white;
-    border-radius: 10px;
-    padding: 0.5rem 1.5rem;
-    font-size: 1rem;
-    font-weight: 500;
-    margin-bottom: 50px;
-    margin-top: 60px;
-  }
-
+export const Grid = styled.div`
   .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    /* border: 1px solid green; */
-    row-gap: 2rem;
-    justify-content: space-evenly;
-    justify-items: center;
-    align-content: space-evenly;
-    align-items: center;
-    width: 90%;
-
+    grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+    width: 100%;
     .img-wrapper {
       height: 65%;
       position: relative;
       overflow: hidden;
-      /* border: 1px solid red; */
-
       a {
         position: absolute;
         height: 100%;
@@ -94,7 +36,6 @@ export const Content = styled.div`
 
     p {
       width: 90%;
-      /* border: 1px solid green; */
       text-align: center;
       font-size: 0.9rem;
     }
@@ -103,8 +44,8 @@ export const Content = styled.div`
   .project {
     border: 1px solid grey;
     border-radius: 10px;
-    height: 370px;
-    width: 400px;
+    height: 340px;
+    width: 390px;
     text-align: center;
     overflow: hidden;
   }
@@ -117,7 +58,6 @@ export const Content = styled.div`
     justify-content: space-between;
     align-items: center;
     padding-top: 10px;
-    overflow: hidden;
 
     a {
       font-size: 1rem;
@@ -144,7 +84,7 @@ export const Content = styled.div`
     border-right: 1px solid rgba(255, 255, 255, 0.4);
   }
 
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 850px) {
     .project {
       height: 300px;
       width: 400px;
@@ -166,10 +106,6 @@ export const Content = styled.div`
       object-fit: cover;
       object-position: center;
     }
-
-    /* .img-wrapper > a:hover {
-      color: red;
-    } */
 
     .view {
       inset: 0;
