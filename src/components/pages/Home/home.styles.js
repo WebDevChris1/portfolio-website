@@ -3,15 +3,18 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   // component wrapper global styles
+  /* border: 1px solid red; */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 15px;
+  height: 90vh;
 
   // desktop
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 1000px) {
     width: 100vw;
+    height: auto;
     flex-direction: row;
   }
 `;
@@ -45,8 +48,13 @@ export const Content = styled.div`
     padding-top: 10px;
   }
 
+  .img-wrapper {
+    transition: height 500ms ease-in-out;
+    transition: width 500ms ease-in-out;
+  }
+
   // desktop
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 1000px) {
     // content component global styles
     height: 85vh;
     width: 100vw;
@@ -99,21 +107,23 @@ export const Content = styled.div`
       overflow: hidden;
       border-radius: 50%;
       margin: auto auto 30px auto;
+      /* opacity: 0.8;s */
     }
   }
 `;
 
 export const Image = styled.img`
   // image component global styles
-  height: 370px;
+  height: 350px;
   width: 350px;
   border-radius: 50%;
   margin: 0 auto;
+  object-fit: cover;
 
   // desktop
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 1000px) {
+    /* border: 5px solid red; */
     width: 100%;
     height: 100%;
-    object-fit: cover;
   }
 `;

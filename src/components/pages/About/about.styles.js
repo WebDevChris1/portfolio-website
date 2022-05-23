@@ -158,17 +158,19 @@ export const Content = styled.div`
 
 export const Image = styled.img`
   /* component image global styles */
-  height: 450px;
+  height: 600px;
   width: 100%;
-  background-image: url("https://res.cloudinary.com/webdevchris/image/upload/v1647919180/portfolio%20site/mobile-image_qh3qsl.jpg");
+  background-image: url("https://res.cloudinary.com/webdevchris/image/upload/v1651710703/portfolio%20site/views_ey2mz7.jpg");
   background-position: center;
   background-size: cover;
   /* border-radius: 5px; */
+  object-fit: cover;
 
   /* desktop */
   @media screen and (min-width: 800px) {
+    height: 450px;
     margin: 50px 0;
     border-radius: 0;
-    background-image: url("https://res.cloudinary.com/webdevchris/image/upload/v1647919180/portfolio%20site/desktop-image_yrplea.jpg");
+    background-image: url("https://res.cloudinary.com/webdevchris/image/upload/v1649687980/portfolio%20site/IMG_1326_qrvj2u.jpg");
   }
 `;
