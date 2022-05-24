@@ -160,7 +160,7 @@ export const Image = styled.img`
   /* component image global styles */
   height: 600px;
   width: 100%;
-  background-image: url("https://res.cloudinary.com/webdevchris/image/upload/v1651710703/portfolio%20site/views_ey2mz7.jpg");
+  background-image: url("https://res.cloudinary.com/webdevchris/image/upload/v1653430459/portfolio%20site/GOPR3843_uxqq8l.jpg");
   background-position: center;
   background-size: cover;
   /* border-radius: 5px; */

@@ -35,11 +35,6 @@ export const Content = styled.div`
     text-decoration: none;
   }
 
-  h2 {
-    font-size: 2rem;
-    text-align: center;
-  }
-
   button {
     background-color: transparent;
     border: 1px solid white;

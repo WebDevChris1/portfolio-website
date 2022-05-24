@@ -5,20 +5,16 @@ export const Wrapper = styled.main`
 `;
 
 export const Content = styled.div`
-  /* border: 1px solid blue; */
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
-  padding-bottom: 20px;
+  width: 100%;
 
   ul {
     width: 100%;
     height: 150px;
     padding-left: 50px;
-    /* border: 1px solid red; */
   }
 
   li {
@@ -26,21 +22,16 @@ export const Content = styled.div`
   }
 
   .page-info {
-    padding: 0 20px;
+    padding: 0 20px 30px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1.3rem;
 
-    h2 {
-      font-size: 2.2rem;
-    }
-
-    .underline {
-      width: 80px;
-      border: 1px solid white;
-      /* border-radius: 20px; */
-      margin-bottom: 10px;
+    .divider {
+      font-size: 2rem;
+      width: 20%;
+      text-align: center;
     }
 
     p {
@@ -111,7 +102,6 @@ export const Content = styled.div`
     display: flex;
     width: 100%;
     height: 60px;
-    /* border: 1px solid blue; */
     align-items: center;
     justify-content: center;
     gap: 5px;
@@ -128,7 +118,6 @@ export const Content = styled.div`
     span {
       font-size: 1.1rem;
       font-weight: normal;
-      /* border: 1px solid yellow; */
     }
   }
 
@@ -150,7 +139,6 @@ export const Content = styled.div`
 
     .tier-options {
       grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
-      /* border: 1px solid red; */
     }
   }
 `;
