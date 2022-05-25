@@ -26,12 +26,12 @@ export const Content = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.3rem;
 
     .divider {
-      font-size: 2rem;
-      width: 20%;
+      font-size: 1.7rem;
+      width: 40%;
       text-align: center;
+      margin-top: 10px;
     }
 
     p {
@@ -133,8 +133,15 @@ export const Content = styled.div`
   @media screen and (min-width: 800px) {
     gap: 50px;
 
+    .divider {
+      font-size: 2rem;
+      width: 20%;
+      text-align: center;
+    }
+
     .page-info {
       width: 80%;
+      gap: 1.3rem;
     }
 
     .tier-options {

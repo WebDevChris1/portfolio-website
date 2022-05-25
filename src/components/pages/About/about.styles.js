@@ -33,20 +33,6 @@ export const Content = styled.div`
     margin-top: 10px;
   }
 
-  /* hero */
-  .hero {
-    height: 25vh;
-    /* border: 1px solid red; */
-    /* display: none; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    h2 {
-      font-size: 3rem;
-      margin-top: 50px;
-    }
-  }
-
   .about-me {
     display: flex;
     flex-direction: column;
@@ -160,10 +146,6 @@ export const Image = styled.img`
   /* component image global styles */
   height: 600px;
   width: 100%;
-  background-image: url("https://res.cloudinary.com/webdevchris/image/upload/v1653430459/portfolio%20site/GOPR3843_uxqq8l.jpg");
-  background-position: center;
-  background-size: cover;
-  /* border-radius: 5px; */
   object-fit: cover;
 
   /* desktop */
@@ -171,6 +153,5 @@ export const Image = styled.img`
     height: 450px;
     margin: 50px 0;
     border-radius: 0;
-    background-image: url("https://res.cloudinary.com/webdevchris/image/upload/v1649687980/portfolio%20site/IMG_1326_qrvj2u.jpg");
   }
 `;

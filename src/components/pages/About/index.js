@@ -1,12 +1,23 @@
 // imports
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useGlobalContext } from "../../../context";
 import Hero from "../../Hero/Hero";
+import useWindowDimensions from "../../../helpers/useWindowDimension";
 // styled components
 import { Wrapper, Content, Image } from "./about.styles";
 
 const About = () => {
   const { myTechStack } = useGlobalContext();
+  const { width } = useWindowDimensions();
+  const [isMobile, setIsMobile] = useState();
+
+  useEffect(() => {
+    if (width <= 800) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  }, [width]);
 
   return (
     // component wrapper
@@ -19,7 +30,13 @@ const About = () => {
         {/* about me */}
         <section className="about-me">
           {/* tech history */}
-          <Image />
+          <Image
+            src={
+              isMobile
+                ? "https://res.cloudinary.com/webdevchris/image/upload/v1653514797/portfolio%20site/Screen_Shot_2022-05-25_at_17.39.33_sit9jt.png"
+                : "https://res.cloudinary.com/webdevchris/image/upload/v1649687980/portfolio%20site/IMG_1326_qrvj2u.jpg"
+            }
+          />
           <p>
             My journey in tech began in middle school. I was fortunate enough to
             have classes that taught me computer basics and a variety of
